@@ -1,0 +1,76 @@
+{
+  "modelId": "others",
+  "label": "Other shortlist cars",
+  "search": "Verified listings for shortlist cars other than the Model 3 and Q6 e-tron watches.",
+  "checked": "2026-10-23",
+  "listings": [
+    {
+      "id": "WBY83FB04RFR87396",
+      "vin": "WBY83FB04RFR87396",
+      "year": 2024,
+      "make": "BMW",
+      "model": "i4",
+      "modelId": "i4",
+      "trim": "xDrive40",
+      "miles": 25630,
+      "price": 40277,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.autostoday.com/cars-for-sale/used-cars/listing/WBY83FB04RFR87396/2024-bmw-i4-xdrive40-south-jordan-ut",
+      "dealer": "Tim Dahle Nissan Southtowne",
+      "city": "South Jordan",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "match",
+      "statusNote": "Verified listing for the leading shortlist car.",
+      "priceHistory": [
+        {
+          "date": "2026-10-23",
+          "price": 40277
+        }
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "KM8KRDDF1RU332518",
+      "vin": "KM8KRDDF1RU332518",
+      "year": 2024,
+      "make": "Hyundai",
+      "model": "Ioniq 5",
+      "modelId": "ioniq5",
+      "trim": "Limited AWD",
+      "miles": 42137,
+      "price": 29992,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.kengarffnissanslc.com/inventory/certified-pre-owned-2024-hyundai-ioniq-5-limited-awd-sport-utility-km8krddf1ru332518/",
+      "dealer": "Ken Garff Hyundai Downtown",
+      "city": "Salt Lake City",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": true,
+      "fit": "match",
+      "statusNote": "Certified pre-owned. Verified listing.",
+      "priceHistory": [
+        {
+          "date": "2026-10-23",
+          "price": 29992
+        }
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    }
+  ]
+}
