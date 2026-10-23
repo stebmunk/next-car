@@ -1,0 +1,1848 @@
+{
+  "modelId": "model3",
+  "label": "Tesla Model 3",
+  "search": "2024 and newer Model 3 Long Range AWD, up to about 25,000 miles, from Ogden to Springville.",
+  "checked": "2026-10-22",
+  "listings": [
+    {
+      "id": "5YJ3E1EB6RF835131",
+      "vin": "5YJ3E1EB6RF835131",
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 9313,
+      "price": 39999,
+      "priceBasis": "vehicle",
+      "docFee": 449,
+      "url": "https://www.kengarff.com/inventory/used-2024-tesla-model-3-long-range-awd-4dr-car-5yj3e1eb6rf835131/",
+      "dealer": "Ken Garff Nissan",
+      "city": "Orem",
+      "color": null,
+      "wheels": "18in w/ full wheel covers (Aero-style per equipment list)",
+      "drivetrain": "AWD",
+      "title": "clean",
+      "cpo": false,
+      "fit": "near-miss",
+      "statusNote": "Meets the car rules, above the price target",
+      "priceHistory": [
+        {
+          "date": "2026-10-14",
+          "price": 40449
+        },
+        {
+          "date": "2026-10-15",
+          "price": 40449
+        },
+        {
+          "date": "2026-10-16",
+          "price": 40449
+        },
+        {
+          "date": "2026-10-17",
+          "price": 40449
+        },
+        {
+          "date": "2026-10-18",
+          "price": 40449
+        },
+        {
+          "date": "2026-10-19",
+          "price": 40449
+        },
+        {
+          "date": "2026-10-20",
+          "price": 40449
+        },
+        {
+          "date": "2026-10-21",
+          "price": 39999
+        },
+        {
+          "date": "2026-10-22",
+          "price": 39999
+        }
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-22",
+      "note": "2026-10-21: price drop $40,449->$39,999",
+      "motivation": {
+        "score": "Medium",
+        "reason": "off-brand Nissan store, first $450 cut after 7 days flat, priced above lower-mile Kentson unit",
+        "asOf": "2026-10-22"
+      },
+      "timing": {
+        "call": "WATCH",
+        "reason": "comparable ~$39-41k 2024 LRs have gone in ~1-2 weeks, but 7 Kentson alternatives exist",
+        "asOf": "2026-10-22"
+      }
+    },
+    {
+      "id": "5YJ3E1EB3RF741109",
+      "vin": "5YJ3E1EB3RF741109",
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 3263,
+      "price": 43990,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.keysy.com/shop/listing/1025530",
+      "dealer": "RedLine Auto Sales",
+      "city": "Draper",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "clean",
+      "cpo": false,
+      "fit": "near-miss",
+      "statusNote": "Close, over $42k",
+      "priceHistory": [
+        {
+          "date": "2026-10-14",
+          "price": 43990
+        },
+        {
+          "date": "2026-10-15",
+          "price": 43990
+        },
+        {
+          "date": "2026-10-16",
+          "price": 43990
+        },
+        {
+          "date": "2026-10-17",
+          "price": 43990
+        },
+        {
+          "date": "2026-10-19",
+          "price": 43990
+        },
+        {
+          "date": "2026-10-20",
+          "price": 43990
+        },
+        {
+          "date": "2026-10-21",
+          "price": 43990
+        },
+        {
+          "date": "2026-10-22",
+          "price": 43990
+        }
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-22",
+      "note": null,
+      "motivation": {
+        "score": "Low",
+        "reason": "no cuts in 8 days, FSD included",
+        "asOf": "2026-10-22"
+      },
+      "timing": {
+        "call": "WAIT",
+        "reason": "above cap with no price movement",
+        "asOf": "2026-10-22"
+      }
+    },
+    {
+      "id": "5YJ3E1EB0RF742895",
+      "vin": "5YJ3E1EB0RF742895",
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 22556,
+      "price": 37650,
+      "priceBasis": "vehicle",
+      "docFee": 895,
+      "url": "https://www.kentsoncarcompany.com/inventory/used-2024-tesla-model-3-long-range-awd-4d-sedan-5yj3e1eb0rf742895/",
+      "dealer": "Kentson Car Company",
+      "city": "Bountiful",
+      "color": "Stealth Grey",
+      "wheels": "18in Photon",
+      "drivetrain": "AWD",
+      "title": "clean",
+      "cpo": false,
+      "fit": "match",
+      "statusNote": "Meets the search",
+      "priceHistory": [
+        {
+          "date": "2026-10-15",
+          "price": 38450
+        },
+        {
+          "date": "2026-10-16",
+          "price": 37950
+        },
+        {
+          "date": "2026-10-17",
+          "price": 37950
+        },
+        {
+          "date": "2026-10-18",
+          "price": 37950
+        },
+        {
+          "date": "2026-10-19",
+          "price": 37950
+        },
+        {
+          "date": "2026-10-20",
+          "price": 37650
+        },
+        {
+          "date": "2026-10-21",
+          "price": 37650
+        },
+        {
+          "date": "2026-10-22",
+          "price": 37650
+        }
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-22",
+      "note": "2026-10-16: price drop $38,450->$37,950 (dealer listing page); 2026-10-20: price drop $37,950->$37,650 (dealer listing page)",
+      "motivation": {
+        "score": "High",
+        "reason": "7 near-identical LR AWDs on lot, 2 cuts ($800-900) in 6 days",
+        "asOf": "2026-10-22"
+      },
+      "timing": {
+        "call": "WATCH",
+        "reason": "Kentson's last cut was 10-20; similar Kentson units left within 1-3 days of first sighting, but 7 twins still listed",
+        "asOf": "2026-10-22"
+      }
+    },
+    {
+      "id": "5YJ3E1EB7RF746085",
+      "vin": "5YJ3E1EB7RF746085",
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 23703,
+      "price": 37950,
+      "priceBasis": "vehicle",
+      "docFee": 895,
+      "url": "https://www.kentsoncarcompany.com/inventory/used-2024-tesla-model-3-long-range-awd-4d-sedan-5yj3e1eb7rf746085/",
+      "dealer": "Kentson Car Company",
+      "city": "Bountiful",
+      "color": "Stealth Grey",
+      "wheels": "18in Photon",
+      "drivetrain": "AWD",
+      "title": "clean",
+      "cpo": false,
+      "fit": "match",
+      "statusNote": "Meets the search",
+      "priceHistory": [
+        {
+          "date": "2026-10-15",
+          "price": 38850
+        },
+        {
+          "date": "2026-10-16",
+          "price": 38350
+        },
+        {
+          "date": "2026-10-17",
+          "price": 38350
+        },
+        {
+          "date": "2026-10-18",
+          "price": 38350
+        },
+        {
+          "date": "2026-10-19",
+          "price": 38350
+        },
+        {
+          "date": "2026-10-20",
+          "price": 37950
+        },
+        {
+          "date": "2026-10-21",
+          "price": 37950
+        },
+        {
+          "date": "2026-10-22",
+          "price": 37950
+        }
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-22",
+      "note": "2026-10-16: price drop $38,850->$38,350 (dealer listing page); 2026-10-20: price drop $38,350->$37,950 (dealer listing page)",
+      "motivation": {
+        "score": "High",
+        "reason": "7 near-identical LR AWDs on lot, 2 cuts ($800-900) in 6 days",
+        "asOf": "2026-10-22"
+      },
+      "timing": {
+        "call": "WATCH",
+        "reason": "Kentson's last cut was 10-20; similar Kentson units left within 1-3 days of first sighting, but 7 twins still listed",
+        "asOf": "2026-10-22"
+      }
+    },
+    {
+      "id": "5YJ3E1EB7RF754039",
+      "vin": "5YJ3E1EB7RF754039",
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 11858,
+      "price": 38950,
+      "priceBasis": "vehicle",
+      "docFee": 895,
+      "url": "https://www.kentsoncarcompany.com/inventory/used-2024-tesla-model-3-long-range-awd-4d-sedan-5yj3e1eb7rf754039/",
+      "dealer": "Kentson Car Company",
+      "city": "Bountiful",
+      "color": "Solid Black",
+      "wheels": "18in Photon",
+      "drivetrain": "AWD",
+      "title": "clean",
+      "cpo": false,
+      "fit": "near-miss",
+      "statusNote": "Meets the car rules, above the price target",
+      "priceHistory": [
+        {
+          "date": "2026-10-15",
+          "price": 39750
+        },
+        {
+          "date": "2026-10-16",
+          "price": 39250
+        },
+        {
+          "date": "2026-10-17",
+          "price": 39250
+        },
+        {
+          "date": "2026-10-18",
+          "price": 39250
+        },
+        {
+          "date": "2026-10-19",
+          "price": 39250
+        },
+        {
+          "date": "2026-10-20",
+          "price": 38950
+        },
+        {
+          "date": "2026-10-21",
+          "price": 38950
+        },
+        {
+          "date": "2026-10-22",
+          "price": 38950
+        }
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-22",
+      "note": "2026-10-16: price drop $39,750->$39,250 (dealer listing page); 2026-10-20: price drop $39,250->$38,950 (dealer listing page)",
+      "motivation": {
+        "score": "High",
+        "reason": "7 near-identical LR AWDs on lot, 2 cuts ($800-900) in 6 days",
+        "asOf": "2026-10-22"
+      },
+      "timing": {
+        "call": "WATCH",
+        "reason": "Kentson's last cut was 10-20; similar Kentson units left within 1-3 days of first sighting, but 7 twins still listed",
+        "asOf": "2026-10-22"
+      }
+    },
+    {
+      "id": "5YJ3E1EBXRF729250",
+      "vin": "5YJ3E1EBXRF729250",
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 6716,
+      "price": 39250,
+      "priceBasis": "vehicle",
+      "docFee": 895,
+      "url": "https://www.kentsoncarcompany.com/inventory/used-2024-tesla-model-3-long-range-awd-4d-sedan-5yj3e1ebxrf729250/",
+      "dealer": "Kentson Car Company",
+      "city": "Bountiful",
+      "color": "Stealth Grey",
+      "wheels": "18in Photon",
+      "drivetrain": "AWD",
+      "title": "clean",
+      "cpo": false,
+      "fit": "near-miss",
+      "statusNote": "Meets the car rules, above the price target",
+      "priceHistory": [
+        {
+          "date": "2026-10-15",
+          "price": 40050
+        },
+        {
+          "date": "2026-10-16",
+          "price": 39550
+        },
+        {
+          "date": "2026-10-17",
+          "price": 39550
+        },
+        {
+          "date": "2026-10-18",
+          "price": 39550
+        },
+        {
+          "date": "2026-10-19",
+          "price": 39550
+        },
+        {
+          "date": "2026-10-20",
+          "price": 39250
+        },
+        {
+          "date": "2026-10-21",
+          "price": 39250
+        },
+        {
+          "date": "2026-10-22",
+          "price": 39250
+        }
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-22",
+      "note": "2026-10-16: price drop $40,050->$39,550 (dealer listing page); 2026-10-20: price drop $39,550->$39,250 (dealer listing page)",
+      "motivation": {
+        "score": "High",
+        "reason": "7 near-identical LR AWDs on lot, 2 cuts ($800-900) in 6 days",
+        "asOf": "2026-10-22"
+      },
+      "timing": {
+        "call": "WATCH",
+        "reason": "Kentson's last cut was 10-20; similar Kentson units left within 1-3 days of first sighting, but 7 twins still listed",
+        "asOf": "2026-10-22"
+      }
+    },
+    {
+      "id": "5YJ3E1EB4RF745718",
+      "vin": "5YJ3E1EB4RF745718",
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 14384,
+      "price": 39550,
+      "priceBasis": "vehicle",
+      "docFee": 895,
+      "url": "https://www.kentsoncarcompany.com/inventory/used-2024-tesla-model-3-long-range-awd-4d-sedan-5yj3e1eb4rf745718/",
+      "dealer": "Kentson Car Company",
+      "city": "Bountiful",
+      "color": "Stealth Grey",
+      "wheels": "18in Photon",
+      "drivetrain": "AWD",
+      "title": "clean",
+      "cpo": false,
+      "fit": "near-miss",
+      "statusNote": "Meets the car rules, above the price target",
+      "priceHistory": [
+        {
+          "date": "2026-10-15",
+          "price": 40350
+        },
+        {
+          "date": "2026-10-16",
+          "price": 39850
+        },
+        {
+          "date": "2026-10-17",
+          "price": 39850
+        },
+        {
+          "date": "2026-10-18",
+          "price": 39850
+        },
+        {
+          "date": "2026-10-19",
+          "price": 39850
+        },
+        {
+          "date": "2026-10-20",
+          "price": 39550
+        },
+        {
+          "date": "2026-10-21",
+          "price": 39550
+        },
+        {
+          "date": "2026-10-22",
+          "price": 39550
+        }
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-22",
+      "note": "2026-10-16: price drop $40,350->$39,850 per Cars.com; 2026-10-17: dealer listing page read, $39,850 confirmed, 18in Photon; 2026-10-20: price drop $39,850->$39,550 (dealer listing page)",
+      "motivation": {
+        "score": "High",
+        "reason": "7 near-identical LR AWDs on lot, 2 cuts ($800-900) in 6 days",
+        "asOf": "2026-10-22"
+      },
+      "timing": {
+        "call": "WATCH",
+        "reason": "Kentson's last cut was 10-20; similar Kentson units left within 1-3 days of first sighting, but 7 twins still listed",
+        "asOf": "2026-10-22"
+      }
+    },
+    {
+      "id": "5YJ3E1EB0RF738667",
+      "vin": "5YJ3E1EB0RF738667",
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 10916,
+      "price": 39950,
+      "priceBasis": "vehicle",
+      "docFee": 895,
+      "url": "https://www.kentsoncarcompany.com/inventory/used-2024-tesla-model-3-long-range-awd-4d-sedan-5yj3e1eb0rf738667/",
+      "dealer": "Kentson Car Company",
+      "city": "Bountiful",
+      "color": "Stealth Grey",
+      "wheels": "18in Photon",
+      "drivetrain": "AWD",
+      "title": "clean",
+      "cpo": false,
+      "fit": "near-miss",
+      "statusNote": "Meets the car rules, above the price target",
+      "priceHistory": [
+        {
+          "date": "2026-10-15",
+          "price": 40850
+        },
+        {
+          "date": "2026-10-16",
+          "price": 40350
+        },
+        {
+          "date": "2026-10-17",
+          "price": 40350
+        },
+        {
+          "date": "2026-10-18",
+          "price": 40350
+        },
+        {
+          "date": "2026-10-19",
+          "price": 40350
+        },
+        {
+          "date": "2026-10-20",
+          "price": 39950
+        },
+        {
+          "date": "2026-10-21",
+          "price": 39950
+        },
+        {
+          "date": "2026-10-22",
+          "price": 39950
+        }
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-22",
+      "note": "2026-10-16: price drop $40,850->$40,350 per Cars.com; 2026-10-17: dealer listing page read, price confirmed; 2026-10-20: price drop $40,350->$39,950 (dealer listing page)",
+      "motivation": {
+        "score": "High",
+        "reason": "7 near-identical LR AWDs on lot, 2 cuts ($800-900) in 6 days",
+        "asOf": "2026-10-22"
+      },
+      "timing": {
+        "call": "WATCH",
+        "reason": "Kentson's last cut was 10-20; similar Kentson units left within 1-3 days of first sighting, but 7 twins still listed",
+        "asOf": "2026-10-22"
+      }
+    },
+    {
+      "id": "5YJ3E1EB4RF744262",
+      "vin": "5YJ3E1EB4RF744262",
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 5421,
+      "price": 40550,
+      "priceBasis": "vehicle",
+      "docFee": 895,
+      "url": "https://www.kentsoncarcompany.com/inventory/used-2024-tesla-model-3-long-range-awd-4d-sedan-5yj3e1eb4rf744262/",
+      "dealer": "Kentson Car Company",
+      "city": "Bountiful",
+      "color": "Stealth Grey",
+      "wheels": "18in Photon",
+      "drivetrain": "AWD",
+      "title": "clean",
+      "cpo": false,
+      "fit": "near-miss",
+      "statusNote": "Meets the car rules, above the price target",
+      "priceHistory": [
+        {
+          "date": "2026-10-15",
+          "price": 41350
+        },
+        {
+          "date": "2026-10-16",
+          "price": 40850
+        },
+        {
+          "date": "2026-10-17",
+          "price": 40850
+        },
+        {
+          "date": "2026-10-18",
+          "price": 40850
+        },
+        {
+          "date": "2026-10-19",
+          "price": 40850
+        },
+        {
+          "date": "2026-10-20",
+          "price": 40550
+        },
+        {
+          "date": "2026-10-21",
+          "price": 40550
+        },
+        {
+          "date": "2026-10-22",
+          "price": 40550
+        }
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-22",
+      "note": "2026-10-16: price drop $41,350->$40,850 per Cars.com; 2026-10-17: dealer listing page read, price confirmed; 2026-10-20: price drop $40,850->$40,550 (dealer listing page)",
+      "motivation": {
+        "score": "High",
+        "reason": "7 near-identical LR AWDs on lot, 2 cuts ($800-900) in 6 days",
+        "asOf": "2026-10-22"
+      },
+      "timing": {
+        "call": "WATCH",
+        "reason": "Kentson's last cut was 10-20; similar Kentson units left within 1-3 days of first sighting, but 7 twins still listed",
+        "asOf": "2026-10-22"
+      }
+    },
+    {
+      "id": "5YJ3E1EB8SF953820",
+      "vin": "5YJ3E1EB8SF953820",
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 12146,
+      "price": 33001,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.autosavvy.com/inventory/woods-cross-ut-used-2025-tesla-model-3-long-range-awd-4d-sedan-5yj3e1eb8sf953820/",
+      "dealer": "AutoSavvy",
+      "city": "Woods Cross",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "branded",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Branded title",
+      "priceHistory": [
+        {
+          "date": "2026-10-15",
+          "price": 33001
+        },
+        {
+          "date": "2026-10-16",
+          "price": 33001
+        },
+        {
+          "date": "2026-10-17",
+          "price": 33001
+        },
+        {
+          "date": "2026-10-21",
+          "price": 33001
+        },
+        {
+          "date": "2026-10-22",
+          "price": 33001
+        }
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-22",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "5YJ3E1EBXSF960879",
+      "vin": "5YJ3E1EBXSF960879",
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 25964,
+      "price": 31901,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.autosavvy.com/inventory/lindon-ut-used-2025-tesla-model-3-long-range-awd-4d-sedan-5yj3e1ebxsf960879/",
+      "dealer": "AutoSavvy",
+      "city": "Lindon",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "branded",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Branded title, over 25,000 miles",
+      "priceHistory": [
+        {
+          "date": "2026-10-15",
+          "price": 31901
+        },
+        {
+          "date": "2026-10-16",
+          "price": 31901
+        },
+        {
+          "date": "2026-10-22",
+          "price": 31901
+        }
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-22",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "5YJ3E1EB9SF939599",
+      "vin": "5YJ3E1EB9SF939599",
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 32907,
+      "price": 39995,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://asayauto.com/2025-tesla-model-3-long-range-%7C-lindon%2C-ut-%7C-asay-auto-sales-lindon-ut-84042/7486600",
+      "dealer": "Asay Auto Sales",
+      "city": "Lindon",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "clean",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "32,907 mi (>25k); clean title/1 owner/no accidents per dealer, sold AS-IS",
+      "priceHistory": [
+        {
+          "date": "2026-10-15",
+          "price": 39995
+        },
+        {
+          "date": "2026-10-16",
+          "price": 39995
+        }
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "5YJ3E1ET7SF084815",
+      "vin": "5YJ3E1ET7SF084815",
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Performance",
+      "miles": 10172,
+      "price": 37616,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.parklinemotors.com/inventory/used-2025-tesla-model-3-performance-5yj3e1et7sf084815-in-salt-lake-city-ut",
+      "dealer": "Parkline Motors",
+      "city": "Salt Lake City",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "branded",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Performance, branded title",
+      "priceHistory": [
+        {
+          "date": "2026-10-15",
+          "price": 37626
+        },
+        {
+          "date": "2026-10-16",
+          "price": 37626
+        },
+        {
+          "date": "2026-10-17",
+          "price": 37626
+        },
+        {
+          "date": "2026-10-21",
+          "price": 37626
+        },
+        {
+          "date": "2026-10-22",
+          "price": 37616
+        }
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-22",
+      "note": "2026-10-19: Parkline now lists sale price incl $695 doc fee (orig price unchanged); still excluded.; 2026-10-22: price drop $37,626->$37,616",
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "2024-kentson-car-company-american-fork-19602-39450",
+      "vin": null,
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 19602,
+      "price": 39450,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.cars.com/dealers/5384320/kentson-car-company-american-fork/inventory/",
+      "dealer": "Kentson Car Company",
+      "city": "American Fork",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "clean",
+      "cpo": false,
+      "fit": "unverified",
+      "statusNote": "Meets the car rules, above the price target (unverified, new 2026-10-16)",
+      "priceHistory": [
+        {
+          "date": "2026-10-16",
+          "price": 39450
+        },
+        {
+          "date": "2026-10-17",
+          "price": 39450
+        },
+        {
+          "date": "2026-10-19",
+          "price": 39450
+        },
+        {
+          "date": "2026-10-20",
+          "price": 39450
+        },
+        {
+          "date": "2026-10-21",
+          "price": 39450
+        },
+        {
+          "date": "2026-10-22",
+          "price": 39450
+        }
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-22",
+      "note": "price derived: Cars.com purchase price $40,345 minus $895 doc fee (unverified); VIN, wheels, history unverified (Kentson claims clean CARFAX/clean title on all inventory)",
+      "motivation": {
+        "score": "Medium",
+        "reason": "sister store to Bountiful's 7 units, no cuts in 6 days",
+        "asOf": "2026-10-22"
+      },
+      "timing": {
+        "call": "WAIT",
+        "reason": "Bountiful twins keep getting cut; this one hasn't moved yet",
+        "asOf": "2026-10-22"
+      }
+    },
+    {
+      "id": "5YJ3E1EAXSF058529",
+      "vin": "5YJ3E1EAXSF058529",
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range RWD",
+      "miles": 11625,
+      "price": 26236,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.parklinemotors.com/tesla",
+      "dealer": "Parkline Motors",
+      "city": "Salt Lake City",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "RWD",
+      "title": "branded",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "RWD Long Range (VIN EA); Parkline titles branded (unverified for this car)",
+      "priceHistory": [
+        {
+          "date": "2026-10-16",
+          "price": 26636
+        },
+        {
+          "date": "2026-10-17",
+          "price": 26636
+        },
+        {
+          "date": "2026-10-21",
+          "price": 26636
+        },
+        {
+          "date": "2026-10-22",
+          "price": 26236
+        }
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-22",
+      "note": "2026-10-19: Parkline now lists sale price incl $695 doc fee (orig price unchanged); still excluded.; 2026-10-22: price drop $26,636->$26,236",
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "5YJ3E1EA0SF079907",
+      "vin": "5YJ3E1EA0SF079907",
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range RWD",
+      "miles": 4508,
+      "price": 31601,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.autosavvy.com/inventory/woods-cross-ut-used-2025-tesla-model-3-long-range-rwd-4d-sedan-5yj3e1ea0sf079907/",
+      "dealer": "AutoSavvy",
+      "city": "Woods Cross",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "RWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "RWD",
+      "priceHistory": [
+        {
+          "date": "2026-10-16",
+          "price": 31601
+        },
+        {
+          "date": "2026-10-17",
+          "price": 31601
+        },
+        {
+          "date": "2026-10-21",
+          "price": 31601
+        },
+        {
+          "date": "2026-10-22",
+          "price": 31601
+        }
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-22",
+      "note": "$32,200 incl $599 fee",
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "5YJ3E1EB8RF792136",
+      "vin": "5YJ3E1EB8RF792136",
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 30096,
+      "price": 39584,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.autostoday.com/cars-for-sale/used-cars/listing/5YJ3E1EB8RF792136-a1243c87-1093/2024-tesla-model-3-long-range-awd-sandy-ut",
+      "dealer": "Dealer via AutosToday",
+      "city": "Sandy",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Over 25,000 miles (unverified snippet)",
+      "priceHistory": [
+        {
+          "date": "2026-10-16",
+          "price": 39584
+        }
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "5YJ3E1EB5RF814612",
+      "vin": "5YJ3E1EB5RF814612",
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 39623,
+      "price": 37950,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.cars.com/dealers/5384320/kentson-car-company-american-fork/inventory/",
+      "dealer": "Kentson Car Company",
+      "city": "American Fork",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Over 25,000 miles",
+      "priceHistory": [
+        {
+          "date": "2026-10-16",
+          "price": 37950
+        }
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "note": "Cars.com $38,845 incl $895 doc fee (derived)",
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "5YJ3E1EB5SF898050",
+      "vin": "5YJ3E1EB5SF898050",
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 24466,
+      "price": 41519,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.utahmitsubishi.com/used/Tesla/2025-Tesla-Model-3-1d9f501fac18150404e3bc89d515f8c4.htm",
+      "dealer": "Axio EV / Southtowne Mitsubishi",
+      "city": "Sandy",
+      "color": "Pearl White",
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "match",
+      "statusNote": "AWD confirmed and under the $42k line after the price cut. Still priced above the lower-mile cars.",
+      "priceHistory": [
+        {
+          "date": "2026-10-16",
+          "price": 42697
+        },
+        {
+          "date": "2026-10-17",
+          "price": 42697
+        },
+        {
+          "date": "2026-10-19",
+          "price": 42697
+        },
+        {
+          "date": "2026-10-20",
+          "price": 41519
+        },
+        {
+          "date": "2026-10-21",
+          "price": 41519
+        },
+        {
+          "date": "2026-10-22",
+          "price": 41519
+        }
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-22",
+      "note": "2026-10-20: dealer listing page Price $41,519 / Your Price $42,108; CarGurus $42,108; Cars.com still $42,697 (prior record $42,697) dealer \"Your Price\" $42,108 (likely incl. fees, ~$589)",
+      "motivation": {
+        "score": "Medium",
+        "reason": "off-brand Mitsubishi/Axio lot, one ~$1.2k cut, 24.5k mi near limit, pricier than lower-mile Kentson cars",
+        "asOf": "2026-10-22"
+      },
+      "timing": {
+        "call": "WAIT",
+        "reason": "overpriced vs comps; more cuts likely",
+        "asOf": "2026-10-22"
+      }
+    },
+    {
+      "id": "2025-ken-garff-honda-orem-12983",
+      "vin": null,
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range RWD",
+      "miles": 12983,
+      "price": null,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://cars.ksl.com/listing/10400474",
+      "dealer": "Ken Garff Honda",
+      "city": "Orem",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "RWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Search says RWD; KSL post dated Feb 2026; page blocked",
+      "priceHistory": [],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "2025-automatch-utah-orem-28594",
+      "vin": null,
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range RWD",
+      "miles": null,
+      "price": 28594,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.cars.com/shopping/results/ (AutoMatch Utah, Orem)",
+      "dealer": "AutoMatch Utah",
+      "city": "Orem",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "RWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "RWD per AutoMatch VINs 5YJ3E1EA...; unverified per-car",
+      "priceHistory": [
+        {
+          "date": "2026-10-16",
+          "price": 28594
+        },
+        {
+          "date": "2026-10-17",
+          "price": 28594
+        },
+        {
+          "date": "2026-10-21",
+          "price": 28594
+        }
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-22",
+      "note": "two cars, 13,669 and 2,878 mi, both $28,594",
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "5YJ3E1EB5SF078406",
+      "vin": "5YJ3E1EB5SF078406",
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 709,
+      "price": 31126,
+      "priceBasis": "vehicle",
+      "docFee": 695,
+      "url": "https://www.parklinemotors.com/inventory/used-2025-tesla-model-3-long-range-5yj3e1eb5sf078406-in-salt-lake-city-ut",
+      "dealer": "Parkline Motors",
+      "city": "Salt Lake City",
+      "color": null,
+      "wheels": "18in Photon",
+      "drivetrain": "AWD",
+      "title": "branded",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Branded title (stated on Parkline listing page)",
+      "priceHistory": [
+        {
+          "date": "2026-10-17",
+          "price": 31126
+        },
+        {
+          "date": "2026-10-21",
+          "price": 31126
+        },
+        {
+          "date": "2026-10-22",
+          "price": 31126
+        }
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-22",
+      "note": "2026-10-19: Parkline now lists sale price incl $695 doc fee (orig price unchanged); still excluded.",
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "5YJ3E1EB0RF725823",
+      "vin": "5YJ3E1EB0RF725823",
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 116635,
+      "price": 27990,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://mountainautoslc.com/506835",
+      "dealer": "Mountain Auto",
+      "city": "Salt Lake City",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Over 25,000 miles",
+      "priceHistory": [],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "2025-unknown-dealer-trovit-orem-9219-37901",
+      "vin": null,
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 9219,
+      "price": 37901,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://cars.trovit.com/used-cars/tesla-model-3-utah-county",
+      "dealer": "Unknown dealer (Trovit)",
+      "city": "Orem",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "stale",
+      "statusNote": "Trovit says posted 1+ years ago; no VIN; trim says Long Range (AWD unverified)",
+      "priceHistory": [],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "2024-unknown-dealer-trovit-orem-11371-31995",
+      "vin": null,
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 11371,
+      "price": 31995,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://cars.trovit.com/used-cars/tesla-model-3-utah-county",
+      "dealer": "Unknown dealer (Trovit)",
+      "city": "Orem",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "stale",
+      "statusNote": "Trovit says posted 1+ years ago; no VIN",
+      "priceHistory": [],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "2024-unknown-dealer-trovit-lehi-2762-42489",
+      "vin": null,
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Performance",
+      "miles": 2762,
+      "price": 42489,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://cars.trovit.com/used-cars/tesla-model-3-utah-county",
+      "dealer": "Unknown dealer (Trovit)",
+      "city": "Lehi",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Performance, over $42k; Trovit 1+ years old",
+      "priceHistory": [],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "2026-reel-deal-auto-north-salt-lake-1615-32900",
+      "vin": null,
+      "year": 2026,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Standard Range",
+      "miles": 1615,
+      "price": 32900,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.cars.com/shopping/results/ (Reel Deal Auto, North Salt Lake)",
+      "dealer": "Reel Deal Auto",
+      "city": "North Salt Lake",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "RWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Standard Range (not LR AWD)",
+      "priceHistory": [],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-22",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "5YJ3E1EA1SF976959",
+      "vin": "5YJ3E1EA1SF976959",
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range RWD",
+      "miles": null,
+      "price": null,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.autostoday.com/cars-for-sale/used-cars/listing/5YJ3E1EA1SF976959-bb9d7cca-4a8c/2025-tesla-model-3-long-range-orem-ut",
+      "dealer": "AutoMatch Utah (likely)",
+      "city": "Orem",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "RWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "RWD (VIN EA)",
+      "priceHistory": [],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "5YJ3E1EA8SF082991",
+      "vin": "5YJ3E1EA8SF082991",
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range RWD",
+      "miles": null,
+      "price": null,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.automatchutah.com/inventory/used-2025-tesla-model-3-long-range-5yj3e1ea8sf082991-in-orem-ut",
+      "dealer": "AutoMatch Utah",
+      "city": "Orem",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "RWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "RWD (VIN EA); likely one of the $28,594 AutoMatch cars",
+      "priceHistory": [],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "5YJ3E1ET8TF134803",
+      "vin": "5YJ3E1ET8TF134803",
+      "year": 2026,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Performance",
+      "miles": 12871,
+      "price": 50950,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.drivershub.com/d/kentson-car-company-bountiful-ut-3653/inventory",
+      "dealer": "Kentson Car Company",
+      "city": "Bountiful",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Performance, over $42k (DriversHub price incl $895 doc, approx)",
+      "priceHistory": [],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-22",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "5YJ3E1ET3SF953717",
+      "vin": "5YJ3E1ET3SF953717",
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Performance",
+      "miles": 11083,
+      "price": 51950,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.drivershub.com/d/kentson-car-company-bountiful-ut-3653/inventory",
+      "dealer": "Kentson Car Company",
+      "city": "Bountiful",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Performance, over $42k (DriversHub price incl $895 doc, approx)",
+      "priceHistory": [],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "5YJ3E1ET3SF035689",
+      "vin": "5YJ3E1ET3SF035689",
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Performance",
+      "miles": 10893,
+      "price": 52250,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.drivershub.com/d/kentson-car-company-bountiful-ut-3653/inventory",
+      "dealer": "Kentson Car Company",
+      "city": "Bountiful",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Performance, over $42k (DriversHub price incl $895 doc, approx)",
+      "priceHistory": [],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-22",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "5YJ3E1ET7SF928514",
+      "vin": "5YJ3E1ET7SF928514",
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Performance",
+      "miles": 20662,
+      "price": 47550,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.drivershub.com/d/kentson-car-company-bountiful-ut-3653/inventory",
+      "dealer": "Kentson Car Company",
+      "city": "Bountiful",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Performance, over $42k (DriversHub price incl $895 doc, approx)",
+      "priceHistory": [],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "5YJ3E1ET6RF787249",
+      "vin": "5YJ3E1ET6RF787249",
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Performance",
+      "miles": 26748,
+      "price": 45650,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.drivershub.com/d/kentson-car-company-bountiful-ut-3653/inventory",
+      "dealer": "Kentson Car Company",
+      "city": "Bountiful",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Performance, over $42k (DriversHub price incl $895 doc, approx)",
+      "priceHistory": [],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "5YJ3E1EB3SF985901",
+      "vin": "5YJ3E1EB3SF985901",
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 10415,
+      "price": 30637,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.cargurus.com/Cars/l-Used-Tesla-Model-3-Salt-Lake-City-d2475_L35782",
+      "dealer": "NexGen Motors",
+      "city": "Orem",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "branded",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Salvage/rebuilt branded title (BadVIN + dealer branded-title notice per search)",
+      "priceHistory": [
+        {
+          "date": "2026-10-20",
+          "price": 30637
+        }
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "2025-ev-auto-lehi-16536-35790",
+      "vin": null,
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range RWD",
+      "miles": 16536,
+      "price": 35790,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://cars.ksl.com/listing/10451096",
+      "dealer": "EV Auto",
+      "city": "Lehi",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "RWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "RWD (dealer description)",
+      "priceHistory": [],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "2024-unknown-dealer-trovit-sandy-11684-44570",
+      "vin": null,
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Performance",
+      "miles": 11684,
+      "price": 44570,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://cars.trovit.com/used-cars/tesla-model-3-salt-lake-county",
+      "dealer": "Unknown dealer (Trovit)",
+      "city": "Sandy",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Performance, over $42k; Trovit 1+ years old",
+      "priceHistory": [],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "2024-axio-ev-likely-sandy-36276-39575",
+      "vin": null,
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 36276,
+      "price": 39575,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://cars.trovit.com/used-cars/tesla-model-3-salt-lake-county",
+      "dealer": "Axio EV (likely)",
+      "city": "Sandy",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Over 25,000 miles",
+      "priceHistory": [],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "5YJ3E1EB1RF733381",
+      "vin": "5YJ3E1EB1RF733381",
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 60270,
+      "price": 38539,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.autostoday.com/cars-for-sale/used-cars/listing/5YJ3E1EB1RF733381/2024-tesla-model-3-long-range-awd-sandy-ut",
+      "dealer": "Axio EV",
+      "city": "Sandy",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Over 25,000 miles",
+      "priceHistory": [],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "2025-unknown-dealer-trovit-provo-47441-36700",
+      "vin": null,
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 47441,
+      "price": 36700,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://cars.trovit.com/used-cars/tesla-model-3-utah-county",
+      "dealer": "Unknown dealer (Trovit)",
+      "city": "Provo",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Over 25,000 miles",
+      "priceHistory": [],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "2025-carmax-south-jordan-12257-46998",
+      "vin": null,
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 12257,
+      "price": 46998,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.cars.com/shopping/results/ (CarMax Salt Lake, South Jordan)",
+      "dealer": "CarMax",
+      "city": "South Jordan",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Over $42k cap; drivetrain unverified",
+      "priceHistory": [
+        {
+          "date": "2026-10-21",
+          "price": 46998
+        }
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "2025-gp-motor-company-kaysville-25300-29741",
+      "vin": null,
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 25300,
+      "price": 29741,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://cars.ksl.com/listing/10821251",
+      "dealer": "GP Motor Company",
+      "city": "Kaysville",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "branded",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "Branded title (hail), over 25,000 miles",
+      "priceHistory": [
+        {
+          "date": "2026-10-21",
+          "price": 29741
+        }
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "5YJ3E1EA0RF854863",
+      "vin": "5YJ3E1EA0RF854863",
+      "year": 2024,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range RWD",
+      "miles": 10098,
+      "price": 40147,
+      "priceBasis": "vehicle",
+      "docFee": null,
+      "url": "https://www.cargurus.com/Cars/l-Used-Tesla-Model-3-Salt-Lake-City-d2475_L35782",
+      "dealer": "CarMax (transfer)",
+      "city": "South Jordan",
+      "color": null,
+      "wheels": null,
+      "drivetrain": "RWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "excluded",
+      "statusNote": "RWD (VIN EA), out-of-area CarMax transfer",
+      "priceHistory": [
+        {
+          "date": "2026-10-22",
+          "price": 40147
+        }
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    }
+  ]
+}

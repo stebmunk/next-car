@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "lastUpdated": "2026-10-23",
+  "summary": "Model 3 and Q6 checks run through October 22, 2026. The i4 and Ioniq 5 listings were added October 23, 2026.",
+  "files": {
+    "model3": "2026-10-22",
+    "q6": "2026-10-22",
+    "others": "2026-10-23",
+    "gone": "2026-10-22"
+  }
+}
