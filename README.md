@@ -149,4 +149,4 @@ Each entry uses `id`, `vin`, `year`, `make`, `model`, `modelId`, `trim`, `miles`
 - 2024 BMW i4 xDrive40, 25,630 mi, $40,277, Tim Dahle Nissan Southtowne, South Jordan
 - 2024 Hyundai Ioniq 5 Limited AWD, 42,137 mi, $29,992, Ken Garff Hyundai Downtown, Salt Lake City, certified pre-owned
 
-The page is HTML, CSS, and one script. Filters, the day/night theme, and sparklines run in the browser.
+The page is HTML, CSS, and one script. Filters, the day/night theme, and sparklines run in the browser. Display type is self-hosted Barlow and Barlow Condensed (SIL Open Font License, `css/fonts/OFL.txt`). The page does not load third-party scripts, fonts, or analytics.
