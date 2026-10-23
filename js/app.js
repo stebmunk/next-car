@@ -716,6 +716,8 @@
     var toLight = theme !== "light";
     button.textContent = toLight ? "Day" : "Night";
     button.setAttribute("aria-label", toLight ? "Switch to day theme" : "Switch to night theme");
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", theme === "light" ? "#f2f2f0" : "#09090b");
   }
 
   function getJson(path) {

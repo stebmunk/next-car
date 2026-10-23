@@ -7,9 +7,11 @@
     <meta name="description" content="A public shortlist and listing tracker for Jason's next car. Priorities, ranked candidates, live asking prices, and cars that left the market.">
     <meta property="og:title" content="Next car">
     <meta property="og:description" content="Priorities, a ranked shortlist, and public asking prices for the next daily driver.">
-    <meta name="theme-color" content="#10120e">
+    <meta name="theme-color" content="#09090b">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <script src="js/theme.js"></script>
+    <link rel="preload" href="css/fonts/barlow-condensed-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="css/fonts/barlow-400.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
@@ -36,15 +38,17 @@
             <h1>Where I'm headed</h1>
             <p class="dek">A fun daily with the stance of an old sport wagon, the driver assist of a new car, and a price that lets the first owner eat the steep depreciation.</p>
           </div>
-          <svg class="wagon" viewBox="0 0 320 96" fill="none" aria-hidden="true">
-            <path d="M18 68h28l16-28h78l14-10h52l38 30h58" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
-            <path d="M18 68h284" stroke="currentColor" stroke-width="2.4"/>
-            <path d="M66 42l14 26h62l16-26" stroke="currentColor" stroke-width="2"/>
-            <path d="M214 36l10 32" stroke="currentColor" stroke-width="2"/>
-            <circle cx="92" cy="68" r="12" stroke="currentColor" stroke-width="2.4"/>
-            <circle cx="92" cy="68" r="4" stroke="currentColor" stroke-width="2"/>
-            <circle cx="248" cy="68" r="12" stroke="currentColor" stroke-width="2.4"/>
-            <circle cx="248" cy="68" r="4" stroke="currentColor" stroke-width="2"/>
+          <svg class="wagon" viewBox="0 0 440 128" fill="none" aria-hidden="true">
+            <path class="wagon-accent" d="M356 26 L412 70" stroke-width="2.4"/>
+            <path d="M18 104h404" stroke="currentColor" stroke-width="1.4" opacity="0.4"/>
+            <path d="M36 104V74h48l34-30h92l22-12h86l52 28h42v44" stroke="currentColor" stroke-width="2.3" stroke-linejoin="miter"/>
+            <path d="M128 46l16 30h70l18-30" stroke="currentColor" stroke-width="1.7"/>
+            <path d="M318 36l16 40" stroke="currentColor" stroke-width="1.7"/>
+            <path class="wagon-accent" d="M210 32h96" stroke-width="2.4"/>
+            <circle cx="122" cy="104" r="16" stroke="currentColor" stroke-width="2.3"/>
+            <circle cx="122" cy="104" r="6" stroke="currentColor" stroke-width="1.7"/>
+            <circle cx="342" cy="104" r="16" stroke="currentColor" stroke-width="2.3"/>
+            <circle cx="342" cy="104" r="6" stroke="currentColor" stroke-width="1.7"/>
           </svg>
         </div>
         <p class="updated">Last updated <time id="updated" datetime="2026-10-23">October 23, 2026</time></p>
@@ -142,9 +146,18 @@
             <p class="trim">2024 · AWD</p>
             <p class="fit-line">The driver’s car. Closest thing here to the old 3 Series, with enough range to leave town.</p>
             <ul class="specs">
-              <li>307 mi EPA</li>
-              <li>About 260–270 mi highway</li>
-              <li>400V · ~200 kW</li>
+              <li>
+                <span class="spec-k">EPA range</span>
+                <span class="spec-v">307<small>mi</small></span>
+              </li>
+              <li>
+                <span class="spec-k">Highway, about</span>
+                <span class="spec-v">260–270<small>mi</small></span>
+              </li>
+              <li>
+                <span class="spec-k">Charge</span>
+                <span class="spec-v">400V<small>~200 kW</small></span>
+              </li>
             </ul>
             <p class="cost-line">Cents per mile stays unpinned. Home charging and a highway fast-charge stop are different prices, and this tracker does not collapse them into one number.</p>
             <div class="split">
@@ -176,9 +189,18 @@
             <p class="trim">2025 · AWD hybrid</p>
             <p class="fit-line">The comfort and driver-assist pick. Strong lane tracing and traffic-jam assist. The sport-wagon itch stays unscratched.</p>
             <ul class="specs">
-              <li>About 38 MPG</li>
-              <li>~12–13¢/mi</li>
-              <li>About 4.5¢ under baseline</li>
+              <li>
+                <span class="spec-k">Economy, about</span>
+                <span class="spec-v">38<small>mpg</small></span>
+              </li>
+              <li>
+                <span class="spec-k">Cost / mile</span>
+                <span class="spec-v">12–13<small>¢</small></span>
+              </li>
+              <li>
+                <span class="spec-k">Vs baseline, about</span>
+                <span class="spec-v">−4.5<small>¢</small></span>
+              </li>
             </ul>
             <p class="cost-line">17¢ × 28 ÷ 38 ≈ 12.5¢ per mile, inside the 12–13¢ band.</p>
             <div class="split">
@@ -207,9 +229,18 @@
             <p class="trim">Sedan</p>
             <p class="fit-line">The road-trip EV. Excellent Autopilot. The wagon brief is the compromise.</p>
             <ul class="specs">
-              <li>Best road-trip EV here</li>
-              <li>~12¢/mi on winter trips</li>
-              <li>About 5¢ under baseline</li>
+              <li>
+                <span class="spec-k">Road trips</span>
+                <span class="spec-v">Best<small>EV here</small></span>
+              </li>
+              <li>
+                <span class="spec-k">Winter trips</span>
+                <span class="spec-v">12<small>¢/mi</small></span>
+              </li>
+              <li>
+                <span class="spec-k">Vs baseline, about</span>
+                <span class="spec-v">−5<small>¢</small></span>
+              </li>
             </ul>
             <p class="cost-line">About 12¢ per mile on winter trips. That figure is from trip notes, separate from the MPG scaling used for the gas and hybrid cars.</p>
             <div class="split">
@@ -238,9 +269,18 @@
             <p class="trim">800V</p>
             <p class="fit-line">The fast-charging pick. HDA2 is a real assist suite. Highway range is the limit.</p>
             <ul class="specs">
-              <li>About 240 mi highway</li>
-              <li>800V</li>
-              <li>About 18 min, 10–80%</li>
+              <li>
+                <span class="spec-k">Highway, about</span>
+                <span class="spec-v">240<small>mi</small></span>
+              </li>
+              <li>
+                <span class="spec-k">Architecture</span>
+                <span class="spec-v">800V</span>
+              </li>
+              <li>
+                <span class="spec-k">10–80%, about</span>
+                <span class="spec-v">18<small>min</small></span>
+              </li>
             </ul>
             <p class="cost-line">Cents per mile stays unpinned. The 800-volt stop is the reason it is this high, and the highway range is why it is fourth.</p>
             <div class="split">
@@ -269,9 +309,18 @@
             <p class="trim">Wagon</p>
             <p class="fit-line">The body-style match. A true allroad wagon, the shape the A4, the A6, and the 3 Series wagon left behind.</p>
             <ul class="specs">
-              <li>About 31 MPG highway</li>
-              <li>~15.4¢/mi highway</li>
-              <li>About 1.6¢ under baseline</li>
+              <li>
+                <span class="spec-k">Highway, about</span>
+                <span class="spec-v">31<small>mpg</small></span>
+              </li>
+              <li>
+                <span class="spec-k">Cost / mile</span>
+                <span class="spec-v">15.4<small>¢</small></span>
+              </li>
+              <li>
+                <span class="spec-k">Vs baseline, about</span>
+                <span class="spec-v">−1.6<small>¢</small></span>
+              </li>
             </ul>
             <p class="cost-line">17¢ × 28 ÷ 31 ≈ 15.4¢ per mile on the highway figure. City driving costs more than that.</p>
             <div class="split">
@@ -301,9 +350,18 @@
             <p class="trim">Quattro · 800V</p>
             <p class="fit-line">Audi, 800-volt charging, and strong range. Local clean cars are asking about $50k, which fights the depreciation plan.</p>
             <ul class="specs">
-              <li>800V</li>
-              <li>Strong range</li>
-              <li>About $50k locally</li>
+              <li>
+                <span class="spec-k">Architecture</span>
+                <span class="spec-v">800V</span>
+              </li>
+              <li>
+                <span class="spec-k">Range</span>
+                <span class="spec-v">Strong</span>
+              </li>
+              <li>
+                <span class="spec-k">Local ask, about</span>
+                <span class="spec-v">$50k</span>
+              </li>
             </ul>
             <p class="cost-line">Cents per mile stays unpinned. The decision on this one is the asking price and the shape, ahead of the energy math.</p>
             <div class="split">
