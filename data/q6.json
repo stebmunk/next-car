@@ -2,7 +2,7 @@
   "modelId": "q6",
   "label": "Audi Q6 e-tron",
   "search": "2025 and newer Q6 e-tron quattro, up to about 25,000 miles, from Ogden to Springville.",
-  "checked": "2026-10-22",
+  "checked": "2026-10-23",
   "listings": [
     {
       "id": "WA124BGF5SA093608",
@@ -11,7 +11,7 @@
       "make": "Audi",
       "model": "Q6 e-tron",
       "modelId": "q6",
-      "trim": "Premium Plus",
+      "trim": "Premium Plus quattro",
       "miles": 6685,
       "price": 49995,
       "priceBasis": "vehicle",
@@ -19,13 +19,13 @@
       "url": "https://www.audisaltlakecity.com/en/inventory/vehicle/?isdealer=&market=usuc&vehicleId=WA124BGF5SA093608",
       "dealer": "Audi Salt Lake City",
       "city": "Salt Lake City",
-      "color": null,
+      "color": "Glacier White",
       "wheels": null,
       "drivetrain": "AWD",
       "title": "unknown",
       "cpo": false,
       "fit": "over-cap",
-      "statusNote": "Over the $48k line",
+      "statusNote": "Over the $48k line. Listed as pre-owned, not Audi CPO; CPO financing not shown. Carfax not read",
       "priceHistory": [
         {
           "date": "2026-10-15",
@@ -58,20 +58,24 @@
         {
           "date": "2026-10-22",
           "price": 49995
+        },
+        {
+          "date": "2026-10-23",
+          "price": 49995
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "note": null,
       "motivation": {
         "score": "Low",
-        "reason": "franchise Audi store, no cuts in 8 days (listed ~12 days per Trovit)",
-        "asOf": "2026-10-22"
+        "reason": "franchise Audi store, no cuts in 9 days tracked",
+        "asOf": "2026-10-23"
       },
       "timing": {
         "call": "WAIT",
         "reason": "over $48k cap, no price movement",
-        "asOf": "2026-10-22"
+        "asOf": "2026-10-23"
       }
     },
     {
@@ -81,7 +85,7 @@
       "make": "Audi",
       "model": "Q6 e-tron",
       "modelId": "q6",
-      "trim": "Premium Plus",
+      "trim": "Premium Plus quattro",
       "miles": 8127,
       "price": 50995,
       "priceBasis": "vehicle",
@@ -89,13 +93,13 @@
       "url": "https://www.audisaltlakecity.com/en/inventory/vehicle/?isdealer=&market=usuc&vehicleId=WA124BGF8SA074485",
       "dealer": "Audi Salt Lake City",
       "city": "Salt Lake City",
-      "color": null,
+      "color": "Glacier White",
       "wheels": null,
       "drivetrain": "AWD",
       "title": "unknown",
       "cpo": false,
       "fit": "over-cap",
-      "statusNote": "Over the $48k line",
+      "statusNote": "Over the $48k line. Listed as pre-owned, not Audi CPO; CPO financing not shown. Carfax not read",
       "priceHistory": [
         {
           "date": "2026-10-15",
@@ -128,533 +132,25 @@
         {
           "date": "2026-10-22",
           "price": 50995
+        },
+        {
+          "date": "2026-10-23",
+          "price": 50995
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "note": null,
       "motivation": {
         "score": "Low",
-        "reason": "franchise Audi store, no cuts in 8 days",
-        "asOf": "2026-10-22"
+        "reason": "franchise Audi store, no cuts in 9 days tracked",
+        "asOf": "2026-10-23"
       },
       "timing": {
         "call": "WAIT",
         "reason": "over $48k cap, no price movement",
-        "asOf": "2026-10-22"
+        "asOf": "2026-10-23"
       }
-    },
-    {
-      "id": "WA125BGF4SA039343",
-      "vin": "WA125BGF4SA039343",
-      "year": 2025,
-      "make": "Audi",
-      "model": "Q6 e-tron",
-      "modelId": "q6",
-      "trim": "SQ6 Premium Plus",
-      "miles": 4180,
-      "price": 47799,
-      "priceBasis": "vehicle",
-      "docFee": null,
-      "url": "https://randsauto.com/vdp/24388170/Used-2025-Audi-SQ6-etron-Premium-Plus-for-sale-in-Salt-Lake-City-UT-84054",
-      "dealer": "Rand's Auto Sales",
-      "city": "North Salt Lake",
-      "color": null,
-      "wheels": null,
-      "drivetrain": "AWD",
-      "title": "buyback",
-      "cpo": false,
-      "fit": "excluded",
-      "statusNote": "SQ6, manufacturer buyback title (CA); priced $47,799 as of 2026-10-16; still on Rand's main list 2026-10-17",
-      "priceHistory": [
-        {
-          "date": "2026-10-16",
-          "price": 47799
-        }
-      ],
-      "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-16",
-      "note": null,
-      "motivation": null,
-      "timing": null
-    },
-    {
-      "id": "WA124BGF6SA007545",
-      "vin": "WA124BGF6SA007545",
-      "year": 2025,
-      "make": "Audi",
-      "model": "Q6 e-tron",
-      "modelId": "q6",
-      "trim": "Premium Plus",
-      "miles": 11407,
-      "price": 42999,
-      "priceBasis": "vehicle",
-      "docFee": null,
-      "url": "https://www.autostoday.com/cars-for-sale/used-cars/listing/WA124BGF6SA007545-43aae45c-4fb6/2025-audi-q6-e-tron-premium-plus-quattro-bountiful-ut",
-      "dealer": "Rand's Auto Sales",
-      "city": "North Salt Lake",
-      "color": null,
-      "wheels": null,
-      "drivetrain": "AWD",
-      "title": "buyback",
-      "cpo": false,
-      "fit": "excluded",
-      "statusNote": "BadVIN snippet reports prior accident/damage records; Rand's sells buybacks; not found on Rand's current page; listing page 403; 2026-10-16: still absent from Rand's own Q6 list (only 2 Q6 there), AutosToday snippet still shows $42,999",
-      "priceHistory": [
-        {
-          "date": "2026-10-15",
-          "price": 42999
-        }
-      ],
-      "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
-      "note": null,
-      "motivation": null,
-      "timing": null
-    },
-    {
-      "id": "2025-rand-s-auto-sales-likely-north-salt-lake-3122-41294",
-      "vin": null,
-      "year": 2025,
-      "make": "Audi",
-      "model": "Q6 e-tron",
-      "modelId": "q6",
-      "trim": "Premium Plus",
-      "miles": 3122,
-      "price": 41294,
-      "priceBasis": "vehicle",
-      "docFee": null,
-      "url": "https://cars.trovit.com/used-cars/audi-e-tron-ut",
-      "dealer": "Rand's Auto Sales (likely)",
-      "city": "North Salt Lake",
-      "color": null,
-      "wheels": null,
-      "drivetrain": "AWD",
-      "title": "buyback",
-      "cpo": false,
-      "fit": "unverified",
-      "statusNote": "Trovit aggregator only, '30+ days ago', no VIN/title; likely Rand's buyback stock",
-      "priceHistory": [],
-      "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
-      "note": "2026-10-16: almost certainly = Rand's WA124BGF2SA014234 (3,122 mi, Manhattan Gray), a manufacturer buyback",
-      "motivation": null,
-      "timing": null
-    },
-    {
-      "id": "WA124BGF2SA014234",
-      "vin": "WA124BGF2SA014234",
-      "year": 2025,
-      "make": "Audi",
-      "model": "Q6 e-tron",
-      "modelId": "q6",
-      "trim": "Premium Plus",
-      "miles": 3122,
-      "price": 41487,
-      "priceBasis": "with-fees",
-      "docFee": 598,
-      "url": "https://randsauto.com/vdp/24056199/Used-2025-Audi-Q6-etron-etron-Premium-Plus-quattro-for-sale-in-Salt-Lake-City-UT-84054",
-      "dealer": "Rand's Auto Sales",
-      "city": "North Salt Lake",
-      "color": null,
-      "wheels": null,
-      "drivetrain": "AWD",
-      "title": "buyback",
-      "cpo": false,
-      "fit": "excluded",
-      "statusNote": "Manufacturer buyback title (CA; gateway module)",
-      "priceHistory": [
-        {
-          "date": "2026-10-16",
-          "price": 40791
-        },
-        {
-          "date": "2026-10-17",
-          "price": 40791
-        },
-        {
-          "date": "2026-10-20",
-          "price": 41487
-        },
-        {
-          "date": "2026-10-21",
-          "price": 41487
-        },
-        {
-          "date": "2026-10-22",
-          "price": 41487
-        }
-      ],
-      "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-22",
-      "note": null,
-      "motivation": null,
-      "timing": null
-    },
-    {
-      "id": "2025-audi-salt-lake-city-salt-lake-city-9864-49995",
-      "vin": null,
-      "year": 2025,
-      "make": "Audi",
-      "model": "Q6 e-tron",
-      "modelId": "q6",
-      "trim": "Premium Plus",
-      "miles": 9864,
-      "price": 49995,
-      "priceBasis": "vehicle",
-      "docFee": null,
-      "url": "https://cars.trovit.com/used-cars/audi-quattro-utah-county",
-      "dealer": "Audi Salt Lake City",
-      "city": "Salt Lake City",
-      "color": null,
-      "wheels": null,
-      "drivetrain": "AWD",
-      "title": "unknown",
-      "cpo": false,
-      "fit": "stale",
-      "statusNote": "Over the price line / likely stale: Trovit snippet only (was $51,995); Audi SLC site shows only 2 Q6 (6,685 & 8,127 mi)",
-      "priceHistory": [],
-      "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
-      "note": null,
-      "motivation": null,
-      "timing": null
-    },
-    {
-      "id": "WA124BGF8SA005599",
-      "vin": "WA124BGF8SA005599",
-      "year": 2025,
-      "make": "Audi",
-      "model": "Q6 e-tron",
-      "modelId": "q6",
-      "trim": "Premium Plus",
-      "miles": 10860,
-      "price": 41495,
-      "priceBasis": "with-fees",
-      "docFee": 598,
-      "url": "https://randsauto.com/vdp/24371364/Used-2025-Audi-Q6-etron-etron-Premium-Plus-quattro-for-sale-in-Salt-Lake-City-UT-84054",
-      "dealer": "Rand's Auto Sales",
-      "city": "North Salt Lake",
-      "color": null,
-      "wheels": null,
-      "drivetrain": "AWD",
-      "title": "buyback",
-      "cpo": false,
-      "fit": "excluded",
-      "statusNote": "Manufacturer buyback title (CA; software)",
-      "priceHistory": [
-        {
-          "date": "2026-10-18",
-          "price": 40799
-        },
-        {
-          "date": "2026-10-19",
-          "price": 40799
-        },
-        {
-          "date": "2026-10-20",
-          "price": 41495
-        },
-        {
-          "date": "2026-10-21",
-          "price": 41495
-        },
-        {
-          "date": "2026-10-22",
-          "price": 41495
-        }
-      ],
-      "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-22",
-      "note": null,
-      "motivation": null,
-      "timing": null
-    },
-    {
-      "id": "WA124BGF1SA051257",
-      "vin": "WA124BGF1SA051257",
-      "year": 2025,
-      "make": "Audi",
-      "model": "Q6 e-tron",
-      "modelId": "q6",
-      "trim": "Premium Plus",
-      "miles": 32718,
-      "price": 46397,
-      "priceBasis": "with-shipping",
-      "docFee": null,
-      "url": "https://www.cargurus.com/Cars/l-Used-Audi-Q6-e-tron-Salt-Lake-City-d3420_L35782",
-      "dealer": "CarMax (transfer)",
-      "city": "South Jordan",
-      "color": null,
-      "wheels": null,
-      "drivetrain": "AWD",
-      "title": "unknown",
-      "cpo": false,
-      "fit": "excluded",
-      "statusNote": "Out-of-area CarMax transfer, over 25,000 miles",
-      "priceHistory": [
-        {
-          "date": "2026-10-20",
-          "price": 46397
-        },
-        {
-          "date": "2026-10-21",
-          "price": 46397
-        },
-        {
-          "date": "2026-10-22",
-          "price": 46397
-        }
-      ],
-      "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-22",
-      "note": null,
-      "motivation": null,
-      "timing": null
-    },
-    {
-      "id": "WA124BGF4SA006880",
-      "vin": "WA124BGF4SA006880",
-      "year": 2025,
-      "make": "Audi",
-      "model": "Q6 e-tron",
-      "modelId": "q6",
-      "trim": "Premium Plus",
-      "miles": 48199,
-      "price": 42247,
-      "priceBasis": "with-shipping",
-      "docFee": null,
-      "url": "https://www.cargurus.com/Cars/l-Used-Audi-Q6-e-tron-Salt-Lake-City-d3420_L35782",
-      "dealer": "CarMax (transfer)",
-      "city": "South Jordan",
-      "color": null,
-      "wheels": null,
-      "drivetrain": "AWD",
-      "title": "unknown",
-      "cpo": false,
-      "fit": "excluded",
-      "statusNote": "Out-of-area CarMax transfer, over 25,000 miles",
-      "priceHistory": [
-        {
-          "date": "2026-10-20",
-          "price": 43247
-        },
-        {
-          "date": "2026-10-21",
-          "price": 42247
-        }
-      ],
-      "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-21",
-      "note": "2026-10-21: price drop $43,247->$42,247 2026-10-22: absent from CarGurus SLC list Missed on a later check.",
-      "motivation": null,
-      "timing": null
-    },
-    {
-      "id": "WA134BGF3SA002114",
-      "vin": "WA134BGF3SA002114",
-      "year": 2025,
-      "make": "Audi",
-      "model": "Q6 e-tron",
-      "modelId": "q6",
-      "trim": "Prestige",
-      "miles": 10323,
-      "price": 52147,
-      "priceBasis": "with-shipping",
-      "docFee": null,
-      "url": "https://www.cargurus.com/Cars/l-Used-Audi-Q6-e-tron-Salt-Lake-City-d3420_L35782",
-      "dealer": "CarMax (transfer)",
-      "city": "South Jordan",
-      "color": null,
-      "wheels": null,
-      "drivetrain": "AWD",
-      "title": "unknown",
-      "cpo": false,
-      "fit": "excluded",
-      "statusNote": "Out-of-area CarMax transfer, over $48k",
-      "priceHistory": [
-        {
-          "date": "2026-10-20",
-          "price": 52147
-        },
-        {
-          "date": "2026-10-21",
-          "price": 52147
-        },
-        {
-          "date": "2026-10-22",
-          "price": 52147
-        }
-      ],
-      "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-22",
-      "note": null,
-      "motivation": null,
-      "timing": null
-    },
-    {
-      "id": "WA134BGF4SA016510",
-      "vin": "WA134BGF4SA016510",
-      "year": 2025,
-      "make": "Audi",
-      "model": "Q6 e-tron",
-      "modelId": "q6",
-      "trim": "Prestige",
-      "miles": 4780,
-      "price": 55147,
-      "priceBasis": "with-shipping",
-      "docFee": null,
-      "url": "https://www.cargurus.com/Cars/l-Used-Audi-Q6-e-tron-Salt-Lake-City-d3420_L35782",
-      "dealer": "CarMax (transfer)",
-      "city": "South Jordan",
-      "color": null,
-      "wheels": null,
-      "drivetrain": "AWD",
-      "title": "unknown",
-      "cpo": false,
-      "fit": "excluded",
-      "statusNote": "Out-of-area CarMax transfer, over $48k",
-      "priceHistory": [
-        {
-          "date": "2026-10-20",
-          "price": 56147
-        },
-        {
-          "date": "2026-10-21",
-          "price": 56147
-        },
-        {
-          "date": "2026-10-22",
-          "price": 55147
-        }
-      ],
-      "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-22",
-      "note": "2026-10-22: price drop $56,147->$55,147",
-      "motivation": null,
-      "timing": null
-    },
-    {
-      "id": "WA134BGF4SA020475",
-      "vin": "WA134BGF4SA020475",
-      "year": 2025,
-      "make": "Audi",
-      "model": "Q6 e-tron",
-      "modelId": "q6",
-      "trim": "unknown (VIN suggests Prestige)",
-      "miles": 16338,
-      "price": 52697,
-      "priceBasis": "with-shipping",
-      "docFee": null,
-      "url": "https://www.cargurus.com/Cars/l-Used-Audi-Q6-e-tron-Salt-Lake-City-d3420_L35782",
-      "dealer": "CarMax (transfer)",
-      "city": "South Jordan",
-      "color": null,
-      "wheels": null,
-      "drivetrain": "AWD",
-      "title": "unknown",
-      "cpo": false,
-      "fit": "excluded",
-      "statusNote": "Out-of-area CarMax transfer, over $48k",
-      "priceHistory": [
-        {
-          "date": "2026-10-20",
-          "price": 53697
-        },
-        {
-          "date": "2026-10-21",
-          "price": 52697
-        },
-        {
-          "date": "2026-10-22",
-          "price": 52697
-        }
-      ],
-      "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-22",
-      "note": "2026-10-21: price drop $53,697->$52,697",
-      "motivation": null,
-      "timing": null
-    },
-    {
-      "id": "WA114BGFXSA073107",
-      "vin": "WA114BGFXSA073107",
-      "year": 2025,
-      "make": "Audi",
-      "model": "Q6 e-tron",
-      "modelId": "q6",
-      "trim": "unknown (VIN suggests Premium)",
-      "miles": 2769,
-      "price": 53497,
-      "priceBasis": "with-shipping",
-      "docFee": null,
-      "url": "https://www.cargurus.com/Cars/l-Used-Audi-Q6-e-tron-Salt-Lake-City-d3420_L35782",
-      "dealer": "CarMax (transfer)",
-      "city": "South Jordan",
-      "color": null,
-      "wheels": null,
-      "drivetrain": "AWD",
-      "title": "unknown",
-      "cpo": false,
-      "fit": "excluded",
-      "statusNote": "Out-of-area CarMax transfer, over $48k",
-      "priceHistory": [
-        {
-          "date": "2026-10-20",
-          "price": 53497
-        },
-        {
-          "date": "2026-10-21",
-          "price": 53497
-        },
-        {
-          "date": "2026-10-22",
-          "price": 53497
-        }
-      ],
-      "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-22",
-      "note": null,
-      "motivation": null,
-      "timing": null
-    },
-    {
-      "id": "WA114BGF9SA067136",
-      "vin": "WA114BGF9SA067136",
-      "year": 2025,
-      "make": "Audi",
-      "model": "Q6 e-tron",
-      "modelId": "q6",
-      "trim": "Premium",
-      "miles": 12401,
-      "price": 50137,
-      "priceBasis": "vehicle",
-      "docFee": null,
-      "url": "https://www.cargurus.com/Cars/l-Used-Audi-Q6-e-tron-Salt-Lake-City-d3420_L35782",
-      "dealer": "Home delivery from Roswell, GA",
-      "city": "Roswell",
-      "color": null,
-      "wheels": null,
-      "drivetrain": "AWD",
-      "title": "unknown",
-      "cpo": false,
-      "fit": "excluded",
-      "statusNote": "Out of area, over $48k",
-      "priceHistory": [
-        {
-          "date": "2026-10-21",
-          "price": 50537
-        },
-        {
-          "date": "2026-10-22",
-          "price": 50137
-        }
-      ],
-      "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-22",
-      "note": "2026-10-22: price drop $50,537->$50,137",
-      "motivation": null,
-      "timing": null
     }
   ]
 }
