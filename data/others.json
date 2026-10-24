@@ -2,7 +2,7 @@
   "modelId": "others",
   "label": "Other shortlist cars",
   "search": "Verified listings for shortlist cars other than the Model 3 and Q6 e-tron watches.",
-  "checked": "2026-10-23",
+  "checked": "2026-10-24",
   "listings": [
     {
       "id": "WBY83FB04RFR87396",
@@ -30,10 +30,14 @@
         {
           "date": "2026-10-23",
           "price": 39828
+        },
+        {
+          "date": "2026-10-24",
+          "price": 39828
         }
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-24",
       "note": null,
       "motivation": null,
       "timing": null
@@ -64,10 +68,48 @@
         {
           "date": "2026-10-23",
           "price": 29992
+        },
+        {
+          "date": "2026-10-24",
+          "price": 29992
         }
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-24",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "JTDACAAJ9S3009032",
+      "vin": "JTDACAAJ9S3009032",
+      "year": 2025,
+      "make": "Toyota",
+      "model": "Crown Signia",
+      "modelId": "signia",
+      "trim": "Limited AWD",
+      "miles": 15563,
+      "price": 48271,
+      "priceBasis": "vehicle",
+      "docFee": 399,
+      "url": "https://www.wasatchfrontkiakiakia.com/viewdetails/used/jtdacaaj9s3009032/2025-toyota-crown-signia-sport-utility",
+      "dealer": "Wasatch Front Kia",
+      "city": "Ogden",
+      "color": "Bronze",
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "clean",
+      "cpo": false,
+      "fit": "match",
+      "statusNote": "Verified on the dealer's own page. CARFAX one-owner, clean CARFAX per dealer. Selling price $48,271; doc fee $399 is extra.",
+      "priceHistory": [
+        {
+          "date": "2026-10-24",
+          "price": 48271
+        }
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
       "note": null,
       "motivation": null,
       "timing": null
