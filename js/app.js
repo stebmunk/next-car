@@ -1,11 +1,13 @@
 (function () {
   var THEME_KEY = "next-car-theme";
-  var MODEL_ORDER = ["i4", "model3", "ioniq5", "q6"];
+  var MODEL_ORDER = ["i4", "model3", "ioniq5", "q6", "signia", "v60cc"];
   var MODEL_LABEL = {
     i4: "BMW i4",
     model3: "Model 3",
     ioniq5: "Ioniq 5",
     q6: "Q6 e-tron",
+    signia: "Crown Signia",
+    v60cc: "V60 Cross Country",
   };
   var FIT_RANK = {
     match: 0,
