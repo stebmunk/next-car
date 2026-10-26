@@ -2,7 +2,7 @@
   "modelId": "others",
   "label": "Other shortlist cars",
   "search": "Verified listings for shortlist cars other than the Model 3 and Q6 e-tron watches.",
-  "checked": "2026-10-25",
+  "checked": "2026-10-26",
   "listings": [
     {
       "id": "WBY83FB04RFR87396",
@@ -38,10 +38,14 @@
         {
           "date": "2026-10-25",
           "price": 39828
+        },
+        {
+          "date": "2026-10-26",
+          "price": 39828
         }
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-26",
       "note": null,
       "motivation": null,
       "timing": null
@@ -80,10 +84,14 @@
         {
           "date": "2026-10-25",
           "price": 29992
+        },
+        {
+          "date": "2026-10-26",
+          "price": 29992
         }
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-26",
       "note": null,
       "motivation": null,
       "timing": null
@@ -118,10 +126,14 @@
         {
           "date": "2026-10-25",
           "price": 48271
+        },
+        {
+          "date": "2026-10-26",
+          "price": 48271
         }
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-26",
       "note": null,
       "motivation": null,
       "timing": null
@@ -152,10 +164,82 @@
         {
           "date": "2026-10-25",
           "price": 43993
+        },
+        {
+          "date": "2026-10-26",
+          "price": 43993
         }
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-26",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "JTDACAAJXS3014630",
+      "vin": "JTDACAAJXS3014630",
+      "year": 2025,
+      "make": "Toyota",
+      "model": "Crown Signia",
+      "modelId": "signia",
+      "trim": "Limited AWD",
+      "miles": 14722,
+      "price": 48157,
+      "priceBasis": "vehicle",
+      "docFee": 499,
+      "url": "https://www.oremtoyota.com/used-Orem-2025-+-Toyota+Crown+Signia-Limited-JTDACAAJXS3014630",
+      "dealer": "Orem Toyota",
+      "city": "Orem",
+      "color": "Storm Cloud",
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "match",
+      "statusNote": "Verified on the dealer's own page (stock U18201). CARFAX one-owner, clean CARFAX per dealer. Hybrid AWD wagon-style SUV. $48,157 plus $499 doc fee ($48,656).",
+      "priceHistory": [
+        {
+          "date": "2026-10-26",
+          "price": 48157
+        }
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "note": null,
+      "motivation": null,
+      "timing": null
+    },
+    {
+      "id": "WBY33AW05PFR38602",
+      "vin": "WBY33AW05PFR38602",
+      "year": 2023,
+      "make": "BMW",
+      "model": "i4",
+      "modelId": "i4",
+      "trim": "M50 xDrive",
+      "miles": 31747,
+      "price": 43696,
+      "priceBasis": "vehicle",
+      "docFee": 449,
+      "url": "https://timdahlesouthtowne.com/inventory/Used-2023-BMW-i4-M50-WBY33AW05PFR38602",
+      "dealer": "Tim Dahle Nissan Southtowne",
+      "city": "South Jordan",
+      "color": "Grey",
+      "wheels": null,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "cpo": false,
+      "fit": "match",
+      "statusNote": "Verified on the dealer's own page (stock 73892, in stock, not on hold). CARFAX one-owner per dealer. Dual-motor M50, higher miles (31.7k). $43,696 plus $449 doc fee ($44,145).",
+      "priceHistory": [
+        {
+          "date": "2026-10-26",
+          "price": 43696
+        }
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
       "note": null,
       "motivation": null,
       "timing": null
