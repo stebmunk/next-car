@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "criteria": {
+    "milesCeiling": 25000,
+    "hideAbove": 27000
+  },
+  "costNote": "Cents per mile use a public 17¢ baseline at 28 MPG, about $4.76 a gallon. Gas and hybrid cars scale from that (17¢ × 28 ÷ mpg). The Model 3 figure is a winter road-trip estimate. The i4, Ioniq 5, and Q6 e-tron do not get an invented cents-per-mile number.",
+  "reference": [
+    "Audi A4 Avant",
+    "Audi A6 Avant",
+    "Audi allroad",
+    "BMW 3 Series wagon"
+  ],
+  "priorities": {
+    "asOf": "2026-10-26",
+    "items": [
+      {
+        "id": "fun",
+        "label": "Driving fun",
+        "rank": 1,
+        "detail": "Sport-wagon feel. The on-ramp test."
+      },
+      {
+        "id": "assist",
+        "label": "Driver assist",
+        "rank": 1,
+        "detail": "Lane tracing and traffic-jam assist."
+      },
+      {
+        "id": "price",
+        "label": "Price after depreciation",
+        "rank": 2,
+        "detail": "A roughly two-year-old car."
+      },
+      {
+        "id": "awd",
+        "label": "AWD",
+        "rank": 3,
+        "detail": "Required on every car."
+      },
+      {
+        "id": "miles",
+        "label": "About 25,000 miles",
+        "rank": 3,
+        "detail": "Ceiling for every model."
+      },
+      {
+        "id": "range",
+        "label": "Road-trip range",
+        "rank": 4,
+        "detail": "800V preferred on an EV."
+      }
+    ],
+    "previously": [
+      {
+        "asOf": "2026-10-23",
+        "note": "Opening order",
+        "items": [
+          { "id": "fun", "label": "Driving fun", "rank": 1 },
+          { "id": "assist", "label": "Driver assist", "rank": 1 },
+          { "id": "price", "label": "Price after depreciation", "rank": 2 },
+          { "id": "awd", "label": "AWD", "rank": 3 },
+          { "id": "range", "label": "Road-trip range", "rank": 4 }
+        ]
+      }
+    ]
+  },
+  "models": [
+    {
+      "id": "i4",
+      "label": "BMW i4",
+      "chip": "BMW i4",
+      "trim": "xDrive40 · AWD",
+      "status": "front-runner",
+      "rank": 1,
+      "trend": "gaining",
+      "fit": "The driver’s car. Closest thing here to the old 3 Series, with enough range to leave town.",
+      "specs": [
+        { "k": "EPA range", "v": "307", "u": "mi" },
+        { "k": "Highway", "v": "260–270", "u": "mi" },
+        { "k": "Charge", "v": "400V", "u": "~200 kW" }
+      ]
+    },
+    {
+      "id": "signia",
+      "label": "Toyota Crown Signia",
+      "chip": "Crown Signia",
+      "trim": "AWD hybrid",
+      "status": "front-runner",
+      "rank": 2,
+      "trend": "gaining",
+      "fit": "The comfort and driver-assist pick. Strong lane tracing and traffic-jam assist. The sport-wagon itch stays unscratched.",
+      "specs": [
+        { "k": "Economy", "v": "38", "u": "mpg" },
+        { "k": "Cost / mile", "v": "12–13", "u": "¢" },
+        { "k": "Vs baseline", "v": "−4.5", "u": "¢" }
+      ]
+    },
+    {
+      "id": "model3",
+      "label": "Tesla Model 3",
+      "chip": "Model 3",
+      "trim": "Long Range AWD",
+      "status": "front-runner",
+      "rank": 3,
+      "trend": "steady",
+      "fit": "The road-trip EV. Excellent Autopilot. The wagon brief is the compromise.",
+      "specs": [
+        { "k": "Road trips", "v": "Best", "u": "EV here" },
+        { "k": "Winter trips", "v": "12", "u": "¢/mi" },
+        { "k": "Vs baseline", "v": "−5", "u": "¢" }
+      ]
+    },
+    {
+      "id": "ioniq5",
+      "label": "Hyundai Ioniq 5",
+      "chip": "Ioniq 5",
+      "trim": "AWD · 800V",
+      "status": "considering",
+      "rank": 4,
+      "trend": "fading",
+      "fit": "The fast-charging pick. HDA2 is a real assist suite. Highway range is the limit.",
+      "specs": [
+        { "k": "Highway", "v": "240", "u": "mi" },
+        { "k": "Architecture", "v": "800V" },
+        { "k": "10–80%", "v": "18", "u": "min" }
+      ]
+    },
+    {
+      "id": "v60cc",
+      "label": "Volvo V60 Cross Country",
+      "chip": "V60 CC",
+      "trim": "Wagon · AWD",
+      "status": "considering",
+      "rank": 5,
+      "trend": "steady",
+      "fit": "The body-style match. A true allroad wagon, the shape the A4, the A6, and the 3 Series wagon left behind.",
+      "specs": [
+        { "k": "Highway", "v": "31", "u": "mpg" },
+        { "k": "Cost / mile", "v": "15.4", "u": "¢" },
+        { "k": "Vs baseline", "v": "−1.6", "u": "¢" }
+      ]
+    },
+    {
+      "id": "q6",
+      "label": "Audi Q6 e-tron",
+      "chip": "Q6 e-tron",
+      "trim": "Quattro · 800V",
+      "status": "considering",
+      "rank": 6,
+      "trend": "fading",
+      "fit": "Audi, 800-volt charging, and strong range. Local clean cars are asking about $50k, which fights the depreciation plan.",
+      "specs": [
+        { "k": "Architecture", "v": "800V" },
+        { "k": "Range", "v": "Strong" },
+        { "k": "Local ask", "v": "$50k" }
+      ]
+    },
+    {
+      "id": "taycan-ct",
+      "label": "Porsche Taycan Cross Turismo",
+      "status": "dropped",
+      "rank": 7,
+      "reason": "Price"
+    },
+    {
+      "id": "i5",
+      "label": "BMW i5",
+      "status": "dropped",
+      "rank": 8,
+      "reason": "Price"
+    },
+    {
+      "id": "rz",
+      "label": "Lexus RZ",
+      "status": "dropped",
+      "rank": 9,
+      "reason": "Range"
+    },
+    {
+      "id": "chr",
+      "label": "Toyota C-HR",
+      "status": "dropped",
+      "rank": 10,
+      "reason": "Range"
+    }
+  ]
+}

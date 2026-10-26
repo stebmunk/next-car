@@ -1,24 +1,5 @@
 (function () {
   var THEME_KEY = "next-car-theme";
-  var MODEL_ORDER = ["i4", "model3", "ioniq5", "q6", "signia", "v60cc"];
-  var MODEL_LABEL = {
-    i4: "BMW i4",
-    model3: "Model 3",
-    ioniq5: "Ioniq 5",
-    q6: "Q6 e-tron",
-    signia: "Crown Signia",
-    v60cc: "V60 Cross Country",
-  };
-  var FIT_RANK = {
-    match: 0,
-    "near-miss": 1,
-    "over-cap": 2,
-    unverified: 3,
-    stale: 4,
-    excluded: 5,
-  };
-  var TIMING_RANK = { "BUY NOW": 0, WATCH: 1, WAIT: 2 };
-  var MOTIVATION_RANK = { High: 0, Medium: 1, Low: 2 };
   var FIT_LABEL = {
     match: "In the search",
     "near-miss": "Close",
@@ -35,23 +16,34 @@
     stale: "badge-aside",
     excluded: "badge-aside",
   };
+  var STATUSES = { "front-runner": 1, considering: 1, dropped: 1 };
+  var TRENDS = { gaining: 1, steady: 1, fading: 1 };
 
   var state = readState();
+  var rules = { ceiling: 25000, hideAbove: 27000 };
   var cars = [];
   var goneEntries = [];
+  var models = [];
+  var priorities = { asOf: "", items: [], previously: [] };
+  var reference = [];
+  var costNote = "";
+  var urlReady = false;
 
-  var inventoryList = document.getElementById("inventory-list");
-  var inventoryStatus = document.getElementById("inventory-status");
-  var modelFilters = document.getElementById("model-filters");
-  var viewFilters = document.getElementById("view-filters");
-  var sortSelect = document.getElementById("sort");
+  var runnerTabs = document.getElementById("runner-tabs");
+  var runnerGrid = document.getElementById("runner-grid");
+  var contenderList = document.getElementById("contender-list");
+  var droppedEl = document.getElementById("dropped");
+  var priorityStrip = document.getElementById("priorities");
   var goneList = document.getElementById("gone-list");
   var goneStatus = document.getElementById("gone-status");
   var goneFilters = document.getElementById("gone-filters");
+  var goneMeta = document.getElementById("gone-meta");
+  var goneIntro = document.getElementById("gone-intro");
+  var milesAside = document.getElementById("miles-aside");
   var comparableToggle = document.getElementById("comparable-only");
 
   initTheme();
-  bindJumps();
+  bind();
   load();
 
   function load() {
@@ -61,29 +53,31 @@
       getJson("data/q6.json"),
       getJson("data/others.json"),
       getJson("data/gone.json"),
+      getJson("data/models.json").catch(function () {
+        return null;
+      }),
     ])
       .then(function (payloads) {
-        var meta = payloads[0];
-        applyMeta(meta);
+        applyMeta(payloads[0]);
         cars = []
           .concat(stamp(payloads[1]))
           .concat(stamp(payloads[2]))
           .concat(stamp(payloads[3]));
-        goneEntries = (payloads[4].entries || []).slice();
-        if (!knownModel(state.model)) state.model = "all";
-        if (!knownModel(state.gone)) state.gone = "all";
-        sortSelect.value = state.sort;
-        render();
+        goneEntries = (payloads[4] && payloads[4].entries) || [];
+        applyBoard(payloads[5]);
+        renderAll();
+        urlReady = true;
+        openDeepLink();
       })
       .catch(function () {
-        inventoryStatus.textContent =
-          "The listing files did not load. Open this page over HTTP, the way GitHub Pages serves it, so the browser can read the data folder.";
-        goneStatus.textContent = "The off-market log did not load.";
+        runnerGrid.innerHTML =
+          '<p class="callout">The listing files did not load. Open this page over HTTP, the way GitHub Pages serves it, so the browser can read the data folder.</p>';
+        if (goneStatus) goneStatus.textContent = "The off-market log did not load.";
       });
   }
 
   function stamp(pack) {
-    return (pack.listings || []).map(function (car) {
+    return ((pack && pack.listings) || []).map(function (car) {
       return {
         id: car.id,
         vin: car.vin || null,
@@ -112,6 +106,9 @@
         note: car.note || "",
         motivation: car.motivation || null,
         timing: car.timing || null,
+        mileageException: car.mileageException === true,
+        mileageExceptionReason:
+          typeof car.mileageExceptionReason === "string" ? car.mileageExceptionReason : "",
         checked: pack.checked,
       };
     });
@@ -119,73 +116,493 @@
 
   function applyMeta(meta) {
     var time = document.getElementById("updated");
-    if (time && meta.lastUpdated) {
+    if (time && meta && meta.lastUpdated) {
       time.dateTime = meta.lastUpdated;
       time.textContent = fullDate(meta.lastUpdated);
     }
     var summary = document.getElementById("updated-summary");
-    if (summary && meta.summary) summary.textContent = meta.summary;
+    if (summary && meta && meta.summary) summary.textContent = meta.summary;
   }
 
-  function render() {
-    renderInventory();
-    renderGone();
-    writeState();
-  }
-
-  function renderInventory() {
-    var modelCars = cars.filter(function (car) {
-      return state.model === "all" || car.modelId === state.model;
+  function applyBoard(board) {
+    var source = board && typeof board === "object" ? board : fallbackBoard();
+    var criteria = source.criteria || {};
+    rules.ceiling = positive(criteria.milesCeiling, 25000);
+    rules.hideAbove = positive(criteria.hideAbove, 27000);
+    if (rules.hideAbove < rules.ceiling) rules.hideAbove = rules.ceiling;
+    costNote = source.costNote || "";
+    reference = Array.isArray(source.reference) ? source.reference : [];
+    priorities = normalizePriorities(source.priorities || {});
+    models = dedupe((source.models || []).map(hydrateModel).filter(Boolean));
+    absorbListingModels();
+    var front = models.filter(function (model) {
+      return model.status === "front-runner";
     });
-    var shown = modelCars.filter(passesView).sort(compareCars);
-    var inPlay = modelCars.filter(inPlayFit).length;
-
-    renderChips(modelFilters, modelChipDefs(cars, state.model), function (id) {
-      state.model = id;
-      render();
-    });
-    renderChips(viewFilters, viewChipDefs(modelCars), function (id) {
-      state.view = id;
-      render();
-    });
-
-    inventoryStatus.textContent =
-      "Showing " +
-      shown.length +
-      " of " +
-      modelCars.length +
-      ". " +
-      inPlay +
-      " of those are in play.";
-
-    if (!shown.length) {
-      inventoryList.innerHTML = '<p class="callout">No cars match these filters.</p>';
-      return;
+    front.sort(byRank);
+    if (!state.runner || !front.some(function (model) { return model.id === state.runner; })) {
+      state.runner = front.length ? front[0].id : "";
     }
+    state.defaultRunner = front.length ? front[0].id : "";
+  }
 
-    var grouped = state.model === "all" && state.sort === "leads";
-    var groups = grouped ? groupCars(shown) : [{ id: "flat", cars: shown }];
-    inventoryList.innerHTML = groups
-      .map(function (group) {
-        var heading = grouped
-          ? '<h3 class="group-label">' +
-            esc(groupLabel(group.cars[0])) +
-            "<span>" +
-            group.cars.length +
-            "</span></h3>"
+  function fallbackBoard() {
+    return {
+      criteria: { milesCeiling: 25000, hideAbove: 27000 },
+      priorities: {
+        asOf: "2026-10-26",
+        items: [
+          { id: "fun", label: "Driving fun", rank: 1, detail: "Sport-wagon feel." },
+          { id: "assist", label: "Driver assist", rank: 1, detail: "Lane tracing and traffic-jam assist." },
+          { id: "price", label: "Price after depreciation", rank: 2, detail: "A roughly two-year-old car." },
+          { id: "awd", label: "AWD", rank: 3, detail: "Required on every car." },
+          { id: "miles", label: "About 25,000 miles", rank: 3, detail: "Ceiling for every model." },
+          { id: "range", label: "Road-trip range", rank: 4, detail: "800V preferred on an EV." },
+        ],
+        previously: [
+          {
+            asOf: "2026-10-23",
+            note: "Opening order",
+            items: [
+              { id: "fun", label: "Driving fun", rank: 1 },
+              { id: "assist", label: "Driver assist", rank: 1 },
+              { id: "price", label: "Price after depreciation", rank: 2 },
+              { id: "awd", label: "AWD", rank: 3 },
+              { id: "range", label: "Road-trip range", rank: 4 },
+            ],
+          },
+        ],
+      },
+      models: [
+        { id: "i4", label: "BMW i4", chip: "BMW i4", status: "front-runner", rank: 1, trend: "gaining" },
+        { id: "signia", label: "Crown Signia", chip: "Crown Signia", status: "front-runner", rank: 2, trend: "gaining" },
+        { id: "model3", label: "Model 3", chip: "Model 3", status: "front-runner", rank: 3, trend: "steady" },
+        { id: "ioniq5", label: "Ioniq 5", chip: "Ioniq 5", status: "considering", rank: 4, trend: "fading" },
+        { id: "v60cc", label: "V60 Cross Country", chip: "V60 CC", status: "considering", rank: 5, trend: "steady" },
+        { id: "q6", label: "Q6 e-tron", chip: "Q6 e-tron", status: "considering", rank: 6, trend: "fading" },
+      ],
+    };
+  }
+
+  function normalizePriorities(raw) {
+    var items = Array.isArray(raw.items) ? raw.items.slice() : [];
+    if (!items.some(function (item) { return item && item.id === "miles"; })) {
+      items.push({ id: "miles", rank: 3, detail: "Ceiling for every model." });
+    }
+    var prev = raw.previously || raw.history || [];
+    if (prev && !Array.isArray(prev)) prev = [prev];
+    if (!Array.isArray(prev)) prev = [];
+    return {
+      asOf: raw.asOf || "",
+      items: items.map(displayPriority).filter(Boolean),
+      previously: prev,
+    };
+  }
+
+  function displayPriority(item) {
+    if (!item || (!item.id && !item.label)) return null;
+    var next = {
+      id: item.id || item.label,
+      label: item.label || item.id,
+      rank: item.rank == null ? 99 : Number(item.rank),
+      detail: item.detail || "",
+    };
+    if (next.id === "miles") {
+      next.label = "About " + Number(rules.ceiling).toLocaleString("en-US") + " miles";
+      if (!next.detail) next.detail = "Ceiling for every model.";
+    }
+    return next;
+  }
+
+  function hydrateModel(raw) {
+    if (!raw || !raw.id) return null;
+    var status = STATUSES[raw.status] ? raw.status : "considering";
+    var trend = TRENDS[raw.trend] ? raw.trend : "steady";
+    return {
+      id: String(raw.id),
+      label: raw.label || raw.id,
+      chip: raw.chip || raw.label || raw.id,
+      trim: raw.trim || "",
+      status: status,
+      rank: raw.rank == null ? 90 : Number(raw.rank),
+      trend: trend,
+      fit: raw.fit || "",
+      specs: Array.isArray(raw.specs) ? raw.specs : [],
+      reason: raw.reason || "",
+    };
+  }
+
+  function dedupe(list) {
+    var seen = {};
+    return list.filter(function (model) {
+      if (seen[model.id]) return false;
+      seen[model.id] = true;
+      return true;
+    });
+  }
+
+  function absorbListingModels() {
+    var known = {};
+    models.forEach(function (model) {
+      known[model.id] = true;
+    });
+    cars.forEach(function (car) {
+      if (!car.modelId || known[car.modelId]) return;
+      known[car.modelId] = true;
+      models.push(
+        hydrateModel({
+          id: car.modelId,
+          label: [car.make, car.model].filter(Boolean).join(" ") || car.modelId,
+          status: "considering",
+          trend: "steady",
+          rank: 80,
+        })
+      );
+    });
+  }
+
+  function renderAll() {
+    renderPriorities();
+    renderRunners();
+    renderContenders();
+    renderGone();
+    var note = document.getElementById("cost-note");
+    if (note) note.textContent = costNote;
+  }
+
+  function renderPriorities() {
+    var items = sortByRank(priorities.items);
+    var history = historyView(items);
+    var chips = items
+      .map(function (item) {
+        var mark = history.marks[item.id];
+        var shift = mark
+          ? '<span class="pshift">' + esc(mark.text) + "</span>"
           : "";
         return (
-          '<section class="model-group">' +
-          heading +
-          '<div class="car-list">' +
-          group.cars.map(carCard).join("") +
-          "</div></section>"
+          '<li class="pchip' +
+          (mark && mark.fresh ? " is-new" : "") +
+          '"><span class="prank">' +
+          esc(padRank(item.rank)) +
+          shift +
+          '</span><span class="plabel">' +
+          esc(item.label) +
+          "</span>" +
+          (item.detail ? '<span class="pdetail">' + esc(item.detail) + "</span>" : "") +
+          "</li>"
         );
       })
       .join("");
+    var asOf = priorities.asOf
+      ? '<p class="strip-asof">As of ' + esc(fullDate(priorities.asOf)) + "</p>"
+      : "";
+    priorityStrip.innerHTML =
+      '<div class="strip-head"><p class="strip-k" id="priorities-label">Priorities</p>' +
+      asOf +
+      '</div><ol class="pchips" aria-labelledby="priorities-label">' +
+      chips +
+      "</ol>" +
+      '<p class="rule-line">' +
+      esc(ruleSentence()) +
+      "</p>" +
+      history.html +
+      referenceHtml();
+  }
+
+  function historyView(items) {
+    var snaps = (priorities.previously || []).slice().sort(function (a, b) {
+      return String(b.asOf || "").localeCompare(String(a.asOf || ""));
+    });
+    if (!snaps.length) return { html: "", marks: {} };
+    var latest = snaps[0];
+    var prevItems = Array.isArray(latest.items) ? latest.items : [];
+    var prevById = {};
+    prevItems.forEach(function (item) {
+      if (item && item.id) prevById[item.id] = item;
+    });
+    var curById = {};
+    items.forEach(function (item) {
+      curById[item.id] = item;
+    });
+    var marks = {};
+    var deltas = [];
+    items.forEach(function (item) {
+      var old = prevById[item.id];
+      if (!old) {
+        marks[item.id] = { text: "New", fresh: true };
+        deltas.push(item.label + " added");
+      } else if (Number(old.rank) !== Number(item.rank)) {
+        marks[item.id] = { text: "was " + old.rank, fresh: false };
+        var up = Number(item.rank) < Number(old.rank);
+        deltas.push(item.label + (up ? " up from " : " down from ") + old.rank);
+      }
+    });
+    prevItems.forEach(function (old) {
+      if (!old || !old.id || curById[old.id]) return;
+      deltas.push((old.label || old.id) + " left the list");
+    });
+    var order = sortByRank(
+      prevItems.map(function (item) {
+        return {
+          id: item.id,
+          label: item.label || (curById[item.id] && curById[item.id].label) || item.id,
+          rank: item.rank,
+        };
+      })
+    )
+      .map(function (item) {
+        return item.label;
+      })
+      .join(", ");
+    var when = latest.asOf ? fullDate(latest.asOf) : "";
+    var lead = [when, latest.note, order].filter(Boolean).join(" · ");
+    var deltaText = deltas.length ? deltas.join(" · ") : "Same order today.";
+    var html =
+      '<p class="phistory"><span class="strip-k">Previously</span> ' +
+      esc(lead) +
+      ' <span class="hdelta">' +
+      esc(deltaText) +
+      "</span></p>";
+    if (snaps.length > 1) {
+      html +=
+        '<details class="earlier"><summary>Earlier priority orders</summary><ul>' +
+        snaps
+          .slice(1)
+          .map(function (snap) {
+            var labels = sortByRank(snap.items || [])
+              .map(function (item) {
+                return item.label || item.id;
+              })
+              .join(", ");
+            return (
+              "<li>" +
+              esc([snap.asOf ? fullDate(snap.asOf) : "", snap.note, labels].filter(Boolean).join(" · ")) +
+              "</li>"
+            );
+          })
+          .join("") +
+        "</ul></details>";
+    }
+    return { html: html, marks: marks };
+  }
+
+  function referenceHtml() {
+    if (!reference.length) return "";
+    return (
+      '<p class="reference-line"><span class="strip-k">Reference</span> ' +
+      esc(reference.join(" · ")) +
+      "</p>"
+    );
+  }
+
+  function ruleSentence() {
+    var ceiling = Number(rules.ceiling).toLocaleString("en-US");
+    var hide = Number(rules.hideAbove).toLocaleString("en-US");
+    return (
+      "Ceiling is about " +
+      ceiling +
+      " miles. A listing over " +
+      hide +
+      " miles stays off the front-runners and the other contenders unless it is flagged as a value exception."
+    );
+  }
+
+  function renderRunners() {
+    var front = models
+      .filter(function (model) {
+        return model.status === "front-runner";
+      })
+      .sort(byRank);
+    runnerGrid.style.setProperty("--cols", String(Math.max(front.length, 1)));
+    runnerTabs.innerHTML = front
+      .map(function (model) {
+        var visible = listed(model.id);
+        var low = lowestPrice(visible);
+        var price = visible.length && low != null ? money(low) : "No listing";
+        var on = model.id === state.runner;
+        return (
+          '<button type="button" class="runner-tab" role="tab" data-id="' +
+          esc(model.id) +
+          '" id="tab-' +
+          esc(model.id) +
+          '" aria-controls="panel-' +
+          esc(model.id) +
+          '" aria-selected="' +
+          (on ? "true" : "false") +
+          '" tabindex="' +
+          (on ? "0" : "-1") +
+          '"><span class="tab-name">' +
+          esc(model.chip) +
+          '</span><span class="tab-price">' +
+          esc(price) +
+          "</span></button>"
+        );
+      })
+      .join("");
+    runnerGrid.innerHTML = front.length
+      ? front.map(runnerArticle).join("")
+      : '<p class="callout">No model is marked as a front-runner. Set status to “front-runner” in data/models.json.</p>';
+    syncRunnerTabs(false);
+  }
+
+  function runnerArticle(model) {
+    var groups = splitCars(model.id);
+    var low = lowestPrice(groups.visible);
+    return (
+      '<article class="runner" role="tabpanel" id="panel-' +
+      esc(model.id) +
+      '" data-id="' +
+      esc(model.id) +
+      '" aria-labelledby="runner-title-' +
+      esc(model.id) +
+      '"><header class="runner-head"><p class="runner-rank">' +
+      esc(padRank(model.rank)) +
+      '</p><div class="runner-id"><h2 id="runner-title-' +
+      esc(model.id) +
+      '">' +
+      esc(model.label) +
+      "</h2>" +
+      (model.trim ? '<p class="trim">' + esc(model.trim) + "</p>" : "") +
+      '</div><p class="trend trend-' +
+      esc(model.trend) +
+      '">' +
+      esc(trendText(model.trend)) +
+      "</p></header>" +
+      fitHtml(model.fit) +
+      specsHtml(model.specs) +
+      fromLine(groups.visible, low) +
+      (groups.visible.length
+        ? '<ul class="runner-listings">' + groups.visible.map(listingHtml).join("") + "</ul>"
+        : "") +
+      emptyNote(groups) +
+      "</article>"
+    );
+  }
+
+  function renderContenders() {
+    var list = models
+      .filter(function (model) {
+        return model.status === "considering";
+      })
+      .sort(byRank);
+    contenderList.innerHTML = list.length
+      ? list.map(contenderHtml).join("")
+      : '<p class="callout">No other contenders on the board.</p>';
+    var dropped = models
+      .filter(function (model) {
+        return model.status === "dropped";
+      })
+      .sort(byRank);
+    droppedEl.innerHTML = dropped.length
+      ? '<p class="strip-k">Ruled out</p><ul>' +
+        dropped
+          .map(function (model) {
+            return (
+              "<li><strong>" +
+              esc(model.label) +
+              "</strong>" +
+              (model.reason ? "<span>" + esc(model.reason) + "</span>" : "") +
+              "</li>"
+            );
+          })
+          .join("") +
+        "</ul>"
+      : "";
+  }
+
+  function contenderHtml(model) {
+    var groups = splitCars(model.id);
+    var count = countLabel(groups.visible);
+    return (
+      '<details class="contender" id="model-' +
+      esc(model.id) +
+      '"><summary><span class="contender-rank">' +
+      esc(padRank(model.rank)) +
+      '</span><h3 class="contender-name">' +
+      esc(model.label) +
+      '</h3><span class="trend trend-' +
+      esc(model.trend) +
+      '">' +
+      esc(trendText(model.trend)) +
+      '</span><span class="contender-count">' +
+      esc(count) +
+      "</span></summary><div class=\"contender-body\">" +
+      fitHtml(model.fit) +
+      specsHtml(model.specs) +
+      (groups.visible.length
+        ? '<ul class="runner-listings">' + groups.visible.map(listingHtml).join("") + "</ul>"
+        : "") +
+      emptyNote(groups) +
+      "</div></details>"
+    );
+  }
+
+  function countLabel(visible) {
+    if (!visible.length) return "0 live";
+    var low = lowestPrice(visible);
+    return visible.length + " live" + (low == null ? "" : " · " + money(low));
+  }
+
+  function fromLine(visible, low) {
+    if (!visible.length) return "";
+    var noun = visible.length === 1 ? " listing" : " listings";
+    return (
+      '<p class="from-line"><span class="from-k">From</span><span class="from-price">' +
+      esc(low == null ? "Price not listed" : money(low)) +
+      '</span><span class="from-meta">' +
+      esc(visible.length + noun) +
+      "</span></p>"
+    );
+  }
+
+  function emptyNote(groups) {
+    if (!groups.visible.length && !groups.hidden.length) {
+      return '<p class="fine">No live listing in this tracker yet.</p>';
+    }
+    return hiddenNote(groups.hidden);
+  }
+
+  function hiddenNote(hidden) {
+    if (!hidden.length) return "";
+    var n = hidden.length;
+    var noun = n === 1 ? "listing" : "listings";
+    var be = n === 1 ? "is" : "are";
+    var sit = n === 1 ? "It sits" : "They sit";
+    return (
+      '<p class="fine aside-note">' +
+      n +
+      " " +
+      noun +
+      " " +
+      be +
+      " over " +
+      Number(rules.hideAbove).toLocaleString("en-US") +
+      " miles with no value exception. " +
+      sit +
+      ' under <a href="#gone">Off the market</a>.</p>'
+    );
   }
 
   function renderGone() {
+    var hidden = cars.filter(overHideLine).sort(byPrice);
+    var hideLabel = Number(rules.hideAbove).toLocaleString("en-US");
+    goneMeta.textContent =
+      goneEntries.length +
+      " logged" +
+      (hidden.length ? " · " + hidden.length + " over " + hideLabel + " miles" : "");
+    milesAside.innerHTML = hidden.length
+      ? '<div class="miles-block"><h3>Over ' +
+        esc(hideLabel) +
+        " miles</h3><p>No value exception on these. They stay out of the front-runners and the other contenders.</p><ul class=\"aside-list\">" +
+        hidden.map(asideItem).join("") +
+        "</ul></div>"
+      : "";
+    if (goneIntro) {
+      goneIntro.textContent =
+        "A car lands in the log when it is missing for two checks in a row, or the page says sold, removed, or not found. Days listed are only the days this tracker saw it. Comparable means the right model year, AWD, a clean title, and about " +
+        Number(rules.ceiling).toLocaleString("en-US") +
+        " miles or fewer.";
+    }
+
     var pool = goneEntries.filter(function (entry) {
       if (state.gone !== "all" && entry.modelId !== state.gone) return false;
       if (state.comparable && !entry.comparable) return false;
@@ -195,25 +612,21 @@
       return String(b.lastSeen).localeCompare(String(a.lastSeen));
     });
 
-    var models = uniqueModels(goneEntries);
-    var chips = [{ id: "all", label: "All " + goneEntries.length, pressed: state.gone === "all" }].concat(
-      models.map(function (id) {
+    var ids = uniqueIds(goneEntries);
+    var chips = [{ id: "all", label: "All · " + goneEntries.length, pressed: state.gone === "all" }].concat(
+      ids.map(function (id) {
         var count = goneEntries.filter(function (entry) {
           return entry.modelId === id;
         }).length;
         return {
           id: id,
-          label: (MODEL_LABEL[id] || id) + " " + count,
+          label: labelFor(id) + " · " + count,
           pressed: state.gone === id,
         };
       })
     );
-    renderChips(goneFilters, chips, function (id) {
-      state.gone = id;
-      render();
-    });
+    renderChips(goneFilters, chips);
     comparableToggle.setAttribute("aria-pressed", state.comparable ? "true" : "false");
-
     var comparableCount = goneEntries.filter(function (entry) {
       return entry.comparable;
     }).length;
@@ -225,100 +638,120 @@
       ". " +
       comparableCount +
       " met the search before they left.";
-
     goneList.innerHTML = pool.length
       ? pool.map(goneCard).join("")
       : '<p class="callout">Nothing in the log matches these filters.</p>';
   }
 
-  function carCard(car) {
+  function asideItem(car) {
     var href = safeUrl(car.url);
-    var name = [car.year, car.make, car.model].filter(Boolean).join(" ");
-    var titleHtml = href
+    var name = [car.year, car.make, car.model, car.trim].filter(Boolean).join(" ");
+    var title = href
       ? '<a href="' + esc(href) + '" target="_blank" rel="noopener noreferrer">' + esc(name) + "</a>"
       : esc(name);
-    var badges = [
-      '<span class="badge ' + (FIT_CLASS[car.fit] || "badge-aside") + '">' + esc(FIT_LABEL[car.fit] || car.fit) + "</span>",
-    ];
-    if (car.cpo) badges.push('<span class="badge badge-title">CPO</span>');
-    if (car.title === "clean") badges.push('<span class="badge badge-title">Clean title</span>');
-    if (car.title === "branded") badges.push('<span class="badge badge-aside">Branded title</span>');
-    if (car.title === "buyback") badges.push('<span class="badge badge-aside">Buyback title</span>');
-
-    var calls = "";
-    if (car.motivation && car.motivation.score) {
-      calls +=
-        '<span class="badge ' +
-        motivationClass(car.motivation.score) +
-        '">' +
-        esc(car.motivation.score) +
-        " motivation</span>";
-    }
-    if (car.timing && car.timing.call) {
-      calls +=
-        '<span class="badge ' +
-        timingClass(car.timing.call) +
-        '">' +
-        esc(car.timing.call) +
-        "</span>";
-    }
-
-    var reasons = "";
-    if (car.motivation && car.motivation.reason) {
-      reasons += "<p class=\"reason\"><strong>Motivation.</strong> " + esc(car.motivation.reason) + "</p>";
-    }
-    if (car.timing && car.timing.reason) {
-      reasons += "<p class=\"reason\"><strong>Timing.</strong> " + esc(car.timing.reason) + "</p>";
-    }
-
-    var where = [car.dealer, car.city, miles(car.miles), car.color, car.wheels]
+    var meta = [car.miles == null ? "" : miles(car.miles), car.price == null ? "" : money(car.price), car.dealer, car.city]
       .filter(Boolean)
       .join(" · ");
-    var seen = seenLine(car);
-    var series = historyFor(car);
-    var change = deltaLine(series);
-    var fee = feeLine(car);
-    var details = detailsBlock(car);
+    return "<li>" + title + '<span class="aside-meta">' + esc(meta) + "</span></li>";
+  }
 
+  function listingHtml(car) {
+    var href = safeUrl(car.url);
+    var price = car.price == null ? "Price not listed" : money(car.price);
+    var priceHtml = href
+      ? '<a class="listing-price" href="' +
+        esc(href) +
+        '" target="_blank" rel="noopener noreferrer">' +
+        esc(price) +
+        "</a>"
+      : '<span class="listing-price">' + esc(price) + "</span>";
+    var go = href
+      ? '<a class="listing-link listing-go" href="' +
+        esc(href) +
+        '" target="_blank" rel="noopener noreferrer">Listing</a>'
+      : "";
+    var meta = [car.year, car.trim || car.drivetrain, car.miles == null ? "" : miles(car.miles)]
+      .filter(Boolean)
+      .join(" · ");
+    var where = [car.dealer, car.city].filter(Boolean).join(" · ");
+    var ex = exceptionInfo(car);
+    var badges = badgesHtml(car);
+    var over = showOverLine(car) ? '<p class="over-miles">' + esc(overLineText()) + "</p>" : "";
+    var exception = "";
+    if (showException(car, ex)) {
+      exception =
+        '<p class="exception"><span class="badge badge-exception">Mileage exception</span>' +
+        (ex.reason ? '<span class="exception-reason">' + esc(ex.reason) + "</span>" : "") +
+        "</p>";
+    }
+    var fee = feeLine(car);
+    var change = deltaLine(historyFor(car));
+    var delta =
+      change.tone === "drop" || change.tone === "rise"
+        ? '<p class="delta ' + change.tone + '">' + esc(change.text) + "</p>"
+        : "";
+    var seen = staleSeen(car);
     return (
-      '<article class="car fit-' +
-      esc(car.fit) +
-      '" id="listing-' +
-      esc(car.id) +
-      '">' +
-      '<div class="car-main">' +
-      '<div class="kicker">' +
-      badges.join("") +
+      '<li class="listing" id="listing-' +
+      esc(domId(car.id)) +
+      '"><div class="listing-top">' +
+      priceHtml +
+      delta +
+      go +
       "</div>" +
-      "<h3>" +
-      titleHtml +
-      "</h3>" +
-      '<p class="trim">' +
-      esc(trimLine(car)) +
-      "</p>" +
-      '<p class="where">' +
-      esc(where) +
-      "</p>" +
-      (car.statusNote ? '<p class="status-note">' + esc(car.statusNote) + "</p>" : "") +
-      (calls ? '<div class="calls">' + calls + "</div>" : "") +
-      reasons +
-      (seen ? '<p class="seen">' + esc(seen) + "</p>" : "") +
-      details +
-      "</div>" +
-      '<div class="car-price">' +
-      '<p class="price">' +
-      (car.price == null ? "Price not listed" : esc(money(car.price))) +
-      "</p>" +
-      (change.text ? '<p class="delta ' + change.tone + '">' + esc(change.text) + "</p>" : "") +
-      sparkline(series) +
+      (meta ? '<p class="listing-meta">' + esc(meta) + "</p>" : "") +
+      (where ? '<p class="listing-where">' + esc(where) + "</p>" : "") +
+      over +
+      exception +
       (fee ? '<p class="fee">' + esc(fee) + "</p>" : "") +
-      (href
-        ? '<a class="listing-link" href="' +
-          esc(href) +
-          '" target="_blank" rel="noopener noreferrer">View listing</a>'
-        : "") +
-      "</div></article>"
+      (seen ? '<p class="seen">' + esc(seen) + "</p>" : "") +
+      (badges ? '<div class="kicker">' + badges + "</div>" : "") +
+      whyHtml(car) +
+      "</li>"
     );
+  }
+
+  function badgesHtml(car) {
+    var badges = [];
+    if (car.fit && car.fit !== "match") {
+      badges.push(
+        '<span class="badge ' +
+          (FIT_CLASS[car.fit] || "badge-aside") +
+          '">' +
+          esc(FIT_LABEL[car.fit] || car.fit) +
+          "</span>"
+      );
+    }
+    if (car.cpo) badges.push('<span class="badge badge-title">CPO</span>');
+    if (car.title === "branded") badges.push('<span class="badge badge-aside">Branded title</span>');
+    if (car.title === "buyback") badges.push('<span class="badge badge-aside">Buyback title</span>');
+    if (car.timing && car.timing.call) {
+      badges.push(
+        '<span class="badge ' + timingClass(car.timing.call) + '">' + esc(car.timing.call) + "</span>"
+      );
+    }
+    if (car.motivation && car.motivation.score) {
+      badges.push(
+        '<span class="badge ' +
+          motivationClass(car.motivation.score) +
+          '">' +
+          esc(car.motivation.score) +
+          " motivation</span>"
+      );
+    }
+    return badges.join("");
+  }
+
+  function whyHtml(car) {
+    var bits = [];
+    if (car.motivation && car.motivation.reason) {
+      bits.push("<p><strong>Motivation.</strong> " + esc(car.motivation.reason) + "</p>");
+    }
+    if (car.timing && car.timing.reason) {
+      bits.push("<p><strong>Timing.</strong> " + esc(car.timing.reason) + "</p>");
+    }
+    if (!bits.length) return "";
+    return '<details class="details"><summary>Why</summary>' + bits.join("") + "</details>";
   }
 
   function goneCard(entry) {
@@ -339,31 +772,20 @@
       : '<span class="badge badge-aside">Outside the search</span>';
     if (entry.title === "buyback") badge += '<span class="badge badge-aside">Buyback title</span>';
     if (entry.title === "branded") badge += '<span class="badge badge-aside">Branded title</span>';
-
     return (
       '<article class="gone-card" id="gone-' +
-      esc(entry.id) +
-      '">' +
-      '<div class="gone-top">' +
-      "<div>" +
-      '<div class="kicker">' +
+      esc(domId(entry.id)) +
+      '"><div class="gone-top"><div><div class="kicker">' +
       badge +
-      "</div>" +
-      "<h3>" +
+      "</div><h3>" +
       titleHtml +
-      "</h3>" +
-      '<p class="where">' +
+      '</h3><p class="where">' +
       esc(where) +
-      "</p>" +
-      "</div>" +
-      '<div class="price-stack">' +
-      '<p class="gone-price">' +
+      '</p></div><div class="price-stack"><p class="gone-price">' +
       esc([prices, cuts, days].filter(Boolean).join(" · ")) +
-      "</p>" +
-      '<p class="seen">' +
+      '</p><p class="seen">' +
       esc(shortDate(entry.firstSeen) + " – " + shortDate(entry.lastSeen)) +
-      "</p>" +
-      "</div></div>" +
+      "</p></div></div>" +
       (entry.outcome ? '<p class="outcome">' + esc(sentence(entry.outcome)) + "</p>" : "") +
       (href
         ? '<a class="listing-link" href="' +
@@ -374,131 +796,160 @@
     );
   }
 
-  function detailsBlock(car) {
-    var bits = [];
-    if (car.vin) bits.push("<p class=\"vin\">VIN " + esc(car.vin) + "</p>");
-    if (car.note) bits.push("<p>" + esc(car.note) + "</p>");
-    if (!bits.length) return "";
-    return "<details class=\"details\"><summary>Details</summary>" + bits.join("") + "</details>";
-  }
-
-  function trimLine(car) {
-    var trim = car.trim || "";
-    if (/awd|rwd|quattro|xdrive/i.test(trim)) return trim;
-    return [trim, car.drivetrain].filter(Boolean).join(" · ");
-  }
-
-  function seenLine(car) {
-    if (!car.firstSeen && !car.lastSeen) return "";
-    var range = shortDate(car.firstSeen);
-    if (car.lastSeen && car.lastSeen !== car.firstSeen) {
-      range += " – " + shortDate(car.lastSeen);
-    }
-    var fresh = !car.checked || car.lastSeen === car.checked;
-    return (fresh ? "Seen " : "Last seen ") + range;
-  }
-
-  function feeLine(car) {
-    if (car.priceBasis === "with-fees") return "Includes listed fees";
-    if (car.priceBasis === "with-shipping") return "Includes shipping";
-    if (car.docFee) return "Doc fee " + money(car.docFee);
-    return "";
-  }
-
-  function pricePath(entry) {
-    if (entry.firstPrice == null && entry.lastPrice == null) return "Price not listed";
-    if (entry.firstPrice == null) return money(entry.lastPrice);
-    if (entry.lastPrice == null || entry.firstPrice === entry.lastPrice) return money(entry.firstPrice);
-    return money(entry.firstPrice) + " → " + money(entry.lastPrice);
-  }
-
-  function passesView(car) {
-    if (state.view === "in-play") return inPlayFit(car);
-    if (state.view === "aside") return !inPlayFit(car);
-    return true;
-  }
-
-  function inPlayFit(car) {
-    return car.fit === "match" || car.fit === "near-miss" || car.fit === "over-cap" || car.fit === "unverified";
-  }
-
-  function compareCars(a, b) {
-    if (state.sort === "price") {
-      return (a.price == null ? Infinity : a.price) - (b.price == null ? Infinity : b.price);
-    }
-    if (state.sort === "newest") {
-      return String(b.lastSeen || "").localeCompare(String(a.lastSeen || ""));
-    }
-    var fit = (FIT_RANK[a.fit] ?? 9) - (FIT_RANK[b.fit] ?? 9);
-    if (fit) return fit;
-    var timing =
-      (TIMING_RANK[a.timing && a.timing.call] ?? 9) - (TIMING_RANK[b.timing && b.timing.call] ?? 9);
-    if (timing) return timing;
-    var motivation =
-      (MOTIVATION_RANK[a.motivation && a.motivation.score] ?? 9) -
-      (MOTIVATION_RANK[b.motivation && b.motivation.score] ?? 9);
-    if (motivation) return motivation;
-    return (a.price == null ? Infinity : a.price) - (b.price == null ? Infinity : b.price);
-  }
-
-  function groupCars(list) {
-    var map = {};
-    list.forEach(function (car) {
-      if (!map[car.modelId]) map[car.modelId] = [];
-      map[car.modelId].push(car);
+  function splitCars(modelId) {
+    var all = cars.filter(function (car) {
+      return car.modelId === modelId;
     });
-    var ids = Object.keys(map).sort(function (a, b) {
-      var ai = MODEL_ORDER.indexOf(a);
-      var bi = MODEL_ORDER.indexOf(b);
-      return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
-    });
-    return ids.map(function (id) {
-      return { id: id, cars: map[id] };
-    });
+    return {
+      visible: all.filter(isListed).sort(byPrice),
+      hidden: all.filter(overHideLine).sort(byPrice),
+    };
   }
 
-  function groupLabel(car) {
-    return [car.make, car.model].filter(Boolean).join(" ");
+  function listed(modelId) {
+    return splitCars(modelId).visible;
   }
 
-  function modelChipDefs(list, active) {
-    var ids = uniqueModels(list);
-    return [{ id: "all", label: "All " + list.length, pressed: active === "all" }].concat(
-      ids.map(function (id) {
-        var count = list.filter(function (car) {
-          return car.modelId === id;
-        }).length;
-        return {
-          id: id,
-          label: (MODEL_LABEL[id] || id) + " " + count,
-          pressed: active === id,
-        };
+  function isListed(car) {
+    return !overHideLine(car);
+  }
+
+  function overHideLine(car) {
+    var miles = milesNumber(car);
+    if (miles == null) return false;
+    if (miles <= rules.hideAbove) return false;
+    return !exceptionInfo(car).on;
+  }
+
+  function showOverLine(car) {
+    var miles = milesNumber(car);
+    if (miles == null || exceptionInfo(car).on) return false;
+    return miles > rules.ceiling && miles <= rules.hideAbove;
+  }
+
+  function showException(car, ex) {
+    var info = ex || exceptionInfo(car);
+    if (!info.on) return false;
+    var miles = milesNumber(car);
+    if (miles == null) return true;
+    return miles > rules.ceiling;
+  }
+
+  function exceptionInfo(car) {
+    if (car.mileageException === true) {
+      return { on: true, reason: car.mileageExceptionReason || "" };
+    }
+    return { on: false, reason: "" };
+  }
+
+  function milesNumber(car) {
+    if (car.miles == null || car.miles === "") return null;
+    var n = Number(car.miles);
+    return isFinite(n) ? n : null;
+  }
+
+  function overLineText() {
+    return "Over the " + Math.round(rules.ceiling / 1000) + "k line";
+  }
+
+  function lowestPrice(list) {
+    var prices = list
+      .map(function (car) {
+        return car.price;
       })
+      .filter(function (price) {
+        return price != null;
+      });
+    if (!prices.length) return null;
+    return Math.min.apply(null, prices);
+  }
+
+  function byPrice(a, b) {
+    var ap = a.price == null ? Infinity : a.price;
+    var bp = b.price == null ? Infinity : b.price;
+    if (ap !== bp) return ap - bp;
+    var am = a.miles == null ? Infinity : a.miles;
+    var bm = b.miles == null ? Infinity : b.miles;
+    return am - bm;
+  }
+
+  function byRank(a, b) {
+    var ar = a.rank == null ? 99 : Number(a.rank);
+    var br = b.rank == null ? 99 : Number(b.rank);
+    if (ar !== br) return ar - br;
+    return String(a.label || "").localeCompare(String(b.label || ""));
+  }
+
+  function sortByRank(items) {
+    return items
+      .map(function (item, index) {
+        return { item: item, index: index };
+      })
+      .sort(function (a, b) {
+        var ar = a.item.rank == null ? 99 : Number(a.item.rank);
+        var br = b.item.rank == null ? 99 : Number(b.item.rank);
+        if (ar !== br) return ar - br;
+        return a.index - b.index;
+      })
+      .map(function (wrap) {
+        return wrap.item;
+      });
+  }
+
+  function fitHtml(text) {
+    if (!text) return "";
+    return '<p class="fit-line">' + esc(text) + "</p>";
+  }
+
+  function specsHtml(specs) {
+    if (!specs || !specs.length) return "";
+    return (
+      '<ul class="specs">' +
+      specs
+        .map(function (spec) {
+          return (
+            '<li><span class="spec-k">' +
+            esc(spec.k || "") +
+            '</span><span class="spec-v">' +
+            esc(spec.v || "") +
+            (spec.u ? "<small>" + esc(spec.u) + "</small>" : "") +
+            "</span></li>"
+          );
+        })
+        .join("") +
+      "</ul>"
     );
   }
 
-  function viewChipDefs(list) {
-    var inPlay = list.filter(inPlayFit).length;
-    return [
-      { id: "all", label: "All", pressed: state.view === "all" },
-      { id: "in-play", label: "In play " + inPlay, pressed: state.view === "in-play" },
-      { id: "aside", label: "Set aside " + (list.length - inPlay), pressed: state.view === "aside" },
-    ];
+  function labelFor(id) {
+    var model = models.filter(function (item) {
+      return item.id === id;
+    })[0];
+    if (model) return model.chip || model.label;
+    var car = cars.filter(function (item) {
+      return item.modelId === id;
+    })[0];
+    var gone = goneEntries.filter(function (item) {
+      return item.modelId === id;
+    })[0];
+    var sample = car || gone;
+    if (sample) return [sample.make, sample.model].filter(Boolean).join(" ") || id;
+    return id;
   }
 
-  function uniqueModels(list) {
+  function uniqueIds(list) {
     var seen = {};
     list.forEach(function (item) {
-      seen[item.modelId] = true;
+      if (item.modelId) seen[item.modelId] = true;
     });
     return Object.keys(seen).sort(function (a, b) {
-      var ai = MODEL_ORDER.indexOf(a);
-      var bi = MODEL_ORDER.indexOf(b);
-      return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
+      var am = models.filter(function (model) { return model.id === a; })[0];
+      var bm = models.filter(function (model) { return model.id === b; })[0];
+      return ((am && am.rank) || 99) - ((bm && bm.rank) || 99);
     });
   }
 
-  function renderChips(container, defs, onPick) {
+  function renderChips(container, defs) {
     var focused = container.querySelector(".chip:focus");
     var focusedId = focused ? focused.getAttribute("data-id") : "";
     container.innerHTML = defs
@@ -514,15 +965,29 @@
         );
       })
       .join("");
-    Array.prototype.forEach.call(container.querySelectorAll(".chip"), function (button) {
-      button.addEventListener("click", function () {
-        onPick(button.getAttribute("data-id"));
-      });
-    });
-    if (focusedId) {
-      var again = container.querySelector('[data-id="' + focusedId + '"]');
+    if (focusedId && window.CSS && CSS.escape) {
+      var again = container.querySelector('[data-id="' + CSS.escape(focusedId) + '"]');
       if (again) again.focus();
     }
+  }
+
+  function feeLine(car) {
+    if (car.priceBasis === "with-fees") return "Includes listed fees";
+    if (car.priceBasis === "with-shipping") return "Includes shipping";
+    if (car.docFee) return "Doc fee " + money(car.docFee);
+    return "";
+  }
+
+  function staleSeen(car) {
+    if (!car.lastSeen || !car.checked || car.lastSeen === car.checked) return "";
+    return "Last seen " + shortDate(car.lastSeen);
+  }
+
+  function pricePath(entry) {
+    if (entry.firstPrice == null && entry.lastPrice == null) return "Price not listed";
+    if (entry.firstPrice == null) return money(entry.lastPrice);
+    if (entry.lastPrice == null || entry.firstPrice === entry.lastPrice) return money(entry.firstPrice);
+    return money(entry.firstPrice) + " → " + money(entry.lastPrice);
   }
 
   function historyFor(car) {
@@ -535,70 +1000,12 @@
     var points = (history || []).filter(function (point) {
       return point && point.price != null;
     });
-    if (!points.length) return { text: "", tone: "flat" };
-    if (points.length === 1) return { text: "One check", tone: "flat" };
+    if (points.length < 2) return { text: "", tone: "flat" };
     var delta = points[points.length - 1].price - points[0].price;
-    if (delta === 0) return { text: "Unchanged", tone: "flat" };
+    if (delta === 0) return { text: "", tone: "flat" };
     var tone = delta < 0 ? "drop" : "rise";
     var sign = delta < 0 ? "−" : "+";
     return { text: sign + money(Math.abs(delta)) + " from " + shortDate(points[0].date), tone: tone };
-  }
-
-  function sparkline(history) {
-    var points = (history || []).filter(function (point) {
-      return point && point.price != null;
-    });
-    if (!points.length) return "";
-    var width = 132;
-    var height = 40;
-    var pad = 3;
-    var prices = points.map(function (point) {
-      return point.price;
-    });
-    var min = Math.min.apply(null, prices);
-    var max = Math.max.apply(null, prices);
-    var span = max - min;
-    var coords = points.map(function (point, index) {
-      var x = points.length === 1 ? width / 2 : pad + (index / (points.length - 1)) * (width - pad * 2);
-      var y = span === 0 ? height / 2 : pad + (1 - (point.price - min) / span) * (height - pad * 2);
-      return [round(x), round(y)];
-    });
-    var first = points[0];
-    var last = points[points.length - 1];
-    var tone = last.price < first.price ? "drop" : last.price > first.price ? "rise" : "flat";
-    var label =
-      points.length === 1
-        ? "One recorded price, " + money(first.price) + " on " + shortDate(first.date)
-        : "Price from " +
-          money(first.price) +
-          " on " +
-          shortDate(first.date) +
-          " to " +
-          money(last.price) +
-          " on " +
-          shortDate(last.date);
-    var end = coords[coords.length - 1];
-    return (
-      '<svg class="spark spark-' +
-      tone +
-      '" viewBox="0 0 ' +
-      width +
-      " " +
-      height +
-      '" role="img" aria-label="' +
-      esc(label) +
-      '"><polyline points="' +
-      coords
-        .map(function (pair) {
-          return pair.join(",");
-        })
-        .join(" ") +
-      '" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></polyline><circle cx="' +
-      end[0] +
-      '" cy="' +
-      end[1] +
-      '" r="2.6" fill="currentColor"></circle></svg>'
-    );
   }
 
   function motivationClass(score) {
@@ -613,68 +1020,148 @@
     return "badge-wait";
   }
 
-  function knownModel(id) {
-    if (!id || id === "all") return true;
-    return cars.some(function (car) {
-      return car.modelId === id;
-    }) || goneEntries.some(function (entry) {
-      return entry.modelId === id;
+  function trendText(trend) {
+    if (trend === "gaining") return "Gaining";
+    if (trend === "fading") return "Fading";
+    return "Steady";
+  }
+
+  function syncRunnerTabs(focusTab) {
+    var mobile = window.matchMedia("(max-width: 899px)").matches;
+    Array.prototype.forEach.call(document.querySelectorAll(".runner"), function (panel) {
+      var on = !mobile || panel.getAttribute("data-id") === state.runner;
+      panel.hidden = !on;
     });
+    Array.prototype.forEach.call(document.querySelectorAll(".runner-tab"), function (tab) {
+      var on = tab.getAttribute("data-id") === state.runner;
+      tab.setAttribute("aria-selected", on ? "true" : "false");
+      tab.tabIndex = on ? 0 : -1;
+      if (on && focusTab) tab.focus();
+    });
+  }
+
+  function selectRunner(id, focusTab) {
+    var front = models.filter(function (model) {
+      return model.status === "front-runner";
+    });
+    if (!front.some(function (model) { return model.id === id; })) return;
+    state.runner = id;
+    syncRunnerTabs(focusTab);
+    writeUrl();
+  }
+
+  function bind() {
+    runnerTabs.addEventListener("click", function (event) {
+      var tab = event.target.closest(".runner-tab");
+      if (!tab) return;
+      selectRunner(tab.getAttribute("data-id"), false);
+    });
+    runnerTabs.addEventListener("keydown", function (event) {
+      if (event.key !== "ArrowRight" && event.key !== "ArrowLeft" && event.key !== "Home" && event.key !== "End") {
+        return;
+      }
+      var tabs = Array.prototype.slice.call(document.querySelectorAll(".runner-tab"));
+      if (!tabs.length) return;
+      var current = 0;
+      tabs.forEach(function (tab, index) {
+        if (tab.getAttribute("data-id") === state.runner) current = index;
+      });
+      var next = current;
+      if (event.key === "ArrowRight") next = (current + 1) % tabs.length;
+      if (event.key === "ArrowLeft") next = (current - 1 + tabs.length) % tabs.length;
+      if (event.key === "Home") next = 0;
+      if (event.key === "End") next = tabs.length - 1;
+      event.preventDefault();
+      selectRunner(tabs[next].getAttribute("data-id"), true);
+    });
+    var mobileQuery = window.matchMedia("(max-width: 899px)");
+    if (mobileQuery.addEventListener) {
+      mobileQuery.addEventListener("change", function () {
+        syncRunnerTabs(false);
+      });
+    }
+    goneFilters.addEventListener("click", function (event) {
+      var button = event.target.closest("button.chip");
+      if (!button) return;
+      state.gone = button.getAttribute("data-id") || "all";
+      renderGone();
+      writeUrl();
+    });
+    comparableToggle.addEventListener("click", function () {
+      state.comparable = comparableToggle.getAttribute("aria-pressed") !== "true";
+      renderGone();
+      writeUrl();
+    });
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest('a[href="#gone"]');
+      if (!link) return;
+      var fold = document.getElementById("gone");
+      if (fold) fold.open = true;
+    });
+    window.addEventListener("popstate", function () {
+      var next = readState();
+      state.runner = next.runner;
+      state.focusModel = next.focusModel;
+      state.gone = next.gone;
+      state.comparable = next.comparable;
+      if (models.length) {
+        var front = models.filter(function (model) {
+          return model.status === "front-runner";
+        });
+        if (!front.some(function (model) { return model.id === state.runner; })) {
+          state.runner = front.length ? front[0].id : "";
+        }
+        syncRunnerTabs(false);
+        renderGone();
+        openDeepLink();
+      }
+    });
+  }
+
+  function openDeepLink() {
+    if (location.hash === "#gone") {
+      var fold = document.getElementById("gone");
+      if (fold) fold.open = true;
+    }
+    var id = state.focusModel;
+    if (!id) return;
+    var panel = document.getElementById("panel-" + id);
+    if (panel) {
+      state.runner = id;
+      syncRunnerTabs(false);
+      return;
+    }
+    var details = document.getElementById("model-" + id);
+    if (details) {
+      details.open = true;
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      details.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+    }
   }
 
   function readState() {
     var params = new URLSearchParams(window.location.search);
-    var view = params.get("view");
-    var sort = params.get("sort");
+    var runner = params.get("runner") || "";
+    var focusModel = params.get("model") || "";
     return {
-      model: params.get("model") || "all",
-      view: view === "in-play" || view === "aside" ? view : "all",
-      sort: sort === "price" || sort === "newest" ? sort : "leads",
+      runner: runner || focusModel,
+      focusModel: focusModel,
       gone: params.get("gone") || "all",
       comparable: params.get("comparable") === "1",
+      defaultRunner: "",
     };
   }
 
-  function writeState() {
+  function writeUrl() {
+    if (!urlReady) return;
     var url = new URL(window.location.href);
+    var hash = url.hash;
     url.search = "";
-    if (state.model !== "all") url.searchParams.set("model", state.model);
-    if (state.view !== "all") url.searchParams.set("view", state.view);
-    if (state.sort !== "leads") url.searchParams.set("sort", state.sort);
-    if (state.gone !== "all") url.searchParams.set("gone", state.gone);
+    if (state.runner && state.runner !== state.defaultRunner) url.searchParams.set("runner", state.runner);
+    if (state.gone && state.gone !== "all") url.searchParams.set("gone", state.gone);
     if (state.comparable) url.searchParams.set("comparable", "1");
-    if (!writeState.armed) {
-      writeState.armed = true;
-      if (url.href !== window.location.href) window.history.replaceState(null, "", url);
-      return;
-    }
-    if (url.href !== window.location.href) window.history.pushState(null, "", url);
-  }
-
-  window.addEventListener("popstate", function () {
-    state = readState();
-    if (sortSelect) sortSelect.value = state.sort;
-    renderInventory();
-    renderGone();
-  });
-
-  function bindJumps() {
-    document.addEventListener("click", function (event) {
-      var link = event.target.closest("[data-jump-model]");
-      if (!link || !cars.length) return;
-      event.preventDefault();
-      var url = new URL(window.location.href);
-      url.hash = "available";
-      window.history.replaceState(null, "", url);
-      state.model = link.getAttribute("data-jump-model");
-      state.view = "all";
-      render();
-      var section = document.getElementById("available");
-      if (section) {
-        var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-        section.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
-      }
-    });
+    url.hash = hash;
+    if (url.href !== window.location.href) window.history.replaceState(null, "", url);
   }
 
   function initTheme() {
@@ -691,25 +1178,19 @@
       }
       syncThemeButton();
     });
-    media.addEventListener("change", function (event) {
-      var saved = "";
-      try {
-        saved = localStorage.getItem(THEME_KEY) || "";
-      } catch (err) {
-        saved = "";
-      }
-      if (saved === "light" || saved === "dark") return;
-      document.documentElement.setAttribute("data-theme", event.matches ? "light" : "dark");
-      syncThemeButton();
-    });
-    sortSelect.addEventListener("change", function () {
-      state.sort = sortSelect.value;
-      render();
-    });
-    comparableToggle.addEventListener("click", function () {
-      state.comparable = comparableToggle.getAttribute("aria-pressed") !== "true";
-      render();
-    });
+    if (media.addEventListener) {
+      media.addEventListener("change", function (event) {
+        var saved = "";
+        try {
+          saved = localStorage.getItem(THEME_KEY) || "";
+        } catch (err) {
+          saved = "";
+        }
+        if (saved === "light" || saved === "dark") return;
+        document.documentElement.setAttribute("data-theme", event.matches ? "light" : "dark");
+        syncThemeButton();
+      });
+    }
   }
 
   function syncThemeButton() {
@@ -766,8 +1247,19 @@
     return text.charAt(0).toUpperCase() + text.slice(1);
   }
 
-  function round(value) {
-    return Math.round(value * 10) / 10;
+  function padRank(rank) {
+    if (rank == null || rank === "") return "";
+    var n = String(rank);
+    return n.length < 2 ? "0" + n : n;
+  }
+
+  function positive(value, fallback) {
+    var n = Number(value);
+    return isFinite(n) && n > 0 ? n : fallback;
+  }
+
+  function domId(id) {
+    return String(id == null ? "" : id).replace(/[^A-Za-z0-9_-]/g, "");
   }
 
   function esc(value) {

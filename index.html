@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Next car</title>
-    <meta name="description" content="A public shortlist and listing tracker for Jason's next car. Priorities, ranked candidates, live asking prices, and cars that left the market.">
+    <meta name="description" content="Front-runners for Jason's next car, with specs, live asking prices, and the earlier contenders beside them.">
     <meta property="og:title" content="Next car">
-    <meta property="og:description" content="Priorities, a ranked shortlist, and public asking prices for the next daily driver.">
+    <meta property="og:description" content="The cars at the top of the search, with public asking prices beside each one.">
     <meta name="theme-color" content="#09090b">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <script src="js/theme.js"></script>
@@ -15,28 +15,30 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <a class="skip" href="#priorities">Skip to content</a>
+    <a class="skip" href="#top">Skip to content</a>
     <header class="site-header">
       <a class="brand" href="#top">
         <span class="brand-kicker">Jason</span>
         <strong>Next car</strong>
       </a>
       <nav class="nav" aria-label="Page">
-        <a href="#priorities">Priorities</a>
-        <a href="#shortlist">Shortlist</a>
-        <a href="#available">Available</a>
+        <a href="#front-runners">Front-runners</a>
+        <a href="#contenders">Contenders</a>
         <a href="#gone">Off market</a>
       </nav>
       <button type="button" class="theme-toggle" id="theme-toggle">Day</button>
     </header>
 
     <main id="top">
-      <div class="wrap hero">
-        <div class="hero-row">
-          <div>
-            <p class="eyebrow">Decision notes</p>
-            <h1>Where I'm headed</h1>
-            <p class="dek">A fun daily with the stance of an old sport wagon, the driver assist of a new car, and a price that lets the first owner eat the steep depreciation.</p>
+      <div class="wrap board-top">
+        <div class="title-row">
+          <div class="title-copy">
+            <div class="eyebrow-row">
+              <p class="eyebrow">Decision notes</p>
+              <p class="updated">Last updated <time id="updated" datetime="2026-10-26">October 26, 2026</time></p>
+            </div>
+            <h1 id="page-title">Front-runners</h1>
+            <p class="dek">Specs and live listings for the cars this search is closing in on.</p>
           </div>
           <svg class="wagon" viewBox="0 0 440 128" fill="none" aria-hidden="true">
             <path class="wagon-accent" d="M356 26 L412 70" stroke-width="2.4"/>
@@ -51,399 +53,48 @@
             <circle cx="342" cy="104" r="6" stroke="currentColor" stroke-width="1.7"/>
           </svg>
         </div>
-        <p class="updated">Last updated <time id="updated" datetime="2026-10-23">October 23, 2026</time></p>
+        <div id="priorities" class="priority-strip">
+          <p class="status-line">Loading the board…</p>
+        </div>
       </div>
 
-      <section id="priorities" class="wrap" aria-labelledby="priorities-title">
-        <div class="section-head">
-          <div>
-            <p class="section-kicker">01</p>
-            <h2 id="priorities-title">Priorities</h2>
-          </div>
+      <section id="front-runners" class="wrap" aria-labelledby="page-title">
+        <div id="runner-tabs" class="runner-tabs" role="tablist" aria-label="Front-runners"></div>
+        <div id="runner-grid" class="runner-grid">
+          <p class="status-line">Loading listings…</p>
         </div>
-        <ol class="priority-list">
-          <li>
-            <span class="tier">Highest</span>
-            <div>
-              <strong>Driving fun and a sport-wagon feel</strong>
-              <p>The car has to be something I want on an empty on-ramp. The long roof and the way an Avant or a 3 Series wagon sits are the reference.</p>
-            </div>
-          </li>
-          <li>
-            <span class="tier">Highest</span>
-            <div>
-              <strong>Top tech and driver assist</strong>
-              <p>Lane tracing and traffic-jam assist sit on the same shelf as the driving. This is a tie with the line above, ahead of everything else.</p>
-            </div>
-          </li>
-          <li>
-            <span class="tier">Next</span>
-            <div>
-              <strong>Cost, after someone else took the depreciation</strong>
-              <p>Target is a roughly two-year-old car, the fast-depreciating kind, so the purchase price has already done a lot of falling.</p>
-            </div>
-          </li>
-          <li>
-            <span class="tier">Required</span>
-            <div>
-              <strong>AWD</strong>
-              <p>All-wheel drive is mandatory. Rear-drive and front-drive cars are logged when they show up, then set aside.</p>
-            </div>
-          </li>
-          <li>
-            <span class="tier">If EV</span>
-            <div>
-              <strong>Road-trip range, and 800V charging when I can get it</strong>
-              <p>An EV has to cover a real trip. 800-volt charging, with a short 10–80% stop, is the architecture I want. A 400-volt car can still win on how it drives.</p>
-            </div>
-          </li>
-        </ol>
-        <div class="reference">
-          <p>The reference</p>
-          <ul class="pills">
-            <li>Audi A4 Avant</li>
-            <li>Audi A6 Avant</li>
-            <li>Audi allroad</li>
-            <li>BMW 3 Series wagon</li>
-          </ul>
-        </div>
+        <p id="updated-summary" class="fine"></p>
+        <p id="cost-note" class="fine"></p>
+        <p class="fine">Asking price is the figure recorded for that car. A doc fee is shown when the listing published one beside the price. Cars marked with included fees or shipping already roll that cost into the number. These are public asking prices, and they can change.</p>
       </section>
 
-      <section id="shortlist" class="wrap" aria-labelledby="shortlist-title">
+      <section id="contenders" class="wrap" aria-labelledby="contenders-title">
         <div class="section-head">
-          <div>
-            <p class="section-kicker">02</p>
-            <h2 id="shortlist-title">Shortlist</h2>
-          </div>
+          <h2 id="contenders-title">Other contenders</h2>
         </div>
-        <p class="section-note">Ranked. The cents-per-mile figures sit next to a 28 MPG gas baseline of about 17¢ per mile, which is about $4.76 a gallon. Hybrid and gas cars scale from that. The Model 3 number is a separate winter road-trip estimate.</p>
-
-        <div class="cost-panel">
-          <h3>Cost per mile</h3>
-          <div class="meter">
-            <div class="meter-label"><span>28 MPG gas baseline</span><span>17¢</span></div>
-            <div class="meter-track"><div class="meter-fill base" style="width: 100%"></div></div>
-          </div>
-          <div class="meter">
-            <div class="meter-label"><span>Volvo V60 Cross Country, highway</span><span>~15.4¢</span></div>
-            <div class="meter-track"><div class="meter-fill" style="width: 90.6%"></div></div>
-          </div>
-          <div class="meter">
-            <div class="meter-label"><span>Toyota Crown Signia</span><span>~12–13¢</span></div>
-            <div class="meter-track"><div class="meter-fill" style="width: 73.5%"></div></div>
-          </div>
-          <div class="meter">
-            <div class="meter-label"><span>Tesla Model 3, winter trips</span><span>~12¢</span></div>
-            <div class="meter-track"><div class="meter-fill" style="width: 70.6%"></div></div>
-          </div>
-          <p class="fine">Crown Signia at about 38 MPG is 17¢ × 28 ÷ 38 ≈ 12.5¢, about 4.5¢ under the baseline. The V60 uses its 31 MPG highway figure: 17¢ × 28 ÷ 31 ≈ 15.4¢, about 1.6¢ under, and city miles cost more. The Model 3’s ~12¢ is about 5¢ under the same baseline and is an EV road-trip estimate. The i4, Ioniq 5, and Q6 e-tron stay off this chart so a fast-charging guess does not get presented as a fact.</p>
-        </div>
-
-        <article class="pick pick-lead">
-          <p class="rank">01</p>
-          <div>
-            <h3>BMW i4 xDrive40</h3>
-            <p class="trim">2024 · AWD</p>
-            <p class="fit-line">The driver’s car. Closest thing here to the old 3 Series, with enough range to leave town.</p>
-            <ul class="specs">
-              <li>
-                <span class="spec-k">EPA range</span>
-                <span class="spec-v">307<small>mi</small></span>
-              </li>
-              <li>
-                <span class="spec-k">Highway, about</span>
-                <span class="spec-v">260–270<small>mi</small></span>
-              </li>
-              <li>
-                <span class="spec-k">Charge</span>
-                <span class="spec-v">400V<small>~200 kW</small></span>
-              </li>
-            </ul>
-            <p class="cost-line">Cents per mile stays unpinned. Home charging and a highway fast-charge stop are different prices, and this tracker does not collapse them into one number.</p>
-            <div class="split">
-              <div>
-                <h4>Pros</h4>
-                <ul>
-                  <li>Great to drive</li>
-                  <li>AWD and real road-trip range</li>
-                  <li>A 2024, so the early depreciation has already happened</li>
-                </ul>
-              </div>
-              <div>
-                <h4>Cons</h4>
-                <ul>
-                  <li>400-volt charging, around a 200 kW peak</li>
-                  <li>Sedan body</li>
-                  <li>Highway range sits below the EPA number</li>
-                </ul>
-              </div>
-            </div>
-            <a class="listing-link" href="?model=i4#available" data-jump-model="i4">See the i4 listing</a>
-          </div>
-        </article>
-
-        <div class="short-grid">
-          <article class="pick">
-            <p class="rank">02</p>
-            <h3>Toyota Crown Signia</h3>
-            <p class="trim">2025 · AWD hybrid</p>
-            <p class="fit-line">The comfort and driver-assist pick. Strong lane tracing and traffic-jam assist. The sport-wagon itch stays unscratched.</p>
-            <ul class="specs">
-              <li>
-                <span class="spec-k">Economy, about</span>
-                <span class="spec-v">38<small>mpg</small></span>
-              </li>
-              <li>
-                <span class="spec-k">Cost / mile</span>
-                <span class="spec-v">12–13<small>¢</small></span>
-              </li>
-              <li>
-                <span class="spec-k">Vs baseline, about</span>
-                <span class="spec-v">−4.5<small>¢</small></span>
-              </li>
-            </ul>
-            <p class="cost-line">17¢ × 28 ÷ 38 ≈ 12.5¢ per mile, inside the 12–13¢ band.</p>
-            <div class="split">
-              <div>
-                <h4>Pros</h4>
-                <ul>
-                  <li>Lane tracing and traffic-jam assist</li>
-                  <li>AWD and cheap miles</li>
-                  <li>Quiet, comfortable highway car</li>
-                </ul>
-              </div>
-              <div>
-                <h4>Cons</h4>
-                <ul>
-                  <li>Comfortable, and soft rather than sporty</li>
-                  <li>Crossover shape, away from the Avant and the 3 Series wagon</li>
-                </ul>
-              </div>
-            </div>
-            <p class="fine">No live Crown Signia listing in this tracker yet.</p>
-          </article>
-
-          <article class="pick">
-            <p class="rank">03</p>
-            <h3>Tesla Model 3 Long Range AWD</h3>
-            <p class="trim">Sedan</p>
-            <p class="fit-line">The road-trip EV. Excellent Autopilot. The wagon brief is the compromise.</p>
-            <ul class="specs">
-              <li>
-                <span class="spec-k">Road trips</span>
-                <span class="spec-v">Best<small>EV here</small></span>
-              </li>
-              <li>
-                <span class="spec-k">Winter trips</span>
-                <span class="spec-v">12<small>¢/mi</small></span>
-              </li>
-              <li>
-                <span class="spec-k">Vs baseline, about</span>
-                <span class="spec-v">−5<small>¢</small></span>
-              </li>
-            </ul>
-            <p class="cost-line">About 12¢ per mile on winter trips. That figure is from trip notes, separate from the MPG scaling used for the gas and hybrid cars.</p>
-            <div class="split">
-              <div>
-                <h4>Pros</h4>
-                <ul>
-                  <li>Best road-trip EV on the list</li>
-                  <li>Excellent Autopilot</li>
-                  <li>AWD and a strong running cost</li>
-                </ul>
-              </div>
-              <div>
-                <h4>Cons</h4>
-                <ul>
-                  <li>Sedan body</li>
-                  <li>Less of the Audi and BMW chassis feel</li>
-                </ul>
-              </div>
-            </div>
-            <a class="listing-link" href="?model=model3#available" data-jump-model="model3">See Model 3 listings</a>
-          </article>
-
-          <article class="pick">
-            <p class="rank">04</p>
-            <h3>Hyundai Ioniq 5 AWD</h3>
-            <p class="trim">800V</p>
-            <p class="fit-line">The fast-charging pick. HDA2 is a real assist suite. Highway range is the limit.</p>
-            <ul class="specs">
-              <li>
-                <span class="spec-k">Highway, about</span>
-                <span class="spec-v">240<small>mi</small></span>
-              </li>
-              <li>
-                <span class="spec-k">Architecture</span>
-                <span class="spec-v">800V</span>
-              </li>
-              <li>
-                <span class="spec-k">10–80%, about</span>
-                <span class="spec-v">18<small>min</small></span>
-              </li>
-            </ul>
-            <p class="cost-line">Cents per mile stays unpinned. The 800-volt stop is the reason it is this high, and the highway range is why it is fourth.</p>
-            <div class="split">
-              <div>
-                <h4>Pros</h4>
-                <ul>
-                  <li>800-volt charging, about 18 minutes from 10% to 80%</li>
-                  <li>HDA2 driver assist</li>
-                  <li>AWD, and asking prices have been friendly</li>
-                </ul>
-              </div>
-              <div>
-                <h4>Cons</h4>
-                <ul>
-                  <li>About 240 highway miles, so more charging stops</li>
-                  <li>Crossover, away from the sport-wagon feel</li>
-                </ul>
-              </div>
-            </div>
-            <a class="listing-link" href="?model=ioniq5#available" data-jump-model="ioniq5">See the Ioniq 5 listing</a>
-          </article>
-
-          <article class="pick">
-            <p class="rank">05</p>
-            <h3>Volvo V60 Cross Country</h3>
-            <p class="trim">Wagon</p>
-            <p class="fit-line">The body-style match. A true allroad wagon, the shape the A4, the A6, and the 3 Series wagon left behind.</p>
-            <ul class="specs">
-              <li>
-                <span class="spec-k">Highway, about</span>
-                <span class="spec-v">31<small>mpg</small></span>
-              </li>
-              <li>
-                <span class="spec-k">Cost / mile</span>
-                <span class="spec-v">15.4<small>¢</small></span>
-              </li>
-              <li>
-                <span class="spec-k">Vs baseline, about</span>
-                <span class="spec-v">−1.6<small>¢</small></span>
-              </li>
-            </ul>
-            <p class="cost-line">17¢ × 28 ÷ 31 ≈ 15.4¢ per mile on the highway figure. City driving costs more than that.</p>
-            <div class="split">
-              <div>
-                <h4>Pros</h4>
-                <ul>
-                  <li>Actual wagon, with allroad stance</li>
-                  <li>AWD</li>
-                  <li>Gas, so the trip plan is a fuel stop</li>
-                </ul>
-              </div>
-              <div>
-                <h4>Cons</h4>
-                <ul>
-                  <li>Highway economy is a small step past a 28 MPG car</li>
-                  <li>Driver assist and cabin tech sit behind the leaders</li>
-                  <li>Composed ride, short of a sharp chassis</li>
-                </ul>
-              </div>
-            </div>
-            <p class="fine">No live V60 listing in this tracker yet.</p>
-          </article>
-
-          <article class="pick">
-            <p class="rank">06</p>
-            <h3>Audi Q6 e-tron</h3>
-            <p class="trim">Quattro · 800V</p>
-            <p class="fit-line">Audi, 800-volt charging, and strong range. Local clean cars are asking about $50k, which fights the depreciation plan.</p>
-            <ul class="specs">
-              <li>
-                <span class="spec-k">Architecture</span>
-                <span class="spec-v">800V</span>
-              </li>
-              <li>
-                <span class="spec-k">Range</span>
-                <span class="spec-v">Strong</span>
-              </li>
-              <li>
-                <span class="spec-k">Local ask, about</span>
-                <span class="spec-v">$50k</span>
-              </li>
-            </ul>
-            <p class="cost-line">Cents per mile stays unpinned. The decision on this one is the asking price and the shape, ahead of the energy math.</p>
-            <div class="split">
-              <div>
-                <h4>Pros</h4>
-                <ul>
-                  <li>800-volt charging and strong range</li>
-                  <li>Quattro</li>
-                  <li>A familiar Audi way of going down the road</li>
-                </ul>
-              </div>
-              <div>
-                <h4>Cons</h4>
-                <ul>
-                  <li>Local asking prices around $50k</li>
-                  <li>Newer, so less of the steep depreciation is behind it</li>
-                  <li>SUV, away from the Avant</li>
-                </ul>
-              </div>
-            </div>
-            <a class="listing-link" href="?model=q6#available" data-jump-model="q6">See Q6 listings</a>
-          </article>
-        </div>
-
-        <div class="ruled">
-          <h3>Ruled out</h3>
-          <ul>
-            <li><strong>Porsche Taycan Cross Turismo</strong><span>Price</span></li>
-            <li><strong>BMW i5</strong><span>Price</span></li>
-            <li><strong>Lexus RZ</strong><span>Range</span></li>
-            <li><strong>Toyota C-HR</strong><span>Range</span></li>
-          </ul>
-        </div>
+        <p class="section-note">Earlier models, still on the board. Open one for the specs and the listings.</p>
+        <div id="contender-list" class="contender-list"></div>
+        <div id="dropped" class="dropped"></div>
       </section>
 
-      <section id="available" class="wrap" aria-labelledby="available-title">
-        <div class="section-head">
-          <div>
-            <p class="section-kicker">03</p>
-            <h2 id="available-title">Available vehicles</h2>
-          </div>
-        </div>
-        <p id="updated-summary">Model 3 and Q6 checks run through October 22, 2026. The i4 and Ioniq 5 listings were added October 23, 2026.</p>
-        <ul class="legend">
-          <li><strong>In play</strong> meets the car rules, is close, is over the price line, or is still unverified.</li>
-          <li><strong>Set aside</strong> is the wrong drivetrain, title, miles, or a stale lead.</li>
-          <li><strong>High / Medium / Low</strong> is how motivated that listing looks.</li>
-          <li><strong>BUY NOW / WATCH / WAIT</strong> is the timing call, when this tracker has one.</li>
-        </ul>
-        <div class="toolbar">
-          <div>
-            <div class="chip-row" id="model-filters" role="group" aria-label="Filter by model"></div>
-            <div class="chip-row" id="view-filters" role="group" aria-label="Filter by fit"></div>
-          </div>
-          <label class="sort-label">Sort
-            <select id="sort">
-              <option value="leads">Leads</option>
-              <option value="price">Lowest price</option>
-              <option value="newest">Newest</option>
-            </select>
-          </label>
-        </div>
-        <p id="inventory-status" class="status-line">Loading listings…</p>
-        <div id="inventory-list" class="stack" aria-live="polite"></div>
-        <p class="fine">Asking price is the figure recorded for that car. A doc fee appears when the listing published one beside the price. Cars marked “includes listed fees” or “includes shipping” already roll that cost into the number shown. These are public asking prices, and they can change.</p>
-      </section>
-
-      <section id="gone" class="wrap" aria-labelledby="gone-title">
-        <div class="section-head">
-          <div>
-            <p class="section-kicker">04</p>
+      <div class="wrap">
+        <details id="gone" class="fold">
+          <summary>
             <h2 id="gone-title">Off the market</h2>
+            <span class="fold-meta" id="gone-meta">Loading…</span>
+          </summary>
+          <div class="fold-body">
+            <div id="miles-aside"></div>
+            <p id="gone-intro" class="section-note"></p>
+            <div class="toolbar">
+              <div class="chip-row" id="gone-filters" role="group" aria-label="Filter the off-market log by model"></div>
+              <button type="button" class="chip" id="comparable-only" aria-pressed="false">Comparable only</button>
+            </div>
+            <p id="gone-status" class="status-line"></p>
+            <div id="gone-list" class="gone-list"></div>
           </div>
-        </div>
-        <p>A car lands here when it is missing for two checks in a row, or the page says sold, removed, or not found. Days listed are only the days this tracker actually saw it. Comparable means it met the search: the right model year, AWD, a clean title, and about 25,000 miles or fewer.</p>
-        <div class="toolbar">
-          <div class="chip-row" id="gone-filters" role="group" aria-label="Filter the off-market log by model"></div>
-          <button type="button" class="chip" id="comparable-only" aria-pressed="false">Comparable only</button>
-        </div>
-        <p id="gone-status" class="status-line">Loading the log…</p>
-        <div id="gone-list" class="gone-list" aria-live="polite"></div>
-      </section>
+        </details>
+      </div>
     </main>
 
     <footer class="site-footer">
@@ -451,6 +102,7 @@
         <p>Public decision notes for one car search. Dealer links leave this site. Prices are asking prices from those listings.</p>
         <p>This page loads no third-party scripts, fonts, or analytics.</p>
         <ul class="footer-links">
+          <li><a href="data/models.json">models.json</a></li>
           <li><a href="data/meta.json">meta.json</a></li>
           <li><a href="data/model3.json">model3.json</a></li>
           <li><a href="data/q6.json">q6.json</a></li>
