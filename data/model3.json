@@ -2,7 +2,7 @@
   "modelId": "model3",
   "label": "Tesla Model 3",
   "search": "2024 and newer Model 3 Long Range AWD, up to about 25,000 miles, from Ogden to Springville.",
-  "checked": "2026-10-25",
+  "checked": "2026-10-26",
   "listings": [
     {
       "id": "5YJ3E1EB0RF742895",
@@ -70,20 +70,24 @@
         {
           "date": "2026-10-25",
           "price": 37450
+        },
+        {
+          "date": "2026-10-26",
+          "price": 37450
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-26",
       "note": null,
       "motivation": {
         "score": "High",
         "reason": "Kentson holds 6 near-identical LR AWDs here; 3 rounds of cuts 10-15 to 10-23, none since",
-        "asOf": "2026-10-25"
+        "asOf": "2026-10-26"
       },
       "timing": {
         "call": "WATCH",
         "reason": "twin 754039 went off-market after 8 days and 3 cuts; Kentson twins have lasted 1-8 days, but 5 alternatives remain",
-        "asOf": "2026-10-25"
+        "asOf": "2026-10-26"
       }
     },
     {
@@ -152,20 +156,24 @@
         {
           "date": "2026-10-25",
           "price": 37650
+        },
+        {
+          "date": "2026-10-26",
+          "price": 37650
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-26",
       "note": null,
       "motivation": {
         "score": "High",
         "reason": "Kentson holds 6 near-identical LR AWDs here; 3 rounds of cuts 10-15 to 10-23, none since",
-        "asOf": "2026-10-25"
+        "asOf": "2026-10-26"
       },
       "timing": {
         "call": "WATCH",
         "reason": "twin 754039 went off-market after 8 days and 3 cuts; Kentson twins have lasted 1-8 days, but 5 alternatives remain",
-        "asOf": "2026-10-25"
+        "asOf": "2026-10-26"
       }
     },
     {
@@ -234,20 +242,24 @@
         {
           "date": "2026-10-25",
           "price": 39550
+        },
+        {
+          "date": "2026-10-26",
+          "price": 39550
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-26",
       "note": null,
       "motivation": {
         "score": "High",
         "reason": "Kentson holds 6 near-identical LR AWDs here; 3 rounds of cuts 10-15 to 10-23, none since",
-        "asOf": "2026-10-25"
+        "asOf": "2026-10-26"
       },
       "timing": {
         "call": "WATCH",
         "reason": "twin 754039 went off-market after 8 days and 3 cuts; Kentson twins have lasted 1-8 days, but 5 alternatives remain",
-        "asOf": "2026-10-25"
+        "asOf": "2026-10-26"
       }
     },
     {
@@ -316,20 +328,24 @@
         {
           "date": "2026-10-25",
           "price": 39150
+        },
+        {
+          "date": "2026-10-26",
+          "price": 39150
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-26",
       "note": null,
       "motivation": {
         "score": "High",
         "reason": "Kentson holds 6 near-identical LR AWDs here; 3 rounds of cuts 10-15 to 10-23, none since",
-        "asOf": "2026-10-25"
+        "asOf": "2026-10-26"
       },
       "timing": {
         "call": "WATCH",
         "reason": "twin 754039 went off-market after 8 days and 3 cuts; Kentson twins have lasted 1-8 days, but 5 alternatives remain",
-        "asOf": "2026-10-25"
+        "asOf": "2026-10-26"
       }
     },
     {
@@ -398,20 +414,24 @@
         {
           "date": "2026-10-25",
           "price": 39650
+        },
+        {
+          "date": "2026-10-26",
+          "price": 39650
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-26",
       "note": null,
       "motivation": {
         "score": "High",
         "reason": "Kentson holds 6 near-identical LR AWDs here; 3 rounds of cuts 10-15 to 10-23, none since",
-        "asOf": "2026-10-25"
+        "asOf": "2026-10-26"
       },
       "timing": {
         "call": "WATCH",
         "reason": "twin 754039 went off-market after 8 days and 3 cuts; Kentson twins have lasted 1-8 days, but 5 alternatives remain",
-        "asOf": "2026-10-25"
+        "asOf": "2026-10-26"
       }
     },
     {
@@ -480,20 +500,24 @@
         {
           "date": "2026-10-25",
           "price": 40150
+        },
+        {
+          "date": "2026-10-26",
+          "price": 40150
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-26",
       "note": null,
       "motivation": {
         "score": "High",
         "reason": "Kentson holds 6 near-identical LR AWDs here; 3 rounds of cuts 10-15 to 10-23, none since",
-        "asOf": "2026-10-25"
+        "asOf": "2026-10-26"
       },
       "timing": {
         "call": "WATCH",
         "reason": "twin 754039 went off-market after 8 days and 3 cuts; Kentson twins have lasted 1-8 days, but 5 alternatives remain",
-        "asOf": "2026-10-25"
+        "asOf": "2026-10-26"
       }
     },
     {
@@ -554,106 +578,24 @@
         {
           "date": "2026-10-25",
           "price": 39450
+        },
+        {
+          "date": "2026-10-26",
+          "price": 39450
         }
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-26",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "sister store to Bountiful twins, no cuts in 9 days tracked",
-        "asOf": "2026-10-25"
+        "reason": "sister store to Bountiful twins, no cuts in 10 days tracked",
+        "asOf": "2026-10-26"
       },
       "timing": {
         "call": "WAIT",
         "reason": "Bountiful twins keep getting cut; this one hasn't moved yet",
-        "asOf": "2026-10-25"
-      }
-    },
-    {
-      "id": "5YJ3E1EB6RF835131",
-      "vin": "5YJ3E1EB6RF835131",
-      "year": 2024,
-      "make": "Tesla",
-      "model": "Model 3",
-      "modelId": "model3",
-      "trim": "Long Range AWD",
-      "miles": 9313,
-      "price": 39999,
-      "priceBasis": "vehicle",
-      "docFee": 449,
-      "url": "https://www.kengarff.com/inventory/used-2024-tesla-model-3-long-range-awd-4dr-car-5yj3e1eb6rf835131/",
-      "dealer": "Ken Garff Nissan",
-      "city": "Orem",
-      "color": "Blue",
-      "wheels": "18in with aero covers",
-      "drivetrain": "AWD",
-      "title": "clean",
-      "cpo": false,
-      "fit": "near-miss",
-      "statusNote": "Meets the car rules, above the $38k target. Clean CARFAX per dealer",
-      "priceHistory": [
-        {
-          "date": "2026-10-14",
-          "price": 40449
-        },
-        {
-          "date": "2026-10-15",
-          "price": 40449
-        },
-        {
-          "date": "2026-10-16",
-          "price": 40449
-        },
-        {
-          "date": "2026-10-17",
-          "price": 40449
-        },
-        {
-          "date": "2026-10-18",
-          "price": 40449
-        },
-        {
-          "date": "2026-10-19",
-          "price": 40449
-        },
-        {
-          "date": "2026-10-20",
-          "price": 40449
-        },
-        {
-          "date": "2026-10-21",
-          "price": 39999
-        },
-        {
-          "date": "2026-10-22",
-          "price": 39999
-        },
-        {
-          "date": "2026-10-23",
-          "price": 39999
-        },
-        {
-          "date": "2026-10-24",
-          "price": 39999
-        },
-        {
-          "date": "2026-10-25",
-          "price": 39999
-        }
-      ],
-      "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-25",
-      "note": null,
-      "motivation": {
-        "score": "Medium",
-        "reason": "off-brand Nissan store, one $450 cut, 11 days tracked",
-        "asOf": "2026-10-25"
-      },
-      "timing": {
-        "call": "WATCH",
-        "reason": "comparable ~$39-41k 2024 LRs have gone in 0-8 days, but several Kentson alternatives exist",
-        "asOf": "2026-10-25"
+        "asOf": "2026-10-26"
       }
     },
     {
@@ -714,20 +656,24 @@
         {
           "date": "2026-10-25",
           "price": 41519
+        },
+        {
+          "date": "2026-10-26",
+          "price": 41519
         }
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-26",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "off-brand Mitsubishi/Axio lot, one ~$1.2k cut, 24.5k mi near limit, 9 days tracked",
-        "asOf": "2026-10-25"
+        "reason": "off-brand Mitsubishi/Axio lot, one ~$1.2k cut, 24.5k mi near limit, 10 days tracked",
+        "asOf": "2026-10-26"
       },
       "timing": {
         "call": "WAIT",
         "reason": "overpriced vs Kentson comps; more cuts likely",
-        "asOf": "2026-10-25"
+        "asOf": "2026-10-26"
       }
     },
     {
@@ -796,20 +742,24 @@
         {
           "date": "2026-10-25",
           "price": 43990
+        },
+        {
+          "date": "2026-10-26",
+          "price": 43990
         }
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-26",
       "note": null,
       "motivation": {
         "score": "Low",
-        "reason": "no cuts in 11 days, FSD included, 3k mi",
-        "asOf": "2026-10-25"
+        "reason": "no cuts in 12 days, FSD included, 3k mi",
+        "asOf": "2026-10-26"
       },
       "timing": {
         "call": "WAIT",
         "reason": "above $42k cap with no price movement",
-        "asOf": "2026-10-25"
+        "asOf": "2026-10-26"
       }
     },
     {
@@ -850,20 +800,24 @@
         {
           "date": "2026-10-25",
           "price": 40988
+        },
+        {
+          "date": "2026-10-26",
+          "price": 40988
         }
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-26",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "in stock since 10/08 (17 days), small cuts earlier, budget lot",
-        "asOf": "2026-10-25"
+        "reason": "in stock since 10/08 (18 days), small cuts earlier, budget lot",
+        "asOf": "2026-10-26"
       },
       "timing": {
         "call": "WAIT",
-        "reason": "$1.3-3.5k above six verified Kentson twins with similar miles; it has already sat 17 days",
-        "asOf": "2026-10-25"
+        "reason": "$1.3-3.5k above six verified Kentson twins with similar miles; it has already sat 18 days",
+        "asOf": "2026-10-26"
       }
     }
   ]
