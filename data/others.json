@@ -2,7 +2,7 @@
   "modelId": "others",
   "label": "Other shortlist cars",
   "search": "Verified listings for shortlist cars other than the Model 3 and Q6 e-tron watches.",
-  "checked": "2026-10-26",
+  "checked": "2026-10-27",
   "listings": [
     {
       "id": "WBY83FB04RFR87396",
@@ -42,56 +42,14 @@
         {
           "date": "2026-10-26",
           "price": 39828
+        },
+        {
+          "date": "2026-10-27",
+          "price": 39828
         }
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-26",
-      "note": null,
-      "motivation": null,
-      "timing": null
-    },
-    {
-      "id": "KM8KRDDF1RU332518",
-      "vin": "KM8KRDDF1RU332518",
-      "year": 2024,
-      "make": "Hyundai",
-      "model": "Ioniq 5",
-      "modelId": "ioniq5",
-      "trim": "Limited AWD",
-      "miles": 42137,
-      "price": 29992,
-      "priceBasis": "vehicle",
-      "docFee": 449,
-      "url": "https://www.kengarffnissanslc.com/inventory/certified-pre-owned-2024-hyundai-ioniq-5-limited-awd-sport-utility-km8krddf1ru332518/",
-      "dealer": "Ken Garff Hyundai Downtown",
-      "city": "Salt Lake City",
-      "color": "Abyss Black",
-      "wheels": null,
-      "drivetrain": "AWD",
-      "title": "unknown",
-      "cpo": true,
-      "fit": "match",
-      "statusNote": "Hyundai certified pre-owned, CARFAX one-owner per dealer. Verified on the dealer's own page.",
-      "priceHistory": [
-        {
-          "date": "2026-10-23",
-          "price": 29992
-        },
-        {
-          "date": "2026-10-24",
-          "price": 29992
-        },
-        {
-          "date": "2026-10-25",
-          "price": 29992
-        },
-        {
-          "date": "2026-10-26",
-          "price": 29992
-        }
-      ],
-      "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-27",
       "note": null,
       "motivation": null,
       "timing": null
@@ -130,10 +88,14 @@
         {
           "date": "2026-10-26",
           "price": 48271
+        },
+        {
+          "date": "2026-10-27",
+          "price": 48271
         }
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-27",
       "note": null,
       "motivation": null,
       "timing": null
@@ -168,10 +130,14 @@
         {
           "date": "2026-10-26",
           "price": 43993
+        },
+        {
+          "date": "2026-10-27",
+          "price": 43993
         }
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-27",
       "note": null,
       "motivation": null,
       "timing": null
@@ -197,52 +163,90 @@
       "title": "unknown",
       "cpo": false,
       "fit": "match",
-      "statusNote": "Verified on the dealer's own page (stock U18201). CARFAX one-owner, clean CARFAX per dealer. Hybrid AWD wagon-style SUV. $48,157 plus $499 doc fee ($48,656).",
+      "statusNote": "Verified on the dealer's own page (stock U18201); page now lists condition as Certified Pre-Owned. CARFAX one-owner, clean CARFAX per dealer. Hybrid AWD wagon-style SUV. $48,157 plus $499 doc fee ($48,656).",
       "priceHistory": [
         {
           "date": "2026-10-26",
           "price": 48157
+        },
+        {
+          "date": "2026-10-27",
+          "price": 48157
         }
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-27",
       "note": null,
       "motivation": null,
       "timing": null
     },
     {
-      "id": "WBY33AW05PFR38602",
-      "vin": "WBY33AW05PFR38602",
+      "make": "Hyundai",
+      "model": "Ioniq 5",
+      "modelId": "ioniq5",
       "year": 2023,
-      "make": "BMW",
-      "model": "i4",
-      "modelId": "i4",
-      "trim": "M50 xDrive",
-      "miles": 31747,
-      "price": 43696,
+      "trim": "Limited AWD",
       "priceBasis": "vehicle",
       "docFee": 449,
-      "url": "https://timdahlesouthtowne.com/inventory/Used-2023-BMW-i4-M50-WBY33AW05PFR38602",
-      "dealer": "Tim Dahle Nissan Southtowne",
-      "city": "South Jordan",
-      "color": "Grey",
-      "wheels": null,
+      "city": "Salt Lake City",
+      "wheels": "20-inch",
       "drivetrain": "AWD",
       "title": "unknown",
-      "cpo": false,
-      "fit": "match",
-      "statusNote": "Verified on the dealer's own page (stock 73892, in stock, not on hold). CARFAX one-owner per dealer. Dual-motor M50, higher miles (31.7k). $43,696 plus $449 doc fee ($44,145).",
-      "priceHistory": [
-        {
-          "date": "2026-10-26",
-          "price": 43696
-        }
-      ],
-      "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-26",
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
       "note": null,
       "motivation": null,
-      "timing": null
+      "timing": null,
+      "id": "KM8KRDAFXPU185701",
+      "vin": "KM8KRDAFXPU185701",
+      "miles": 22753,
+      "price": 30966,
+      "color": "Gravity Gold (matte)",
+      "cpo": false,
+      "fit": "match",
+      "dealer": "Ken Garff Nissan Salt Lake City",
+      "url": "https://www.kengarffnissanslc.com/inventory/dealer-certified-2023-hyundai-ioniq-5-limited-awd-sport-utility-km8krdafxpu185701/",
+      "statusNote": "Verified on the dealer's own page (stock PU185701W). Ken Garff dealer-certified (not Hyundai factory CPO). Dual-motor AWD, about 266 mi EPA range. $30,966 plus $449 doc fee ($31,415).",
+      "priceHistory": [
+        {
+          "date": "2026-10-27",
+          "price": 30966
+        }
+      ]
+    },
+    {
+      "make": "Hyundai",
+      "model": "Ioniq 5",
+      "modelId": "ioniq5",
+      "year": 2023,
+      "trim": "Limited AWD",
+      "priceBasis": "vehicle",
+      "docFee": 449,
+      "city": "Salt Lake City",
+      "wheels": "20-inch",
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "note": null,
+      "motivation": null,
+      "timing": null,
+      "id": "KM8KRDAF5PU209161",
+      "vin": "KM8KRDAF5PU209161",
+      "miles": 20631,
+      "price": 31200,
+      "color": "Atlas White",
+      "cpo": true,
+      "fit": "match",
+      "dealer": "Ken Garff Hyundai Downtown",
+      "url": "https://www.kengarffhyundaidowntown.com/inventory/certified-pre-owned-2023-hyundai-ioniq-5-limited-awd-sport-utility-km8krdaf5pu209161/",
+      "statusNote": "Verified on the dealer's own page (stock PU209161W). Hyundai Certified Pre-Owned, CARFAX one-owner per dealer. Dual-motor AWD. $31,200 plus $449 doc fee ($31,649).",
+      "priceHistory": [
+        {
+          "date": "2026-10-27",
+          "price": 31200
+        }
+      ]
     }
   ]
 }
