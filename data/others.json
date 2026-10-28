@@ -2,7 +2,7 @@
   "modelId": "others",
   "label": "Other shortlist cars",
   "search": "Verified listings for shortlist cars other than the Model 3 and Q6 e-tron watches.",
-  "checked": "2026-10-27",
+  "checked": "2026-10-28",
   "listings": [
     {
       "id": "WBY83FB04RFR87396",
@@ -46,10 +46,14 @@
         {
           "date": "2026-10-27",
           "price": 39828
+        },
+        {
+          "date": "2026-10-28",
+          "price": 39828
         }
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "note": null,
       "motivation": null,
       "timing": null
@@ -92,10 +96,14 @@
         {
           "date": "2026-10-27",
           "price": 48271
+        },
+        {
+          "date": "2026-10-28",
+          "price": 48271
         }
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "note": null,
       "motivation": null,
       "timing": null
@@ -134,10 +142,14 @@
         {
           "date": "2026-10-27",
           "price": 43993
+        },
+        {
+          "date": "2026-10-28",
+          "price": 43993
         }
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "note": null,
       "motivation": null,
       "timing": null
@@ -172,10 +184,14 @@
         {
           "date": "2026-10-27",
           "price": 48157
+        },
+        {
+          "date": "2026-10-28",
+          "price": 48157
         }
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "note": null,
       "motivation": null,
       "timing": null
@@ -193,7 +209,7 @@
       "drivetrain": "AWD",
       "title": "unknown",
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "note": null,
       "motivation": null,
       "timing": null,
@@ -211,6 +227,10 @@
         {
           "date": "2026-10-27",
           "price": 30966
+        },
+        {
+          "date": "2026-10-28",
+          "price": 30966
         }
       ]
     },
@@ -227,7 +247,7 @@
       "drivetrain": "AWD",
       "title": "unknown",
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "note": null,
       "motivation": null,
       "timing": null,
@@ -244,6 +264,10 @@
       "priceHistory": [
         {
           "date": "2026-10-27",
+          "price": 31200
+        },
+        {
+          "date": "2026-10-28",
           "price": 31200
         }
       ]
