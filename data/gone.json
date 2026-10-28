@@ -1,6 +1,6 @@
 {
   "note": "A car moves here when it is missing for two checks in a row, or the page says sold, removed, or not found. Days listed is only the window this tracker observed. Comparable means it met the search: the right model year, AWD, a clean title, and about 25,000 miles or fewer. On 2026-10-23 the live lists were cut to verified-only; cards that were set aside or could not be verified that day were moved here and are marked as such.",
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "entries": [
     {
       "id": "5YJ3E1EB4SF083516",
@@ -1621,6 +1621,34 @@
       "title": "unknown",
       "outcome": "removed from the live list 2026-10-27: 31,747 miles is over the ~25,000-mile ceiling and the price is in line with lower-mile i4 M50s, so it is not a value exception (car may still be for sale)",
       "detected": "mileage rule review 2026-10-27 (listing page itself still live)"
+    },
+    {
+      "id": "5YJ3E1EB5SF898050",
+      "vin": "5YJ3E1EB5SF898050",
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelId": "model3",
+      "trim": "Long Range AWD",
+      "miles": 24474,
+      "color": "Pearl White",
+      "dealer": "Southtowne Mitsubishi / Axio EV",
+      "city": "Sandy",
+      "url": "https://www.utahmitsubishi.com/used/Tesla/2025-Tesla-Model-3-1d9f501fac18150404e3bc89d515f8c4.htm",
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-27",
+      "daysListed": 11,
+      "firstPrice": 42697,
+      "lastPrice": 41511,
+      "priceCuts": 2,
+      "cutAmounts": [
+        1178,
+        8
+      ],
+      "comparable": true,
+      "title": "unknown",
+      "outcome": "removed from the live list 2026-10-28: the dealer's listing page no longer loads (page not found), so it could not be verified today",
+      "detected": "dealer page not found on 2026-10-28; one missed check so far"
     }
   ]
 }
