@@ -2,7 +2,7 @@
   "modelId": "q6",
   "label": "Audi Q6 e-tron",
   "search": "2025 and newer Q6 e-tron quattro, up to about 25,000 miles, from Ogden to Springville.",
-  "checked": "2026-10-27",
+  "checked": "2026-10-28",
   "listings": [
     {
       "id": "WA124BGF5SA093608",
@@ -78,20 +78,24 @@
         {
           "date": "2026-10-27",
           "price": 49995
+        },
+        {
+          "date": "2026-10-28",
+          "price": 49995
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "note": null,
       "motivation": {
         "score": "Low",
-        "reason": "franchise Audi store, no cuts in 13 days tracked",
-        "asOf": "2026-10-27"
+        "reason": "franchise Audi store, no cuts in 14 days tracked",
+        "asOf": "2026-10-28"
       },
       "timing": {
         "call": "WAIT",
         "reason": "over $48k cap, no price movement",
-        "asOf": "2026-10-27"
+        "asOf": "2026-10-28"
       }
     },
     {
@@ -168,20 +172,24 @@
         {
           "date": "2026-10-27",
           "price": 50995
+        },
+        {
+          "date": "2026-10-28",
+          "price": 50995
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "note": null,
       "motivation": {
         "score": "Low",
-        "reason": "franchise Audi store, no cuts in 13 days tracked",
-        "asOf": "2026-10-27"
+        "reason": "franchise Audi store, no cuts in 14 days tracked",
+        "asOf": "2026-10-28"
       },
       "timing": {
         "call": "WAIT",
         "reason": "over $48k cap, no price movement",
-        "asOf": "2026-10-27"
+        "asOf": "2026-10-28"
       }
     }
   ]
