@@ -2,7 +2,7 @@
   "modelId": "model3",
   "label": "Tesla Model 3",
   "search": "2024 and newer Model 3 Long Range AWD, up to about 25,000 miles, from Ogden to Springville.",
-  "checked": "2026-10-27",
+  "checked": "2026-10-28",
   "listings": [
     {
       "id": "5YJ3E1EB0RF742895",
@@ -78,20 +78,24 @@
         {
           "date": "2026-10-27",
           "price": 37650
+        },
+        {
+          "date": "2026-10-28",
+          "price": 37650
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "Kentson raised all 6 near-identical LR AWDs $200-900 on 10/27 after earlier cuts; still holds 6 units",
-        "asOf": "2026-10-27"
+        "reason": "Kentson holds 6 near-identical LR AWDs; raised $200-900 on 10/27, flat 10/28",
+        "asOf": "2026-10-28"
       },
       "timing": {
         "call": "WATCH",
-        "reason": "prices just went up, not down; twin 754039 went in 8 days, 5 alternatives remain",
-        "asOf": "2026-10-27"
+        "reason": "prices flat after 10/27 bump; twin 754039 went in 8 days, 5 alternatives remain",
+        "asOf": "2026-10-28"
       }
     },
     {
@@ -168,20 +172,24 @@
         {
           "date": "2026-10-27",
           "price": 38150
+        },
+        {
+          "date": "2026-10-28",
+          "price": 38150
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "Kentson raised all 6 near-identical LR AWDs $200-900 on 10/27 after earlier cuts; still holds 6 units",
-        "asOf": "2026-10-27"
+        "reason": "Kentson holds 6 near-identical LR AWDs; raised $200-900 on 10/27, flat 10/28",
+        "asOf": "2026-10-28"
       },
       "timing": {
         "call": "WATCH",
-        "reason": "prices just went up, not down; twin 754039 went in 8 days, 5 alternatives remain",
-        "asOf": "2026-10-27"
+        "reason": "prices flat after 10/27 bump; twin 754039 went in 8 days, 5 alternatives remain",
+        "asOf": "2026-10-28"
       }
     },
     {
@@ -258,20 +266,24 @@
         {
           "date": "2026-10-27",
           "price": 40450
+        },
+        {
+          "date": "2026-10-28",
+          "price": 40450
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "Kentson raised all 6 near-identical LR AWDs $200-900 on 10/27 after earlier cuts; still holds 6 units",
-        "asOf": "2026-10-27"
+        "reason": "Kentson holds 6 near-identical LR AWDs; raised $200-900 on 10/27, flat 10/28",
+        "asOf": "2026-10-28"
       },
       "timing": {
         "call": "WATCH",
-        "reason": "prices just went up, not down; twin 754039 went in 8 days, 5 alternatives remain",
-        "asOf": "2026-10-27"
+        "reason": "prices flat after 10/27 bump; twin 754039 went in 8 days, 5 alternatives remain",
+        "asOf": "2026-10-28"
       }
     },
     {
@@ -348,20 +360,24 @@
         {
           "date": "2026-10-27",
           "price": 39650
+        },
+        {
+          "date": "2026-10-28",
+          "price": 39650
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "Kentson raised all 6 near-identical LR AWDs $200-900 on 10/27 after earlier cuts; still holds 6 units",
-        "asOf": "2026-10-27"
+        "reason": "Kentson holds 6 near-identical LR AWDs; raised $200-900 on 10/27, flat 10/28",
+        "asOf": "2026-10-28"
       },
       "timing": {
         "call": "WATCH",
-        "reason": "prices just went up, not down; twin 754039 went in 8 days, 5 alternatives remain",
-        "asOf": "2026-10-27"
+        "reason": "prices flat after 10/27 bump; twin 754039 went in 8 days, 5 alternatives remain",
+        "asOf": "2026-10-28"
       }
     },
     {
@@ -438,20 +454,24 @@
         {
           "date": "2026-10-27",
           "price": 40150
+        },
+        {
+          "date": "2026-10-28",
+          "price": 40150
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "Kentson raised all 6 near-identical LR AWDs $200-900 on 10/27 after earlier cuts; still holds 6 units",
-        "asOf": "2026-10-27"
+        "reason": "Kentson holds 6 near-identical LR AWDs; raised $200-900 on 10/27, flat 10/28",
+        "asOf": "2026-10-28"
       },
       "timing": {
         "call": "WATCH",
-        "reason": "prices just went up, not down; twin 754039 went in 8 days, 5 alternatives remain",
-        "asOf": "2026-10-27"
+        "reason": "prices flat after 10/27 bump; twin 754039 went in 8 days, 5 alternatives remain",
+        "asOf": "2026-10-28"
       }
     },
     {
@@ -528,20 +548,24 @@
         {
           "date": "2026-10-27",
           "price": 40650
+        },
+        {
+          "date": "2026-10-28",
+          "price": 40650
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "Kentson raised all 6 near-identical LR AWDs $200-900 on 10/27 after earlier cuts; still holds 6 units",
-        "asOf": "2026-10-27"
+        "reason": "Kentson holds 6 near-identical LR AWDs; raised $200-900 on 10/27, flat 10/28",
+        "asOf": "2026-10-28"
       },
       "timing": {
         "call": "WATCH",
-        "reason": "prices just went up, not down; twin 754039 went in 8 days, 5 alternatives remain",
-        "asOf": "2026-10-27"
+        "reason": "prices flat after 10/27 bump; twin 754039 went in 8 days, 5 alternatives remain",
+        "asOf": "2026-10-28"
       }
     },
     {
@@ -610,102 +634,24 @@
         {
           "date": "2026-10-27",
           "price": 39450
+        },
+        {
+          "date": "2026-10-28",
+          "price": 39450
         }
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "sister store to Bountiful twins, no cuts in 11 days tracked",
-        "asOf": "2026-10-27"
+        "reason": "sister store to Bountiful twins, no cuts in 12 days tracked",
+        "asOf": "2026-10-28"
       },
       "timing": {
         "call": "WAIT",
-        "reason": "no movement; Bountiful twins now cheaper or similar",
-        "asOf": "2026-10-27"
-      }
-    },
-    {
-      "id": "5YJ3E1EB5SF898050",
-      "vin": "5YJ3E1EB5SF898050",
-      "year": 2025,
-      "make": "Tesla",
-      "model": "Model 3",
-      "modelId": "model3",
-      "trim": "Long Range AWD",
-      "miles": 24474,
-      "price": 41511,
-      "priceBasis": "vehicle",
-      "docFee": null,
-      "url": "https://www.utahmitsubishi.com/used/Tesla/2025-Tesla-Model-3-1d9f501fac18150404e3bc89d515f8c4.htm",
-      "dealer": "Southtowne Mitsubishi / Axio EV",
-      "city": "Sandy",
-      "color": "Pearl White",
-      "wheels": null,
-      "drivetrain": "AWD",
-      "title": "unknown",
-      "cpo": false,
-      "fit": "near-miss",
-      "statusNote": "Meets the car rules, above the $38k target; 24,466 mi is close to the mileage limit. Dealer \"Your Price\" $42,108 includes fees. No history statement on the page",
-      "priceHistory": [
-        {
-          "date": "2026-10-16",
-          "price": 42697
-        },
-        {
-          "date": "2026-10-17",
-          "price": 42697
-        },
-        {
-          "date": "2026-10-19",
-          "price": 42697
-        },
-        {
-          "date": "2026-10-20",
-          "price": 41519
-        },
-        {
-          "date": "2026-10-21",
-          "price": 41519
-        },
-        {
-          "date": "2026-10-22",
-          "price": 41519
-        },
-        {
-          "date": "2026-10-23",
-          "price": 41519
-        },
-        {
-          "date": "2026-10-24",
-          "price": 41519
-        },
-        {
-          "date": "2026-10-25",
-          "price": 41519
-        },
-        {
-          "date": "2026-10-26",
-          "price": 41519
-        },
-        {
-          "date": "2026-10-27",
-          "price": 41511
-        }
-      ],
-      "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-27",
-      "note": null,
-      "motivation": {
-        "score": "Medium",
-        "reason": "off-brand Mitsubishi/Axio lot, ~$1.2k cut earlier, 24.5k mi near limit, 11 days tracked",
-        "asOf": "2026-10-27"
-      },
-      "timing": {
-        "call": "WAIT",
-        "reason": "overpriced vs Kentson comps; more cuts likely",
-        "asOf": "2026-10-27"
+        "reason": "no movement; Bountiful twins cheaper or similar",
+        "asOf": "2026-10-28"
       }
     },
     {
@@ -782,20 +728,24 @@
         {
           "date": "2026-10-27",
           "price": 43990
+        },
+        {
+          "date": "2026-10-28",
+          "price": 43990
         }
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "note": null,
       "motivation": {
         "score": "Low",
-        "reason": "no cuts in 13 days, FSD included, 3k mi",
-        "asOf": "2026-10-27"
+        "reason": "no cuts in 14 days, FSD included, 3k mi",
+        "asOf": "2026-10-28"
       },
       "timing": {
         "call": "WAIT",
         "reason": "above $42k cap with no price movement",
-        "asOf": "2026-10-27"
+        "asOf": "2026-10-28"
       }
     },
     {
@@ -807,7 +757,7 @@
       "modelId": "model3",
       "trim": "Long Range AWD",
       "miles": 18417,
-      "price": 40988,
+      "price": 40969,
       "priceBasis": "vehicle",
       "docFee": 695,
       "url": "https://www.lowbooksales.com/used/Tesla/2024-Tesla-Model-3-1d82dd88ac18150404e3bc89ec890054.htm",
@@ -844,20 +794,24 @@
         {
           "date": "2026-10-27",
           "price": 40988
+        },
+        {
+          "date": "2026-10-28",
+          "price": 40969
         }
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "in stock since 10/08 (19 days), small cuts earlier, budget lot",
-        "asOf": "2026-10-27"
+        "reason": "in stock since 10/08 (20 days), small cuts, budget no-haggle lot",
+        "asOf": "2026-10-28"
       },
       "timing": {
         "call": "WAIT",
-        "reason": "$0.3-3.3k above verified Kentson twins with similar miles",
-        "asOf": "2026-10-27"
+        "reason": "$19 trim is noise; still $0.3-3.3k above verified Kentson twins",
+        "asOf": "2026-10-28"
       }
     }
   ]
