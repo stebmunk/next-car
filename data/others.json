@@ -2,7 +2,7 @@
   "modelId": "others",
   "label": "Other shortlist cars",
   "search": "Verified listings for shortlist cars other than the Model 3 and Q6 e-tron watches.",
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "listings": [
     {
       "id": "WBY83FB04RFR87396",
@@ -13,7 +13,7 @@
       "modelId": "i4",
       "trim": "xDrive40",
       "miles": 25630,
-      "price": 39828,
+      "price": 38335,
       "priceBasis": "vehicle",
       "docFee": 449,
       "url": "https://timdahlesouthtowne.com/inventory/Used-2024-BMW-i4-xDrive40-WBY83FB04RFR87396",
@@ -25,7 +25,7 @@
       "title": "unknown",
       "cpo": false,
       "fit": "match",
-      "statusNote": "Verified on the dealer's own page. CARFAX one-owner per dealer. $39,828 plus $449 doc fee ($40,277).",
+      "statusNote": "Verified on the dealer's own page. CARFAX one-owner per dealer. Price cut to $38,335 on October 29 (from $39,828), plus $449 doc fee ($38,784). Just over the 25k-mile line.",
       "priceHistory": [
         {
           "date": "2026-10-23",
@@ -50,60 +50,14 @@
         {
           "date": "2026-10-28",
           "price": 39828
+        },
+        {
+          "date": "2026-10-29",
+          "price": 38335
         }
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-28",
-      "note": null,
-      "motivation": null,
-      "timing": null
-    },
-    {
-      "id": "JTDACAAJ9S3009032",
-      "vin": "JTDACAAJ9S3009032",
-      "year": 2025,
-      "make": "Toyota",
-      "model": "Crown Signia",
-      "modelId": "signia",
-      "trim": "Limited AWD",
-      "miles": 15563,
-      "price": 48271,
-      "priceBasis": "vehicle",
-      "docFee": 399,
-      "url": "https://www.wasatchfrontkiakiakia.com/viewdetails/used/jtdacaaj9s3009032/2025-toyota-crown-signia-sport-utility",
-      "dealer": "Wasatch Front Kia",
-      "city": "Ogden",
-      "color": "Bronze",
-      "wheels": null,
-      "drivetrain": "AWD",
-      "title": "clean",
-      "cpo": false,
-      "fit": "match",
-      "statusNote": "Verified on the dealer's own page. CARFAX one-owner, clean CARFAX per dealer. Selling price $48,271; doc fee $399 is extra.",
-      "priceHistory": [
-        {
-          "date": "2026-10-24",
-          "price": 48271
-        },
-        {
-          "date": "2026-10-25",
-          "price": 48271
-        },
-        {
-          "date": "2026-10-26",
-          "price": 48271
-        },
-        {
-          "date": "2026-10-27",
-          "price": 48271
-        },
-        {
-          "date": "2026-10-28",
-          "price": 48271
-        }
-      ],
-      "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-29",
       "note": null,
       "motivation": null,
       "timing": null
@@ -146,10 +100,14 @@
         {
           "date": "2026-10-28",
           "price": 43993
+        },
+        {
+          "date": "2026-10-29",
+          "price": 43993
         }
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-29",
       "note": null,
       "motivation": null,
       "timing": null
@@ -188,10 +146,14 @@
         {
           "date": "2026-10-28",
           "price": 48157
+        },
+        {
+          "date": "2026-10-29",
+          "price": 48157
         }
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-29",
       "note": null,
       "motivation": null,
       "timing": null
@@ -209,20 +171,20 @@
       "drivetrain": "AWD",
       "title": "unknown",
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-29",
       "note": null,
       "motivation": null,
       "timing": null,
       "id": "KM8KRDAFXPU185701",
       "vin": "KM8KRDAFXPU185701",
       "miles": 22753,
-      "price": 30966,
+      "price": 28987,
       "color": "Gravity Gold (matte)",
       "cpo": false,
       "fit": "match",
       "dealer": "Ken Garff Nissan Salt Lake City",
       "url": "https://www.kengarffnissanslc.com/inventory/dealer-certified-2023-hyundai-ioniq-5-limited-awd-sport-utility-km8krdafxpu185701/",
-      "statusNote": "Verified on the dealer's own page (stock PU185701W). Ken Garff dealer-certified (not Hyundai factory CPO). Dual-motor AWD, about 266 mi EPA range. $30,966 plus $449 doc fee ($31,415).",
+      "statusNote": "Verified on the dealer's own page (stock PU185701W). Ken Garff dealer-certified (not Hyundai factory CPO). Dual-motor AWD, about 266 mi EPA range. Price cut to $28,987 on October 29 (from $30,966), plus $449 doc fee ($29,436).",
       "priceHistory": [
         {
           "date": "2026-10-27",
@@ -231,6 +193,10 @@
         {
           "date": "2026-10-28",
           "price": 30966
+        },
+        {
+          "date": "2026-10-29",
+          "price": 28987
         }
       ]
     },
@@ -247,20 +213,20 @@
       "drivetrain": "AWD",
       "title": "unknown",
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-29",
       "note": null,
       "motivation": null,
       "timing": null,
       "id": "KM8KRDAF5PU209161",
       "vin": "KM8KRDAF5PU209161",
       "miles": 20631,
-      "price": 31200,
+      "price": 30499,
       "color": "Atlas White",
       "cpo": true,
       "fit": "match",
       "dealer": "Ken Garff Hyundai Downtown",
       "url": "https://www.kengarffhyundaidowntown.com/inventory/certified-pre-owned-2023-hyundai-ioniq-5-limited-awd-sport-utility-km8krdaf5pu209161/",
-      "statusNote": "Verified on the dealer's own page (stock PU209161W). Hyundai Certified Pre-Owned, CARFAX one-owner per dealer. Dual-motor AWD. $31,200 plus $449 doc fee ($31,649).",
+      "statusNote": "Verified on the dealer's own page (stock PU209161W). Hyundai Certified Pre-Owned, CARFAX one-owner per dealer. Dual-motor AWD. Price cut to $30,499 on October 29 (from $31,200), plus $449 doc fee ($30,948).",
       "priceHistory": [
         {
           "date": "2026-10-27",
@@ -269,8 +235,80 @@
         {
           "date": "2026-10-28",
           "price": 31200
+        },
+        {
+          "date": "2026-10-29",
+          "price": 30499
         }
       ]
+    },
+    {
+      "make": "Hyundai",
+      "model": "Ioniq 5",
+      "modelId": "ioniq5",
+      "year": 2023,
+      "priceBasis": "vehicle",
+      "docFee": 449,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "firstSeen": "2026-10-29",
+      "lastSeen": "2026-10-29",
+      "note": null,
+      "motivation": null,
+      "timing": null,
+      "cpo": false,
+      "fit": "match",
+      "id": "KM8KRDAF1PU196621",
+      "vin": "KM8KRDAF1PU196621",
+      "trim": "Limited AWD",
+      "miles": 16863,
+      "price": 33827,
+      "color": "Shooting Star (matte gray)",
+      "wheels": "20-inch",
+      "dealer": "Tim Dahle Nissan Southtowne",
+      "city": "South Jordan",
+      "url": "https://timdahle.com/inventory/Used-2023-Hyundai-IONIQ_5-Limited-KM8KRDAF1PU196621",
+      "priceHistory": [
+        {
+          "date": "2026-10-29",
+          "price": 33827
+        }
+      ],
+      "statusNote": "Verified on the dealer group's own page (stock 73845). CARFAX one-owner, clean CARFAX per dealer. Dual-motor AWD. $33,827 plus $449 doc fee ($34,276)."
+    },
+    {
+      "make": "Hyundai",
+      "model": "Ioniq 5",
+      "modelId": "ioniq5",
+      "year": 2023,
+      "priceBasis": "vehicle",
+      "docFee": 449,
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "firstSeen": "2026-10-29",
+      "lastSeen": "2026-10-29",
+      "note": null,
+      "motivation": null,
+      "timing": null,
+      "cpo": false,
+      "fit": "match",
+      "id": "KM8KNDAF2PU172307",
+      "vin": "KM8KNDAF2PU172307",
+      "trim": "SEL AWD",
+      "miles": 22764,
+      "price": 27511,
+      "color": "White",
+      "wheels": null,
+      "dealer": "Tim Dahle INFINITI",
+      "city": "Murray",
+      "url": "https://timdahle.com/inventory/Used-2023-Hyundai-IONIQ_5-SEL-KM8KNDAF2PU172307",
+      "priceHistory": [
+        {
+          "date": "2026-10-29",
+          "price": 27511
+        }
+      ],
+      "statusNote": "Verified on the dealer group's own page (stock 042126). AWD per listing; accident history and owner count not stated on the page. $27,511 plus $449 doc fee ($27,960)."
     }
   ]
 }
