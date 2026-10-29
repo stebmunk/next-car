@@ -2,102 +2,8 @@
   "modelId": "q6",
   "label": "Audi Q6 e-tron",
   "search": "2025 and newer Q6 e-tron quattro, up to about 25,000 miles, from Ogden to Springville.",
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "listings": [
-    {
-      "id": "WA124BGF5SA093608",
-      "vin": "WA124BGF5SA093608",
-      "year": 2025,
-      "make": "Audi",
-      "model": "Q6 e-tron",
-      "modelId": "q6",
-      "trim": "Premium Plus quattro",
-      "miles": 6685,
-      "price": 49995,
-      "priceBasis": "vehicle",
-      "docFee": 499,
-      "url": "https://www.audisaltlakecity.com/en/inventory/vehicle/?isdealer=&market=usuc&vehicleId=WA124BGF5SA093608",
-      "dealer": "Audi Salt Lake City",
-      "city": "Salt Lake City",
-      "color": "Glacier White",
-      "wheels": null,
-      "drivetrain": "AWD",
-      "title": "unknown",
-      "cpo": false,
-      "fit": "over-cap",
-      "statusNote": "Over the $48k line. Listed as pre-owned, not Audi CPO; CPO financing not shown. Carfax not read",
-      "priceHistory": [
-        {
-          "date": "2026-10-15",
-          "price": 49995
-        },
-        {
-          "date": "2026-10-16",
-          "price": 49995
-        },
-        {
-          "date": "2026-10-17",
-          "price": 49995
-        },
-        {
-          "date": "2026-10-18",
-          "price": 49995
-        },
-        {
-          "date": "2026-10-19",
-          "price": 49995
-        },
-        {
-          "date": "2026-10-20",
-          "price": 49995
-        },
-        {
-          "date": "2026-10-21",
-          "price": 49995
-        },
-        {
-          "date": "2026-10-22",
-          "price": 49995
-        },
-        {
-          "date": "2026-10-23",
-          "price": 49995
-        },
-        {
-          "date": "2026-10-24",
-          "price": 49995
-        },
-        {
-          "date": "2026-10-25",
-          "price": 49995
-        },
-        {
-          "date": "2026-10-26",
-          "price": 49995
-        },
-        {
-          "date": "2026-10-27",
-          "price": 49995
-        },
-        {
-          "date": "2026-10-28",
-          "price": 49995
-        }
-      ],
-      "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-28",
-      "note": null,
-      "motivation": {
-        "score": "Low",
-        "reason": "franchise Audi store, no cuts in 14 days tracked",
-        "asOf": "2026-10-28"
-      },
-      "timing": {
-        "call": "WAIT",
-        "reason": "over $48k cap, no price movement",
-        "asOf": "2026-10-28"
-      }
-    },
     {
       "id": "WA124BGF8SA074485",
       "vin": "WA124BGF8SA074485",
@@ -176,20 +82,24 @@
         {
           "date": "2026-10-28",
           "price": 50995
+        },
+        {
+          "date": "2026-10-29",
+          "price": 50995
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-29",
       "note": null,
       "motivation": {
         "score": "Low",
-        "reason": "franchise Audi store, no cuts in 14 days tracked",
-        "asOf": "2026-10-28"
+        "reason": "franchise Audi store, no cuts in 15 days tracked",
+        "asOf": "2026-10-29"
       },
       "timing": {
         "call": "WAIT",
         "reason": "over $48k cap, no price movement",
-        "asOf": "2026-10-28"
+        "asOf": "2026-10-29"
       }
     }
   ]
