@@ -2,7 +2,7 @@
   "modelId": "others",
   "label": "Other shortlist cars",
   "search": "Verified listings for shortlist cars other than the Model 3 and Q6 e-tron watches.",
-  "checked": "2026-10-29",
+  "checked": "2026-10-30",
   "listings": [
     {
       "id": "WBY83FB04RFR87396",
@@ -54,10 +54,14 @@
         {
           "date": "2026-10-29",
           "price": 38335
+        },
+        {
+          "date": "2026-10-30",
+          "price": 38335
         }
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "note": null,
       "motivation": null,
       "timing": null
@@ -104,10 +108,14 @@
         {
           "date": "2026-10-29",
           "price": 43993
+        },
+        {
+          "date": "2026-10-30",
+          "price": 43993
         }
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "note": null,
       "motivation": null,
       "timing": null
@@ -150,10 +158,14 @@
         {
           "date": "2026-10-29",
           "price": 48157
+        },
+        {
+          "date": "2026-10-30",
+          "price": 48157
         }
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "note": null,
       "motivation": null,
       "timing": null
@@ -171,7 +183,7 @@
       "drivetrain": "AWD",
       "title": "unknown",
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "note": null,
       "motivation": null,
       "timing": null,
@@ -197,6 +209,10 @@
         {
           "date": "2026-10-29",
           "price": 28987
+        },
+        {
+          "date": "2026-10-30",
+          "price": 28987
         }
       ]
     },
@@ -213,7 +229,7 @@
       "drivetrain": "AWD",
       "title": "unknown",
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "note": null,
       "motivation": null,
       "timing": null,
@@ -239,6 +255,10 @@
         {
           "date": "2026-10-29",
           "price": 30499
+        },
+        {
+          "date": "2026-10-30",
+          "price": 30499
         }
       ]
     },
@@ -252,7 +272,7 @@
       "drivetrain": "AWD",
       "title": "unknown",
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "note": null,
       "motivation": null,
       "timing": null,
@@ -272,6 +292,10 @@
         {
           "date": "2026-10-29",
           "price": 33827
+        },
+        {
+          "date": "2026-10-30",
+          "price": 33827
         }
       ],
       "statusNote": "Verified on the dealer group's own page (stock 73845). CARFAX one-owner, clean CARFAX per dealer. Dual-motor AWD. $33,827 plus $449 doc fee ($34,276)."
@@ -286,7 +310,7 @@
       "drivetrain": "AWD",
       "title": "unknown",
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "note": null,
       "motivation": null,
       "timing": null,
@@ -305,6 +329,10 @@
       "priceHistory": [
         {
           "date": "2026-10-29",
+          "price": 27511
+        },
+        {
+          "date": "2026-10-30",
           "price": 27511
         }
       ],
