@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "lastUpdated": "2026-10-29",
-  "summary": "Verified-only as of October 29, 2026: every car below had its own listing page opened and checked that day.",
+  "lastUpdated": "2026-10-30",
+  "summary": "Verified-only as of October 30, 2026: every car below had its own listing page opened and checked that day.",
   "files": {
-    "model3": "2026-10-29",
-    "q6": "2026-10-29",
-    "others": "2026-10-29",
-    "gone": "2026-10-29"
+    "model3": "2026-10-30",
+    "q6": "2026-10-30",
+    "others": "2026-10-30",
+    "gone": "2026-10-30"
   }
 }
