@@ -1,6 +1,6 @@
 {
   "note": "A car moves here when it is missing for two checks in a row, or the page says sold, removed, or not found. Days listed is only the window this tracker observed. Comparable means it met the search: the right model year, AWD, a clean title, and about 25,000 miles or fewer. On 2026-10-23 the live lists were cut to verified-only; cards that were set aside or could not be verified that day were moved here and are marked as such.",
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "entries": [
     {
       "id": "5YJ3E1EB4SF083516",
@@ -1675,8 +1675,8 @@
       ],
       "comparable": true,
       "title": "clean",
-      "outcome": "removed from the live list 2026-10-29: the dealer's listing page no longer loads (page not found), so it could not be verified today",
-      "detected": "dealer page not found on 2026-10-29; one missed check so far"
+      "outcome": "off the market: the dealer's listing page was not found on two checks in a row (October 29 and 30)",
+      "detected": "dealer page not found 2026-10-29 and 2026-10-30; not on Cars.com either day"
     },
     {
       "id": "WA124BGF5SA093608",
@@ -1700,8 +1700,8 @@
       "cutAmounts": [],
       "comparable": true,
       "title": "unknown",
-      "outcome": "removed from the live list 2026-10-29: the dealer's listing page no longer loads (page not found), so it could not be verified today",
-      "detected": "dealer page not found on 2026-10-29; one missed check so far"
+      "outcome": "off the market: the dealer's listing page was not found on two checks in a row (October 29 and 30)",
+      "detected": "dealer page not found 2026-10-29 and 2026-10-30; no longer in the dealer's used list"
     },
     {
       "id": "JTDACAAJ9S3009032",
