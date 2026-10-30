@@ -2,7 +2,7 @@
   "modelId": "q6",
   "label": "Audi Q6 e-tron",
   "search": "2025 and newer Q6 e-tron quattro, up to about 25,000 miles, from Ogden to Springville.",
-  "checked": "2026-10-29",
+  "checked": "2026-10-30",
   "listings": [
     {
       "id": "WA124BGF8SA074485",
@@ -13,7 +13,7 @@
       "modelId": "q6",
       "trim": "Premium Plus quattro",
       "miles": 8127,
-      "price": 50995,
+      "price": 50495,
       "priceBasis": "vehicle",
       "docFee": 499,
       "url": "https://www.audisaltlakecity.com/en/inventory/vehicle/?isdealer=&market=usuc&vehicleId=WA124BGF8SA074485",
@@ -25,7 +25,7 @@
       "title": "unknown",
       "cpo": false,
       "fit": "over-cap",
-      "statusNote": "Over the $48k line. Listed as pre-owned, not Audi CPO; CPO financing not shown. Carfax not read",
+      "statusNote": "Over the $48k line. First price cut on October 30 ($50,995 to $50,495), plus $499 doc fee ($50,994). Listed as pre-owned, not Audi CPO; CPO financing not shown. Carfax not read",
       "priceHistory": [
         {
           "date": "2026-10-15",
@@ -86,20 +86,24 @@
         {
           "date": "2026-10-29",
           "price": 50995
+        },
+        {
+          "date": "2026-10-30",
+          "price": 50495
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "note": null,
       "motivation": {
-        "score": "Low",
-        "reason": "franchise Audi store, no cuts in 15 days tracked",
-        "asOf": "2026-10-29"
+        "score": "Medium",
+        "reason": "first price cut (-$500) after 15 days tracked; sister unit 093608 just went",
+        "asOf": "2026-10-30"
       },
       "timing": {
         "call": "WAIT",
-        "reason": "over $48k cap, no price movement",
-        "asOf": "2026-10-29"
+        "reason": "still over $48k cap even after the cut",
+        "asOf": "2026-10-30"
       }
     }
   ]
