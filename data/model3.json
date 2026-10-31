@@ -2,7 +2,7 @@
   "modelId": "model3",
   "label": "Tesla Model 3",
   "search": "2024 and newer Model 3 Long Range AWD, up to about 25,000 miles, from Ogden to Springville.",
-  "checked": "2026-10-30",
+  "checked": "2026-10-31",
   "listings": [
     {
       "id": "5YJ3E1EB0RF742895",
@@ -90,20 +90,24 @@
         {
           "date": "2026-10-30",
           "price": 37750
+        },
+        {
+          "date": "2026-10-31",
+          "price": 37750
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-10-31",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "Kentson holds 6 near-identical LR AWDs; no cuts since 10/23, two small bumps up 10/30",
-        "asOf": "2026-10-30"
+        "reason": "Kentson holds 6 near-identical LR AWDs; 16 days tracked with no cuts (two small bumps up 10/30)",
+        "asOf": "2026-10-31"
       },
       "timing": {
         "call": "WATCH",
-        "reason": "Kentson nudging prices up, not down; similar LR AWDs have lasted 8-14 days, 5 alternatives on this lot",
-        "asOf": "2026-10-30"
+        "reason": "prices flat-to-up, not falling; similar LR AWDs have lasted 8-14 days, 5 alternatives on this lot",
+        "asOf": "2026-10-31"
       }
     },
     {
@@ -192,20 +196,24 @@
         {
           "date": "2026-10-30",
           "price": 38150
+        },
+        {
+          "date": "2026-10-31",
+          "price": 38150
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-10-31",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "Kentson holds 6 near-identical LR AWDs; no cuts since 10/23, two small bumps up 10/30",
-        "asOf": "2026-10-30"
+        "reason": "Kentson holds 6 near-identical LR AWDs; 16 days tracked with no cuts (two small bumps up 10/30)",
+        "asOf": "2026-10-31"
       },
       "timing": {
         "call": "WATCH",
-        "reason": "Kentson nudging prices up, not down; similar LR AWDs have lasted 8-14 days, 5 alternatives on this lot",
-        "asOf": "2026-10-30"
+        "reason": "prices flat-to-up, not falling; similar LR AWDs have lasted 8-14 days, 5 alternatives on this lot",
+        "asOf": "2026-10-31"
       }
     },
     {
@@ -294,20 +302,24 @@
         {
           "date": "2026-10-30",
           "price": 40850
+        },
+        {
+          "date": "2026-10-31",
+          "price": 40850
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-10-31",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "Kentson holds 6 near-identical LR AWDs; no cuts since 10/23, two small bumps up 10/30",
-        "asOf": "2026-10-30"
+        "reason": "Kentson holds 6 near-identical LR AWDs; 16 days tracked with no cuts (two small bumps up 10/30)",
+        "asOf": "2026-10-31"
       },
       "timing": {
         "call": "WATCH",
-        "reason": "Kentson nudging prices up, not down; similar LR AWDs have lasted 8-14 days, 5 alternatives on this lot",
-        "asOf": "2026-10-30"
+        "reason": "prices flat-to-up, not falling; similar LR AWDs have lasted 8-14 days, 5 alternatives on this lot",
+        "asOf": "2026-10-31"
       }
     },
     {
@@ -396,20 +408,24 @@
         {
           "date": "2026-10-30",
           "price": 39650
+        },
+        {
+          "date": "2026-10-31",
+          "price": 39650
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-10-31",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "Kentson holds 6 near-identical LR AWDs; no cuts since 10/23, two small bumps up 10/30",
-        "asOf": "2026-10-30"
+        "reason": "Kentson holds 6 near-identical LR AWDs; 16 days tracked with no cuts (two small bumps up 10/30)",
+        "asOf": "2026-10-31"
       },
       "timing": {
         "call": "WATCH",
-        "reason": "Kentson nudging prices up, not down; similar LR AWDs have lasted 8-14 days, 5 alternatives on this lot",
-        "asOf": "2026-10-30"
+        "reason": "prices flat-to-up, not falling; similar LR AWDs have lasted 8-14 days, 5 alternatives on this lot",
+        "asOf": "2026-10-31"
       }
     },
     {
@@ -498,20 +514,24 @@
         {
           "date": "2026-10-30",
           "price": 40150
+        },
+        {
+          "date": "2026-10-31",
+          "price": 40150
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-10-31",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "Kentson holds 6 near-identical LR AWDs; no cuts since 10/23, two small bumps up 10/30",
-        "asOf": "2026-10-30"
+        "reason": "Kentson holds 6 near-identical LR AWDs; 16 days tracked with no cuts (two small bumps up 10/30)",
+        "asOf": "2026-10-31"
       },
       "timing": {
         "call": "WATCH",
-        "reason": "Kentson nudging prices up, not down; similar LR AWDs have lasted 8-14 days, 5 alternatives on this lot",
-        "asOf": "2026-10-30"
+        "reason": "prices flat-to-up, not falling; similar LR AWDs have lasted 8-14 days, 5 alternatives on this lot",
+        "asOf": "2026-10-31"
       }
     },
     {
@@ -600,20 +620,24 @@
         {
           "date": "2026-10-30",
           "price": 40650
+        },
+        {
+          "date": "2026-10-31",
+          "price": 40650
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-10-31",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "Kentson holds 6 near-identical LR AWDs; no cuts since 10/23, two small bumps up 10/30",
-        "asOf": "2026-10-30"
+        "reason": "Kentson holds 6 near-identical LR AWDs; 16 days tracked with no cuts (two small bumps up 10/30)",
+        "asOf": "2026-10-31"
       },
       "timing": {
         "call": "WATCH",
-        "reason": "Kentson nudging prices up, not down; similar LR AWDs have lasted 8-14 days, 5 alternatives on this lot",
-        "asOf": "2026-10-30"
+        "reason": "prices flat-to-up, not falling; similar LR AWDs have lasted 8-14 days, 5 alternatives on this lot",
+        "asOf": "2026-10-31"
       }
     },
     {
@@ -694,20 +718,24 @@
         {
           "date": "2026-10-30",
           "price": 39450
+        },
+        {
+          "date": "2026-10-31",
+          "price": 39450
         }
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-10-31",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "sister store to Bountiful twins, no cuts in 14 days tracked",
-        "asOf": "2026-10-30"
+        "reason": "sister store to Bountiful twins, no cuts in 15 days tracked",
+        "asOf": "2026-10-31"
       },
       "timing": {
         "call": "WAIT",
         "reason": "no movement; Bountiful twins cheaper or similar",
-        "asOf": "2026-10-30"
+        "asOf": "2026-10-31"
       }
     },
     {
@@ -796,20 +824,24 @@
         {
           "date": "2026-10-30",
           "price": 43990
+        },
+        {
+          "date": "2026-10-31",
+          "price": 43990
         }
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-10-31",
       "note": null,
       "motivation": {
         "score": "Low",
-        "reason": "no cuts in 16 days, FSD included, 3k mi",
-        "asOf": "2026-10-30"
+        "reason": "no cuts in 17 days, FSD included, 3k mi",
+        "asOf": "2026-10-31"
       },
       "timing": {
         "call": "WAIT",
         "reason": "above $42k cap with no price movement",
-        "asOf": "2026-10-30"
+        "asOf": "2026-10-31"
       }
     }
   ]
