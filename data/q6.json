@@ -2,7 +2,7 @@
   "modelId": "q6",
   "label": "Audi Q6 e-tron",
   "search": "2025 and newer Q6 e-tron quattro, up to about 25,000 miles, from Ogden to Springville.",
-  "checked": "2026-10-30",
+  "checked": "2026-10-31",
   "listings": [
     {
       "id": "WA124BGF8SA074485",
@@ -25,7 +25,7 @@
       "title": "unknown",
       "cpo": false,
       "fit": "over-cap",
-      "statusNote": "Over the $48k line. First price cut on October 30 ($50,995 to $50,495), plus $499 doc fee ($50,994). Listed as pre-owned, not Audi CPO; CPO financing not shown. Carfax not read",
+      "statusNote": "Over the $48k line. Price unchanged at $50,495 since its first cut on October 30 (from $50,995), plus $499 doc fee ($50,994). Listed as pre-owned, not Audi CPO; CPO financing not shown. Carfax not read",
       "priceHistory": [
         {
           "date": "2026-10-15",
@@ -90,20 +90,24 @@
         {
           "date": "2026-10-30",
           "price": 50495
+        },
+        {
+          "date": "2026-10-31",
+          "price": 50495
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-10-31",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "first price cut (-$500) after 15 days tracked; sister unit 093608 just went",
-        "asOf": "2026-10-30"
+        "reason": "one -$500 cut after 16 days tracked; sister unit 093608 already gone",
+        "asOf": "2026-10-31"
       },
       "timing": {
         "call": "WAIT",
         "reason": "still over $48k cap even after the cut",
-        "asOf": "2026-10-30"
+        "asOf": "2026-10-31"
       }
     }
   ]
