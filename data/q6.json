@@ -2,7 +2,7 @@
   "modelId": "q6",
   "label": "Audi Q6 e-tron",
   "search": "2025 and newer Q6 e-tron quattro, up to about 25,000 miles, from Ogden to Springville.",
-  "checked": "2026-10-31",
+  "checked": "2026-11-01",
   "listings": [
     {
       "id": "WA124BGF8SA074485",
@@ -94,20 +94,24 @@
         {
           "date": "2026-10-31",
           "price": 50495
+        },
+        {
+          "date": "2026-11-01",
+          "price": 50495
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "one -$500 cut after 16 days tracked; sister unit 093608 already gone",
-        "asOf": "2026-10-31"
+        "reason": "one -$500 cut after 16 days tracked, flat since; sister unit 093608 already gone",
+        "asOf": "2026-11-01"
       },
       "timing": {
         "call": "WAIT",
         "reason": "still over $48k cap even after the cut",
-        "asOf": "2026-10-31"
+        "asOf": "2026-11-01"
       }
     }
   ]
