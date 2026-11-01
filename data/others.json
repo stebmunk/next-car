@@ -2,7 +2,7 @@
   "modelId": "others",
   "label": "Other shortlist cars",
   "search": "Verified listings for shortlist cars other than the Model 3 and Q6 e-tron watches.",
-  "checked": "2026-10-31",
+  "checked": "2026-11-01",
   "listings": [
     {
       "id": "WBY83FB04RFR87396",
@@ -13,7 +13,7 @@
       "modelId": "i4",
       "trim": "xDrive40",
       "miles": 25630,
-      "price": 38335,
+      "price": 37622,
       "priceBasis": "vehicle",
       "docFee": 449,
       "url": "https://timdahlesouthtowne.com/inventory/Used-2024-BMW-i4-xDrive40-WBY83FB04RFR87396",
@@ -25,7 +25,7 @@
       "title": "unknown",
       "cpo": false,
       "fit": "match",
-      "statusNote": "Verified on the dealer's own page. CARFAX one-owner per dealer. Price cut to $38,335 on October 29 (from $39,828), plus $449 doc fee ($38,784). Just over the 25k-mile line.",
+      "statusNote": "Verified on the dealer's own page. CARFAX one-owner per dealer. Price cut again to $37,622 on November 1 (from $38,335; was $39,828 before October 29), plus $449 doc fee ($38,071). Just over the 25k-mile line.",
       "priceHistory": [
         {
           "date": "2026-10-23",
@@ -62,15 +62,19 @@
         {
           "date": "2026-10-31",
           "price": 38335
+        },
+        {
+          "date": "2026-11-01",
+          "price": 37622
         }
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "note": null,
       "motivation": null,
       "timing": null,
       "mileageException": true,
-      "mileageExceptionReason": "Only 630 miles over the line, and the price was cut $1,493 on October 29"
+      "mileageExceptionReason": "Only 630 miles over the line, and the price is down $2,206 since October 28"
     },
     {
       "id": "YV4L12WK6S2150102",
@@ -122,10 +126,14 @@
         {
           "date": "2026-10-31",
           "price": 43993
+        },
+        {
+          "date": "2026-11-01",
+          "price": 43993
         }
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "note": null,
       "motivation": null,
       "timing": null
@@ -176,10 +184,14 @@
         {
           "date": "2026-10-31",
           "price": 48157
+        },
+        {
+          "date": "2026-11-01",
+          "price": 48157
         }
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "note": null,
       "motivation": null,
       "timing": null
@@ -197,7 +209,7 @@
       "drivetrain": "AWD",
       "title": "unknown",
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "note": null,
       "motivation": null,
       "timing": null,
@@ -231,6 +243,10 @@
         {
           "date": "2026-10-31",
           "price": 28987
+        },
+        {
+          "date": "2026-11-01",
+          "price": 28987
         }
       ]
     },
@@ -247,7 +263,7 @@
       "drivetrain": "AWD",
       "title": "unknown",
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "note": null,
       "motivation": null,
       "timing": null,
@@ -281,6 +297,10 @@
         {
           "date": "2026-10-31",
           "price": 30499
+        },
+        {
+          "date": "2026-11-01",
+          "price": 30499
         }
       ]
     },
@@ -294,7 +314,7 @@
       "drivetrain": "AWD",
       "title": "unknown",
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "note": null,
       "motivation": null,
       "timing": null,
@@ -304,7 +324,7 @@
       "vin": "KM8KRDAF1PU196621",
       "trim": "Limited AWD",
       "miles": 16863,
-      "price": 33827,
+      "price": 32546,
       "color": "Shooting Star (matte gray)",
       "wheels": "20-inch",
       "dealer": "Tim Dahle Nissan Southtowne",
@@ -322,9 +342,13 @@
         {
           "date": "2026-10-31",
           "price": 33827
+        },
+        {
+          "date": "2026-11-01",
+          "price": 32546
         }
       ],
-      "statusNote": "Verified on the dealer group's own page (stock 73845). CARFAX one-owner, clean CARFAX per dealer. Dual-motor AWD. $33,827 plus $449 doc fee ($34,276)."
+      "statusNote": "Verified on the dealer group's own page (stock 73845). CARFAX one-owner, clean CARFAX per dealer. Dual-motor AWD. Price cut to $32,546 on November 1 (from $33,827), plus $449 doc fee ($32,995)."
     },
     {
       "make": "Hyundai",
@@ -336,7 +360,7 @@
       "drivetrain": "AWD",
       "title": "unknown",
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "note": null,
       "motivation": null,
       "timing": null,
@@ -345,7 +369,7 @@
       "id": "KM8KNDAF2PU172307",
       "vin": "KM8KNDAF2PU172307",
       "trim": "SEL AWD",
-      "miles": 22764,
+      "miles": 22763,
       "price": 27511,
       "color": "White",
       "wheels": null,
@@ -363,6 +387,10 @@
         },
         {
           "date": "2026-10-31",
+          "price": 27511
+        },
+        {
+          "date": "2026-11-01",
           "price": 27511
         }
       ],
