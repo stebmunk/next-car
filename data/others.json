@@ -2,7 +2,7 @@
   "modelId": "others",
   "label": "Other shortlist cars",
   "search": "Verified listings for shortlist cars other than the Model 3 and Q6 e-tron watches.",
-  "checked": "2026-11-02",
+  "checked": "2026-11-03",
   "listings": [
     {
       "id": "WBY83FB04RFR87396",
@@ -25,7 +25,7 @@
       "title": "unknown",
       "cpo": false,
       "fit": "match",
-      "statusNote": "Verified on the dealer's own page. CARFAX one-owner per dealer. Price cut again to $37,622 on November 1 (from $38,335; was $39,828 before October 29), plus $449 doc fee ($38,071); unchanged November 2. Just over the 25k-mile line.",
+      "statusNote": "Verified on the dealer's own page. CARFAX one-owner per dealer. Price cut to $37,622 on November 1 (from $38,335; was $39,828 before October 29), plus $449 doc fee ($38,071); unchanged since. Just over the 25k-mile line.",
       "priceHistory": [
         {
           "date": "2026-10-23",
@@ -70,10 +70,14 @@
         {
           "date": "2026-11-02",
           "price": 37622
+        },
+        {
+          "date": "2026-11-03",
+          "price": 37622
         }
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-03",
       "note": null,
       "motivation": null,
       "timing": null,
@@ -138,10 +142,14 @@
         {
           "date": "2026-11-02",
           "price": 43993
+        },
+        {
+          "date": "2026-11-03",
+          "price": 43993
         }
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-03",
       "note": null,
       "motivation": null,
       "timing": null
@@ -155,7 +163,7 @@
       "modelId": "signia",
       "trim": "Limited AWD",
       "miles": 14722,
-      "price": 48157,
+      "price": 47999,
       "priceBasis": "vehicle",
       "docFee": 499,
       "url": "https://www.oremtoyota.com/used-Orem-2025-+-Toyota+Crown+Signia-Limited-JTDACAAJXS3014630",
@@ -167,7 +175,7 @@
       "title": "unknown",
       "cpo": false,
       "fit": "match",
-      "statusNote": "Verified on the dealer's own page (stock U18201); page now lists condition as Certified Pre-Owned. CARFAX one-owner, clean CARFAX per dealer. Hybrid AWD wagon-style SUV. $48,157 plus $499 doc fee ($48,656).",
+      "statusNote": "Verified on the dealer's own page (stock U18201); listed as Certified Pre-Owned. CARFAX one-owner, clean CARFAX per dealer. Hybrid AWD. Price cut to $47,999 on November 3 (from $48,157), plus $499 doc fee ($48,498).",
       "priceHistory": [
         {
           "date": "2026-10-26",
@@ -200,10 +208,14 @@
         {
           "date": "2026-11-02",
           "price": 48157
+        },
+        {
+          "date": "2026-11-03",
+          "price": 47999
         }
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-03",
       "note": null,
       "motivation": null,
       "timing": null
@@ -221,7 +233,7 @@
       "drivetrain": "AWD",
       "title": "unknown",
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-03",
       "note": null,
       "motivation": null,
       "timing": null,
@@ -263,6 +275,10 @@
         {
           "date": "2026-11-02",
           "price": 30499
+        },
+        {
+          "date": "2026-11-03",
+          "price": 30499
         }
       ]
     },
@@ -276,7 +292,7 @@
       "drivetrain": "AWD",
       "title": "unknown",
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-03",
       "note": null,
       "motivation": null,
       "timing": null,
@@ -312,6 +328,10 @@
         {
           "date": "2026-11-02",
           "price": 32546
+        },
+        {
+          "date": "2026-11-03",
+          "price": 32546
         }
       ],
       "statusNote": "Verified on the dealer group's own page (stock 73845). CARFAX one-owner, clean CARFAX per dealer. Dual-motor AWD. Price cut to $32,546 on November 1 (from $33,827), plus $449 doc fee ($32,995)."
@@ -326,7 +346,7 @@
       "drivetrain": "AWD",
       "title": "unknown",
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-03",
       "note": null,
       "motivation": null,
       "timing": null,
@@ -362,9 +382,71 @@
         {
           "date": "2026-11-02",
           "price": 27511
+        },
+        {
+          "date": "2026-11-03",
+          "price": 27511
         }
       ],
       "statusNote": "Verified on the dealer group's own page (stock 042126). AWD per listing; accident history and owner count not stated on the page. $27,511 plus $449 doc fee ($27,960)."
+    },
+    {
+      "make": "Hyundai",
+      "model": "Ioniq 5",
+      "modelId": "ioniq5",
+      "year": 2023,
+      "trim": "Limited AWD",
+      "priceBasis": "vehicle",
+      "docFee": 449,
+      "city": "Salt Lake City",
+      "wheels": "20-inch",
+      "drivetrain": "AWD",
+      "title": "unknown",
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-11-03",
+      "note": null,
+      "motivation": null,
+      "timing": null,
+      "id": "KM8KRDAFXPU185701",
+      "vin": "KM8KRDAFXPU185701",
+      "miles": 22753,
+      "price": 28987,
+      "color": "Gravity Gold (matte)",
+      "cpo": false,
+      "fit": "match",
+      "dealer": "Ken Garff Nissan Salt Lake City",
+      "url": "https://www.kengarffnissanslc.com/inventory/dealer-certified-2023-hyundai-ioniq-5-limited-awd-sport-utility-km8krdafxpu185701/",
+      "statusNote": "Verified on the dealer's own page again November 3 (stock PU185701W) after the page blocked our check November 2. Ken Garff dealer-certified (not Hyundai factory CPO). Dual-motor AWD, about 266 mi EPA range. Price cut to $28,987 on October 29 (from $30,966), plus $449 doc fee ($29,436); unchanged since.",
+      "priceHistory": [
+        {
+          "date": "2026-10-27",
+          "price": 30966
+        },
+        {
+          "date": "2026-10-28",
+          "price": 30966
+        },
+        {
+          "date": "2026-10-29",
+          "price": 28987
+        },
+        {
+          "date": "2026-10-30",
+          "price": 28987
+        },
+        {
+          "date": "2026-10-31",
+          "price": 28987
+        },
+        {
+          "date": "2026-11-01",
+          "price": 28987
+        },
+        {
+          "date": "2026-11-03",
+          "price": 28987
+        }
+      ]
     }
   ]
 }
