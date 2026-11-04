@@ -2,7 +2,7 @@
   "modelId": "model3",
   "label": "Tesla Model 3",
   "search": "2024 and newer Model 3 Long Range AWD, up to about 25,000 miles, from Ogden to Springville.",
-  "checked": "2026-11-03",
+  "checked": "2026-11-04",
   "listings": [
     {
       "id": "5YJ3E1EB0RF742895",
@@ -13,7 +13,7 @@
       "modelId": "model3",
       "trim": "Long Range AWD",
       "miles": 22556,
-      "price": 37750,
+      "price": 38050,
       "priceBasis": "vehicle",
       "docFee": 895,
       "url": "https://www.kentsoncarcompany.com/inventory/used-2024-tesla-model-3-long-range-awd-4d-sedan-5yj3e1eb0rf742895/",
@@ -24,8 +24,8 @@
       "drivetrain": "AWD",
       "title": "clean",
       "cpo": false,
-      "fit": "match",
-      "statusNote": "On target. CARFAX one-owner, clean CARFAX per dealer; Hardware 4",
+      "fit": "near-miss",
+      "statusNote": "Just above the $38k target after a $300 increase on November 4 (now $38,050). CARFAX one-owner, clean CARFAX per dealer; Hardware 4.",
       "priceHistory": [
         {
           "date": "2026-10-15",
@@ -106,20 +106,24 @@
         {
           "date": "2026-11-03",
           "price": 37750
+        },
+        {
+          "date": "2026-11-04",
+          "price": 38050
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "Kentson holds 7 near-identical LR AWDs; 19 days tracked with no cuts (two small bumps up 10/30)",
-        "asOf": "2026-11-03"
+        "reason": "~34 days on KSL, Kentson holds 7 near-identical LR AWDs; lot-wide reshuffle +$300 today",
+        "asOf": "2026-11-04"
       },
       "timing": {
         "call": "WATCH",
-        "reason": "prices flat-to-up, not falling; similar LR AWDs have lasted 8-14 days, 6 alternatives at Kentson",
-        "asOf": "2026-11-03"
+        "reason": "Kentson twins keep lingering 30+ days with small moves; similar under-$39k private car sold in ~2 days",
+        "asOf": "2026-11-04"
       }
     },
     {
@@ -131,7 +135,7 @@
       "modelId": "model3",
       "trim": "Long Range AWD",
       "miles": 23703,
-      "price": 38150,
+      "price": 38350,
       "priceBasis": "vehicle",
       "docFee": 895,
       "url": "https://www.kentsoncarcompany.com/inventory/used-2024-tesla-model-3-long-range-awd-4d-sedan-5yj3e1eb7rf746085/",
@@ -224,20 +228,24 @@
         {
           "date": "2026-11-03",
           "price": 38150
+        },
+        {
+          "date": "2026-11-04",
+          "price": 38350
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "Kentson holds 7 near-identical LR AWDs; 19 days tracked with no cuts (two small bumps up 10/30)",
-        "asOf": "2026-11-03"
+        "reason": "~34 days on KSL, Kentson holds 7 near-identical LR AWDs; lot-wide reshuffle +$200 today",
+        "asOf": "2026-11-04"
       },
       "timing": {
         "call": "WATCH",
-        "reason": "prices flat-to-up, not falling; similar LR AWDs have lasted 8-14 days, 6 alternatives at Kentson",
-        "asOf": "2026-11-03"
+        "reason": "Kentson twins keep lingering 30+ days with small moves; similar under-$39k private car sold in ~2 days",
+        "asOf": "2026-11-04"
       }
     },
     {
@@ -249,7 +257,7 @@
       "modelId": "model3",
       "trim": "Long Range AWD",
       "miles": 6716,
-      "price": 40850,
+      "price": 40550,
       "priceBasis": "vehicle",
       "docFee": 895,
       "url": "https://www.kentsoncarcompany.com/inventory/used-2024-tesla-model-3-long-range-awd-4d-sedan-5yj3e1ebxrf729250/",
@@ -342,20 +350,24 @@
         {
           "date": "2026-11-03",
           "price": 40850
+        },
+        {
+          "date": "2026-11-04",
+          "price": 40550
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "Kentson holds 7 near-identical LR AWDs; 19 days tracked with no cuts (two small bumps up 10/30)",
-        "asOf": "2026-11-03"
+        "reason": "~39 days on KSL, Kentson holds 7 near-identical LR AWDs; lot-wide reshuffle -$300 today",
+        "asOf": "2026-11-04"
       },
       "timing": {
         "call": "WATCH",
-        "reason": "prices flat-to-up, not falling; similar LR AWDs have lasted 8-14 days, 6 alternatives at Kentson",
-        "asOf": "2026-11-03"
+        "reason": "Kentson twins keep lingering 30+ days with small moves; similar under-$39k private car sold in ~2 days",
+        "asOf": "2026-11-04"
       }
     },
     {
@@ -367,7 +379,7 @@
       "modelId": "model3",
       "trim": "Long Range AWD",
       "miles": 14384,
-      "price": 39650,
+      "price": 39350,
       "priceBasis": "vehicle",
       "docFee": 895,
       "url": "https://www.kentsoncarcompany.com/inventory/used-2024-tesla-model-3-long-range-awd-4d-sedan-5yj3e1eb4rf745718/",
@@ -460,20 +472,24 @@
         {
           "date": "2026-11-03",
           "price": 39650
+        },
+        {
+          "date": "2026-11-04",
+          "price": 39350
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "Kentson holds 7 near-identical LR AWDs; 19 days tracked with no cuts (two small bumps up 10/30)",
-        "asOf": "2026-11-03"
+        "reason": "~34 days on KSL, Kentson holds 7 near-identical LR AWDs; lot-wide reshuffle -$300 today",
+        "asOf": "2026-11-04"
       },
       "timing": {
         "call": "WATCH",
-        "reason": "prices flat-to-up, not falling; similar LR AWDs have lasted 8-14 days, 6 alternatives at Kentson",
-        "asOf": "2026-11-03"
+        "reason": "Kentson twins keep lingering 30+ days with small moves; similar under-$39k private car sold in ~2 days",
+        "asOf": "2026-11-04"
       }
     },
     {
@@ -485,7 +501,7 @@
       "modelId": "model3",
       "trim": "Long Range AWD",
       "miles": 10916,
-      "price": 40150,
+      "price": 39850,
       "priceBasis": "vehicle",
       "docFee": 895,
       "url": "https://www.kentsoncarcompany.com/inventory/used-2024-tesla-model-3-long-range-awd-4d-sedan-5yj3e1eb0rf738667/",
@@ -578,20 +594,24 @@
         {
           "date": "2026-11-03",
           "price": 40150
+        },
+        {
+          "date": "2026-11-04",
+          "price": 39850
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "Kentson holds 7 near-identical LR AWDs; 19 days tracked with no cuts (two small bumps up 10/30)",
-        "asOf": "2026-11-03"
+        "reason": "~34 days on KSL, Kentson holds 7 near-identical LR AWDs; lot-wide reshuffle -$300 today",
+        "asOf": "2026-11-04"
       },
       "timing": {
         "call": "WATCH",
-        "reason": "prices flat-to-up, not falling; similar LR AWDs have lasted 8-14 days, 6 alternatives at Kentson",
-        "asOf": "2026-11-03"
+        "reason": "Kentson twins keep lingering 30+ days with small moves; similar under-$39k private car sold in ~2 days",
+        "asOf": "2026-11-04"
       }
     },
     {
@@ -603,7 +623,7 @@
       "modelId": "model3",
       "trim": "Long Range AWD",
       "miles": 5421,
-      "price": 40650,
+      "price": 40350,
       "priceBasis": "vehicle",
       "docFee": 895,
       "url": "https://www.kentsoncarcompany.com/inventory/used-2024-tesla-model-3-long-range-awd-4d-sedan-5yj3e1eb4rf744262/",
@@ -696,20 +716,24 @@
         {
           "date": "2026-11-03",
           "price": 40650
+        },
+        {
+          "date": "2026-11-04",
+          "price": 40350
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "Kentson holds 7 near-identical LR AWDs; 19 days tracked with no cuts (two small bumps up 10/30)",
-        "asOf": "2026-11-03"
+        "reason": "~34 days on KSL, Kentson holds 7 near-identical LR AWDs; lot-wide reshuffle -$300 today",
+        "asOf": "2026-11-04"
       },
       "timing": {
         "call": "WATCH",
-        "reason": "prices flat-to-up, not falling; similar LR AWDs have lasted 8-14 days, 6 alternatives at Kentson",
-        "asOf": "2026-11-03"
+        "reason": "Kentson twins keep lingering 30+ days with small moves; similar under-$39k private car sold in ~2 days",
+        "asOf": "2026-11-04"
       }
     },
     {
@@ -721,7 +745,7 @@
       "modelId": "model3",
       "trim": "Long Range AWD",
       "miles": 19602,
-      "price": 39450,
+      "price": 38950,
       "priceBasis": "vehicle",
       "docFee": 895,
       "url": "https://www.kentsoncarcompany.com/inventory/used-2024-tesla-model-3-long-range-awd-4d-sedan-5yj3e1eb2rf842321/",
@@ -733,7 +757,7 @@
       "title": "clean",
       "cpo": false,
       "fit": "near-miss",
-      "statusNote": "Meets the car rules, above the $38k target. CARFAX one-owner, clean CARFAX per dealer. Now shown at Kentson's Bountiful lot (was American Fork).",
+      "statusNote": "Meets the car rules, above the $38k target. CARFAX one-owner, clean CARFAX per dealer. At Kentson's Bountiful lot. First price cut November 4: -$500 to $38,950.",
       "priceHistory": [
         {
           "date": "2026-10-16",
@@ -806,20 +830,24 @@
         {
           "date": "2026-11-03",
           "price": 39450
+        },
+        {
+          "date": "2026-11-04",
+          "price": 38950
         }
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "moved to the Bountiful lot with 6 near-twins, no cuts in 18 days tracked",
-        "asOf": "2026-11-03"
+        "reason": "first cut (-$500) after 19 days tracked; 6 near-twins on the same lot",
+        "asOf": "2026-11-04"
       },
       "timing": {
-        "call": "WAIT",
-        "reason": "no movement; cheaper/similar twins on the same lot",
-        "asOf": "2026-11-03"
+        "call": "WATCH",
+        "reason": "first price cut suggests the dealer wants it gone; no sign it will sell soon",
+        "asOf": "2026-11-04"
       }
     },
     {
@@ -924,20 +952,24 @@
         {
           "date": "2026-11-03",
           "price": 43990
+        },
+        {
+          "date": "2026-11-04",
+          "price": 43990
         }
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "note": null,
       "motivation": {
         "score": "Low",
-        "reason": "no cuts in 20 days, FSD included, 3k mi",
-        "asOf": "2026-11-03"
+        "reason": "no cuts in 21 days, FSD included, 3k mi",
+        "asOf": "2026-11-04"
       },
       "timing": {
         "call": "WAIT",
         "reason": "above $42k cap with no price movement",
-        "asOf": "2026-11-03"
+        "asOf": "2026-11-04"
       }
     }
   ]
