@@ -2,7 +2,7 @@
   "modelId": "others",
   "label": "Other shortlist cars",
   "search": "Verified listings for shortlist cars other than the Model 3 and Q6 e-tron watches.",
-  "checked": "2026-11-03",
+  "checked": "2026-11-04",
   "listings": [
     {
       "id": "WBY83FB04RFR87396",
@@ -74,10 +74,14 @@
         {
           "date": "2026-11-03",
           "price": 37622
+        },
+        {
+          "date": "2026-11-04",
+          "price": 37622
         }
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "note": null,
       "motivation": null,
       "timing": null,
@@ -146,10 +150,14 @@
         {
           "date": "2026-11-03",
           "price": 43993
+        },
+        {
+          "date": "2026-11-04",
+          "price": 43993
         }
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "note": null,
       "motivation": null,
       "timing": null
@@ -212,75 +220,17 @@
         {
           "date": "2026-11-03",
           "price": 47999
+        },
+        {
+          "date": "2026-11-04",
+          "price": 47999
         }
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "note": null,
       "motivation": null,
       "timing": null
-    },
-    {
-      "make": "Hyundai",
-      "model": "Ioniq 5",
-      "modelId": "ioniq5",
-      "year": 2023,
-      "trim": "Limited AWD",
-      "priceBasis": "vehicle",
-      "docFee": 449,
-      "city": "Salt Lake City",
-      "wheels": "20-inch",
-      "drivetrain": "AWD",
-      "title": "unknown",
-      "firstSeen": "2026-10-27",
-      "lastSeen": "2026-11-03",
-      "note": null,
-      "motivation": null,
-      "timing": null,
-      "id": "KM8KRDAF5PU209161",
-      "vin": "KM8KRDAF5PU209161",
-      "miles": 20631,
-      "price": 30499,
-      "color": "Atlas White",
-      "cpo": true,
-      "fit": "match",
-      "dealer": "Ken Garff Hyundai Downtown",
-      "url": "https://www.kengarffhyundaidowntown.com/inventory/certified-pre-owned-2023-hyundai-ioniq-5-limited-awd-sport-utility-km8krdaf5pu209161/",
-      "statusNote": "Verified on the dealer's own page (stock PU209161W). Hyundai Certified Pre-Owned, CARFAX one-owner per dealer. Dual-motor AWD. Price cut to $30,499 on October 29 (from $31,200), plus $449 doc fee ($30,948).",
-      "priceHistory": [
-        {
-          "date": "2026-10-27",
-          "price": 31200
-        },
-        {
-          "date": "2026-10-28",
-          "price": 31200
-        },
-        {
-          "date": "2026-10-29",
-          "price": 30499
-        },
-        {
-          "date": "2026-10-30",
-          "price": 30499
-        },
-        {
-          "date": "2026-10-31",
-          "price": 30499
-        },
-        {
-          "date": "2026-11-01",
-          "price": 30499
-        },
-        {
-          "date": "2026-11-02",
-          "price": 30499
-        },
-        {
-          "date": "2026-11-03",
-          "price": 30499
-        }
-      ]
     },
     {
       "make": "Hyundai",
@@ -292,7 +242,7 @@
       "drivetrain": "AWD",
       "title": "unknown",
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "note": null,
       "motivation": null,
       "timing": null,
@@ -332,6 +282,10 @@
         {
           "date": "2026-11-03",
           "price": 32546
+        },
+        {
+          "date": "2026-11-04",
+          "price": 32546
         }
       ],
       "statusNote": "Verified on the dealer group's own page (stock 73845). CARFAX one-owner, clean CARFAX per dealer. Dual-motor AWD. Price cut to $32,546 on November 1 (from $33,827), plus $449 doc fee ($32,995)."
@@ -346,7 +300,7 @@
       "drivetrain": "AWD",
       "title": "unknown",
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "note": null,
       "motivation": null,
       "timing": null,
@@ -386,6 +340,10 @@
         {
           "date": "2026-11-03",
           "price": 27511
+        },
+        {
+          "date": "2026-11-04",
+          "price": 27511
         }
       ],
       "statusNote": "Verified on the dealer group's own page (stock 042126). AWD per listing; accident history and owner count not stated on the page. $27,511 plus $449 doc fee ($27,960)."
@@ -403,7 +361,7 @@
       "drivetrain": "AWD",
       "title": "unknown",
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "note": null,
       "motivation": null,
       "timing": null,
@@ -416,7 +374,7 @@
       "fit": "match",
       "dealer": "Ken Garff Nissan Salt Lake City",
       "url": "https://www.kengarffnissanslc.com/inventory/dealer-certified-2023-hyundai-ioniq-5-limited-awd-sport-utility-km8krdafxpu185701/",
-      "statusNote": "Verified on the dealer's own page again November 3 (stock PU185701W) after the page blocked our check November 2. Ken Garff dealer-certified (not Hyundai factory CPO). Dual-motor AWD, about 266 mi EPA range. Price cut to $28,987 on October 29 (from $30,966), plus $449 doc fee ($29,436); unchanged since.",
+      "statusNote": "Verified on the dealer's own page November 4 (stock PU185701W). Ken Garff dealer-certified (not Hyundai factory CPO). Dual-motor AWD, about 266 mi EPA range. Price cut to $28,987 on October 29 (from $30,966), plus $449 doc fee ($29,436); unchanged since.",
       "priceHistory": [
         {
           "date": "2026-10-27",
@@ -444,6 +402,10 @@
         },
         {
           "date": "2026-11-03",
+          "price": 28987
+        },
+        {
+          "date": "2026-11-04",
           "price": 28987
         }
       ]
