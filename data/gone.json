@@ -1,6 +1,6 @@
 {
   "note": "A car moves here when it is missing for two checks in a row, or the page says sold, removed, or not found. Days listed is only the window this tracker observed. Comparable means it met the search: the right model year, AWD, a clean title, and about 25,000 miles or fewer. On 2026-10-23 the live lists were cut to verified-only; cards that were set aside or could not be verified that day were moved here and are marked as such.",
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "entries": [
     {
       "id": "5YJ3E1EB4SF083516",
@@ -1806,6 +1806,33 @@
       "title": "unknown",
       "outcome": "removed from the live list 2026-11-05: the dealer's page for this car now opens the general used-inventory page, so it could not be verified",
       "detected": "dealer page redirect on 2026-11-05"
+    },
+    {
+      "id": "JTDACAAJXS3014630",
+      "vin": "JTDACAAJXS3014630",
+      "year": 2025,
+      "make": "Toyota",
+      "model": "Crown Signia",
+      "modelId": "signia",
+      "trim": "Limited AWD",
+      "miles": 14722,
+      "color": "Storm Cloud",
+      "dealer": "Orem Toyota",
+      "city": "Orem",
+      "url": "https://www.oremtoyota.com/used-Orem-2025-+-Toyota+Crown+Signia-Limited-JTDACAAJXS3014630",
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-11-05",
+      "daysListed": 10,
+      "firstPrice": 48157,
+      "lastPrice": 47999,
+      "priceCuts": 1,
+      "cutAmounts": [
+        158
+      ],
+      "comparable": true,
+      "title": "unknown",
+      "outcome": "removed from the live list 2026-11-06: dealer VDP returns 404 and Orem Toyota used search for Crown Signia shows 0 results",
+      "detected": "dealer VDP 404 + empty model search on 2026-11-06"
     }
   ]
 }
