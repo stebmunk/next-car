@@ -2,7 +2,7 @@
   "modelId": "model3",
   "label": "Tesla Model 3",
   "search": "2024 and newer Model 3 Long Range AWD, up to about 25,000 miles, from Ogden to Springville.",
-  "checked": "2026-11-05",
+  "checked": "2026-11-06",
   "listings": [
     {
       "id": "5YJ3E1EB0RF742895",
@@ -25,7 +25,7 @@
       "title": "clean",
       "cpo": false,
       "fit": "near-miss",
-      "statusNote": "Just above the $38k target at $38,050 (unchanged November 5). CARFAX one-owner, clean CARFAX per dealer; Hardware 4.",
+      "statusNote": "Just above the $38k target at $38,050 (unchanged November 6). CARFAX one-owner, clean CARFAX per dealer; Hardware 4.",
       "priceHistory": [
         {
           "date": "2026-10-15",
@@ -114,20 +114,24 @@
         {
           "date": "2026-11-05",
           "price": 38050
+        },
+        {
+          "date": "2026-11-06",
+          "price": 38050
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-06",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "~35 days on KSL, Kentson holds 7 near-identical LR AWDs; prices flat today",
-        "asOf": "2026-11-05"
+        "reason": "~36 days on KSL, Kentson holds 7 near-identical LR AWDs; prices flat today",
+        "asOf": "2026-11-06"
       },
       "timing": {
         "call": "WATCH",
         "reason": "Kentson twins keep lingering 30+ days with small moves; similar under-$39k private car sold in ~2 days",
-        "asOf": "2026-11-05"
+        "asOf": "2026-11-06"
       }
     },
     {
@@ -240,20 +244,24 @@
         {
           "date": "2026-11-05",
           "price": 38350
+        },
+        {
+          "date": "2026-11-06",
+          "price": 38350
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-06",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "~35 days on KSL, Kentson holds 7 near-identical LR AWDs; prices flat today",
-        "asOf": "2026-11-05"
+        "reason": "~36 days on KSL, Kentson holds 7 near-identical LR AWDs; prices flat today",
+        "asOf": "2026-11-06"
       },
       "timing": {
         "call": "WATCH",
         "reason": "Kentson twins keep lingering 30+ days with small moves; similar under-$39k private car sold in ~2 days",
-        "asOf": "2026-11-05"
+        "asOf": "2026-11-06"
       }
     },
     {
@@ -366,20 +374,24 @@
         {
           "date": "2026-11-05",
           "price": 40550
+        },
+        {
+          "date": "2026-11-06",
+          "price": 40550
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-06",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "~40 days on KSL, Kentson holds 7 near-identical LR AWDs; prices flat today",
-        "asOf": "2026-11-05"
+        "reason": "~41 days on KSL, Kentson holds 7 near-identical LR AWDs; prices flat today",
+        "asOf": "2026-11-06"
       },
       "timing": {
         "call": "WATCH",
         "reason": "Kentson twins keep lingering 30+ days with small moves; similar under-$39k private car sold in ~2 days",
-        "asOf": "2026-11-05"
+        "asOf": "2026-11-06"
       }
     },
     {
@@ -492,20 +504,24 @@
         {
           "date": "2026-11-05",
           "price": 39350
+        },
+        {
+          "date": "2026-11-06",
+          "price": 39350
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-06",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "~35 days on KSL, Kentson holds 7 near-identical LR AWDs; prices flat today",
-        "asOf": "2026-11-05"
+        "reason": "~36 days on KSL, Kentson holds 7 near-identical LR AWDs; prices flat today",
+        "asOf": "2026-11-06"
       },
       "timing": {
         "call": "WATCH",
         "reason": "Kentson twins keep lingering 30+ days with small moves; similar under-$39k private car sold in ~2 days",
-        "asOf": "2026-11-05"
+        "asOf": "2026-11-06"
       }
     },
     {
@@ -618,20 +634,24 @@
         {
           "date": "2026-11-05",
           "price": 39850
+        },
+        {
+          "date": "2026-11-06",
+          "price": 39850
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-06",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "~35 days on KSL, Kentson holds 7 near-identical LR AWDs; prices flat today",
-        "asOf": "2026-11-05"
+        "reason": "~36 days on KSL, Kentson holds 7 near-identical LR AWDs; prices flat today",
+        "asOf": "2026-11-06"
       },
       "timing": {
         "call": "WATCH",
         "reason": "Kentson twins keep lingering 30+ days with small moves; similar under-$39k private car sold in ~2 days",
-        "asOf": "2026-11-05"
+        "asOf": "2026-11-06"
       }
     },
     {
@@ -744,20 +764,24 @@
         {
           "date": "2026-11-05",
           "price": 40350
+        },
+        {
+          "date": "2026-11-06",
+          "price": 40350
         }
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-06",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "~35 days on KSL, Kentson holds 7 near-identical LR AWDs; prices flat today",
-        "asOf": "2026-11-05"
+        "reason": "~36 days on KSL, Kentson holds 7 near-identical LR AWDs; prices flat today",
+        "asOf": "2026-11-06"
       },
       "timing": {
         "call": "WATCH",
         "reason": "Kentson twins keep lingering 30+ days with small moves; similar under-$39k private car sold in ~2 days",
-        "asOf": "2026-11-05"
+        "asOf": "2026-11-06"
       }
     },
     {
@@ -781,7 +805,7 @@
       "title": "clean",
       "cpo": false,
       "fit": "near-miss",
-      "statusNote": "Meets the car rules, above the $38k target. CARFAX one-owner, clean CARFAX per dealer. At Kentson's Bountiful lot. Prior cut November 4 to $38,950; unchanged November 5.",
+      "statusNote": "Meets the car rules, above the $38k target. CARFAX one-owner, clean CARFAX per dealer. At Kentson's Bountiful lot. Prior cut November 4 to $38,950; unchanged November 6.",
       "priceHistory": [
         {
           "date": "2026-10-16",
@@ -862,20 +886,24 @@
         {
           "date": "2026-11-05",
           "price": 38950
+        },
+        {
+          "date": "2026-11-06",
+          "price": 38950
         }
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-06",
       "note": null,
       "motivation": {
         "score": "Medium",
-        "reason": "one prior cut (-$500 on 11/04); 20 days tracked; 6 near-twins on the same lot",
-        "asOf": "2026-11-05"
+        "reason": "one prior cut (-$500 on 11/04); 21 days tracked; 6 near-twins on the same lot",
+        "asOf": "2026-11-06"
       },
       "timing": {
         "call": "WATCH",
         "reason": "first cut already logged; no further move today",
-        "asOf": "2026-11-05"
+        "asOf": "2026-11-06"
       }
     },
     {
@@ -988,20 +1016,24 @@
         {
           "date": "2026-11-05",
           "price": 43990
+        },
+        {
+          "date": "2026-11-06",
+          "price": 43990
         }
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-06",
       "note": null,
       "motivation": {
         "score": "Low",
-        "reason": "no cuts in 22 days, FSD included, 3k mi",
-        "asOf": "2026-11-05"
+        "reason": "no cuts in 23 days, FSD included, 3k mi",
+        "asOf": "2026-11-06"
       },
       "timing": {
         "call": "WAIT",
         "reason": "above $42k cap with no price movement",
-        "asOf": "2026-11-05"
+        "asOf": "2026-11-06"
       }
     }
   ]
